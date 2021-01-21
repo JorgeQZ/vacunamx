@@ -24,6 +24,7 @@ footer{
                 font-size: 18px;
                 line-height: 26px;
                 margin-bottom: 10px;
+                font-weight: 600;
             }
             ul{
                 padding: 0;
@@ -35,6 +36,37 @@ footer{
                         color: white;
                         &:hover{
                             color: #bc945b;
+                        }
+                    }
+                }
+            }
+            p{
+                font-size: 12px;
+                line-height: 16px;
+                color: white;
+                margin: 0;
+            }
+            a{
+                display: block;
+                font-size: 12px;
+                line-height: 16px;
+                color: white;
+                &:hover{
+                    color: #bc945b;
+                }
+            }
+            .cont-redes{
+                margin-top: 10px;
+                display: flex;
+                svg{
+                    width: 17px;
+                    margin-right: 20px;
+                    path{
+                        fill: white;
+                    }
+                    &:hover{
+                        path{
+                            fill: #bc945b;
                         }
                     }
                 }

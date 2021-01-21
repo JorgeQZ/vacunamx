@@ -42,6 +42,7 @@ footer .contenedor-footer .contenedor-enlaces h2 {
   font-size: 18px;
   line-height: 26px;
   margin-bottom: 10px;
+  font-weight: 600;
 }
 
 footer .contenedor-footer .contenedor-enlaces ul {
@@ -60,6 +61,44 @@ footer .contenedor-footer .contenedor-enlaces ul li a {
 
 footer .contenedor-footer .contenedor-enlaces ul li a:hover {
   color: #bc945b;
+}
+
+footer .contenedor-footer .contenedor-enlaces p {
+  font-size: 12px;
+  line-height: 16px;
+  color: white;
+  margin: 0;
+}
+
+footer .contenedor-footer .contenedor-enlaces a {
+  display: block;
+  font-size: 12px;
+  line-height: 16px;
+  color: white;
+}
+
+footer .contenedor-footer .contenedor-enlaces a:hover {
+  color: #bc945b;
+}
+
+footer .contenedor-footer .contenedor-enlaces .cont-redes {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .contenedor-footer .contenedor-enlaces .cont-redes svg {
+  width: 17px;
+  margin-right: 20px;
+}
+
+footer .contenedor-footer .contenedor-enlaces .cont-redes svg path {
+  fill: white;
+}
+
+footer .contenedor-footer .contenedor-enlaces .cont-redes svg:hover path {
+  fill: #bc945b;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
