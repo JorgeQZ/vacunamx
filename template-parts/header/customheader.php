@@ -1,22 +1,9 @@
-<?php
-/**
-* Template Name: Front Page
-*
-*/
-?>
-
-<?php get_header(); ?>
-
-<h1>
-hdhdhgd
-</h1>
-
 <div class="header">
 
     <div class="contenedor-header">
 
         <div class="contenedor-logo">
-            <img src="<?php echo get_template_directory_uri().'/img/logo-gobiernodemexico.png';?>" alt="">
+            <img src="<?php echo get_template_directory_uri().'/custom/img/logo-gobiernodemexico.png';?>" alt="">
         </div>
 
         <div class="contenedor-menu">
@@ -34,11 +21,9 @@ hdhdhgd
         </div>
 
         <div class="contenedor-logo">
-            <img src="<?php echo get_template_directory_uri().'/img/logo-secretariadesalud.png';?>" alt="">
+            <img src="<?php echo get_template_directory_uri().'/custom/img/logo-secretariadesalud.png';?>" alt="">
         </div>
 
     </div>
 
 </div>
-
-<?php get_footer(); ?>
