@@ -40,9 +40,17 @@ header .contenedor-header .contenedor-menu ul {
 header .contenedor-header .contenedor-menu ul li {
   padding: 0 12px;
   max-width: 111px;
-  font-size: 9px;
+  font-size: 11px;
   line-height: 12px;
   text-align: center;
+  position: relative;
+  height: 39px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .contenedor-header .contenedor-menu ul li a {
@@ -58,6 +66,19 @@ header .contenedor-header .contenedor-menu ul li a:hover {
 header .contenedor-header .contenedor-menu ul li.active a {
   font-weight: 600;
   color: #bc945b;
+}
+
+header .contenedor-header .contenedor-menu ul li.active::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 30px;
+  height: 4px;
+  background: #015c4d;
+  border-radius: 20px;
 }
 
 header .contenedor-movil {

@@ -26,9 +26,13 @@ header{
                 li{
                     padding: 0 12px;
                     max-width: 111px;
-                    font-size: 9px;
+                    font-size: 11px;
                     line-height: 12px;
                     text-align: center;
+                    position: relative;
+                    height: 39px;
+                    display: flex;
+                    align-items: center;
                     a{
                         color: white;
                         transition:  all .3s;
@@ -40,6 +44,18 @@ header{
                         a{
                             font-weight: 600;
                             color: #bc945b;
+                        }
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            bottom: -15px;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                            width: 30px;
+                            height: 4px;
+                            background: #015c4d;
+                            border-radius: 20px;
                         }
                     }
                 }
