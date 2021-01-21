@@ -1,4 +1,4 @@
-<div class="header">
+<header>
 
     <div class="contenedor-header">
 
@@ -24,6 +24,35 @@
             <img src="<?php echo get_template_directory_uri().'/custom/img/logo-secretariadesalud.png';?>" alt="">
         </div>
 
+        <div class="cont-burguer">
+            <div class="burguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
     </div>
 
-</div>
+
+    <!-- Mobile -->
+        <div class="contenedor-movil">
+            
+                <div class="contenedor-menu">
+                    <ul>
+                        <li class="active"> <a href="#"> Home </a> </li>
+                        <li> <a href="#"> Información de la vacuna </a> </li>
+                        <li> <a href="#"> Priorización de personas a vacunar </a> </li>
+                        <li> <a href="#"> Calendario vacunación </a> </li>
+                        <li> <a href="#"> Eventos adversos  </a> </li>
+                        <li> <a href="#"> Datos </a> </li>
+                        <li> <a href="#"> Preguntas frecuentes </a> </li>
+                        <li> <a href="#"> Noticias </a> </li>
+                        <li> <a href="#"> Contacto </a> </li>
+                    </ul>
+                </div>
+
+        </div>
+    <!-- Mobile -->
+
+</header>
