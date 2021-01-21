@@ -1,0 +1,124 @@
+* {
+  font-family: helvetica;
+}
+
+.container-news {
+  height: 80vh;
+  min-height: 700px;
+  max-height: 1000px;
+  background-color: grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-news .column {
+  width: 50%;
+  background-color: red;
+}
+
+.container-news .column:nth-child(odd) {
+  background-color: transparent;
+}
+
+.container-news .column .grid-news-carousel .item {
+  background-color: black;
+  min-height: 700px;
+  max-height: 1000px;
+  height: 80vh;
+  padding: 20px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+}
+
+.container-news .column .grid-news-carousel .item .seemore {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 16px;
+}
+
+.container-news .column .grid-news-carousel .item .seemore a {
+  position: relative;
+  color: white;
+  z-index: 9999;
+}
+
+.container-news .column .grid-news-carousel .item .overlay {
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.container-news .column .grid-news-carousel .item .content {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.container-news .column .grid-news-carousel .item .content .title {
+  line-height: 1;
+  margin-bottom: 30px;
+  width: 90%;
+  max-width: 700px;
+  position: relative;
+}
+
+.container-news .column .grid-news-carousel .item .content .title::before {
+  content: "";
+  width: 10px;
+  height: 5px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+}
+
+.container-news .column .grid-news-carousel .item .content .title h3 {
+  font-weight: 800;
+}
+
+.container-news .column .grid-news-carousel .item .content .excerpt {
+  line-height: 1.2;
+  width: 90%;
+  max-width: 700px;
+  margin: 20px 0;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.container-news .column .grid-news-carousel .owl-dots {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  z-index: 0;
+}
+
+.container-news .column .grid-news-carousel .owl-dots button span {
+  background-color: transparent;
+  border: 1px solid white;
+  width: 12px;
+  height: 12px;
+}
+
+.container-news .column .grid-news-carousel .owl-dots button.active span {
+  background-color: #fff;
+}

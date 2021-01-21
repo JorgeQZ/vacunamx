@@ -1,0 +1,122 @@
+// Variables
+$dot_size: 12px;
+$carousel_min_height: 700px;
+$carousel_max_height: 1000px;
+$carousel_height: 80vh;
+
+* {
+    font-family: helvetica;
+}
+
+.container-news {
+    height: $carousel_height;
+    min-height: $carousel_min_height;
+    max-height: $carousel_max_height;
+
+    background-color: grey;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    .column {
+        width: 50%;
+        background-color: red;
+        &:nth-child(odd) {
+            background-color: transparent;
+        }
+
+        .grid-news-carousel {
+            .item {
+                background-color: black;
+                min-height: $carousel_min_height;
+                max-height: $carousel_max_height;
+                height: $carousel_height;
+                padding: 20px;
+                position: relative;
+                display: flex;
+                color: white;
+
+                .seemore {
+                    position: absolute;
+                    bottom: 20px;
+                    right: 20px;
+                    font-size: 16px;
+                    a {
+                        position: relative;
+                        color: white;
+                        z-index: 9999;
+                    }
+                }
+
+                .overlay {
+                    background-size: cover;
+                    background-position: center;
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                    opacity: 0.5;
+                }
+
+                .content {
+                    align-self: flex-end;
+                    margin-bottom: 50px;
+                    position: relative;
+                    z-index: 2;
+
+                    .title {
+                        line-height: 1;
+                        margin-bottom: 30px;
+                        width: 90%;
+                        max-width: 700px;
+                        position: relative;
+                        &::before {
+                            content: "";
+                            width: 10px;
+                            height: 5px;
+                            background-color: #fff;
+                            position: absolute;
+                            bottom: -15px;
+                            left: 0;
+                        }
+                        h3 {
+                            font-weight: 800;
+                        }
+                    }
+
+                    .excerpt {
+                        line-height: 1.2;
+                        width: 90%;
+                        max-width: 700px;
+                        margin: 20px 0;
+                        font-size: 20px;
+                        letter-spacing: 1px;
+                    }
+                }
+            }
+
+            .owl-dots {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                margin: 0;
+                z-index: 0;
+                button {
+                    span {
+                        background-color: transparent;
+                        border: 1px solid white;
+                        width: $dot_size;
+                        height: $dot_size;
+                    }
+
+                    &.active {
+                        span {
+                            background-color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
