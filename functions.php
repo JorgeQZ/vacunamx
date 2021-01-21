@@ -462,6 +462,14 @@ function twenty_twenty_one_scripts() {
 		wp_get_theme()->get( 'Version' ),
 		true
 	);
+
+
+	if(is_front_page()){
+		wp_enqueue_style( 'generals', get_template_directory_uri() . '/css/generals.css', array(), filemtime( get_stylesheet_directory() . '/css/generals.css' ), 'all');
+        wp_enqueue_style( 'header', get_template_directory_uri() . '/css/header.css', array(), filemtime( get_stylesheet_directory() . '/css/header.css' ), 'all');
+    }
+
+
 }
 add_action( 'wp_enqueue_scripts', 'twenty_twenty_one_scripts' );
 

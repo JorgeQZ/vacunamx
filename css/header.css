@@ -1,0 +1,58 @@
+.header {
+  padding: 15px 0;
+  background: #0a221e;
+  border-bottom: 5px solid #bc945b;
+}
+
+.header .contenedor-header {
+  width: 64%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .contenedor-header .contenedor-logo img {
+  width: auto;
+  height: 25px;
+}
+
+.header .contenedor-header .contenedor-menu ul {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.header .contenedor-header .contenedor-menu ul li {
+  padding: 0 12px;
+  max-width: 72px;
+  font-size: 7px;
+  line-height: 10px;
+  text-align: center;
+}
+
+.header .contenedor-header .contenedor-menu ul li a {
+  color: white;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.header .contenedor-header .contenedor-menu ul li a:hover {
+  color: #bc945b;
+}
+
+.header .contenedor-header .contenedor-menu ul li.active a {
+  font-weight: 600;
+  color: #bc945b;
+}

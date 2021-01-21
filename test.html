@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg#Montserrat-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Light.eot");
+  src: url("../fonts/Montserrat-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat-Light.ttf") format("truetype"), url("../fonts/Montserrat-Light.svg#Montserrat-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-SemiBold.eot");
+  src: url("../fonts/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat-SemiBold.ttf") format("truetype"), url("../fonts/Montserrat-SemiBold.svg#Montserrat-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: url("../fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg#Montserrat-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat";
+  font-weight: normal;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+input,
+button {
+  outline: none;
+}
+
+.header {
+  padding: 15px 0;
+  background: #0a221e;
+  border-bottom: 5px solid #bc945b;
+}
+
+.header .contenedor-header {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .contenedor-header .contenedor-logo img {
+  width: auto;
+  height: 25px;
+}
+
+.header .contenedor-header .contenedor-menu ul {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.header .contenedor-header .contenedor-menu ul li {
+  padding: 0 10px;
+  max-width: 72px;
+}
+
+.header .contenedor-header .contenedor-menu ul li a {
+  font-size: 8px;
+  --global--line-height-body: 12px;
+  color: white;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.header .contenedor-header .contenedor-menu ul li a:hover {
+  color: #bc945b;
+}
+
+.header .contenedor-header .contenedor-menu ul li.active a {
+  font-weight: 600;
+  color: #bc945b;
+}
+
+
+</style>
+<body>
+    <h1>
+        hdhdhgd
+        </h1>
+        
+        <div class="header">
+        
+            <div class="contenedor-header">
+        
+            <!--
+                <div class="contenedor-logo">
+                    <img src="<?php echo get_template_directory_uri().'/img/logo-gobiernodemexico.png';?>" alt="">
+                </div>
+        -->
+                <div class="contenedor-menu">
+                    <ul>
+                        <li class="active"> <a href="#"> Home </a> </li>
+                        <li> <a href="#"> Información de la vacuna </a> </li>
+                        <li> <a href="#"> Priorización de personas a vacunar </a> </li>
+                        <li> <a href="#"> Calendario vacunación </a> </li>
+                        <li> <a href="#"> Eventos adversos  </a> </li>
+                        <li> <a href="#"> Datos </a> </li>
+                        <li> <a href="#"> Preguntas frecuentes </a> </li>
+                        <li> <a href="#"> Noticias </a> </li>
+                        <li> <a href="#"> Contacto </a> </li>
+                    </ul>
+                </div>
+        <!--
+                <div class="contenedor-logo">
+                    <img src="<?php echo get_template_directory_uri().'/img/logo-secretariadesalud.png';?>" alt="">
+                </div>
+        -->
+            </div>
+        
+        </div>
+</body>
+</html>
