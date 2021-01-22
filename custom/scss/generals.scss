@@ -1,0 +1,29 @@
+@import "fonts";
+
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    font-weight: normal;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+input,
+button {
+    outline: none;
+}
