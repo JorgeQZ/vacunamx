@@ -1,0 +1,36 @@
+.contenedor-general-modulos{
+    padding: 40px 0 85px;
+    background-image: url(../img/background-modulos.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .contenedor-item{
+        display: flex;
+        align-items: center;
+        .cont-pregunta{
+            width: 50%;
+            h2{
+                color: white;
+                font-size: 18px;
+                line-height: 26px;
+                margin-bottom: 10px;
+                font-weight: 600;
+            }
+            p{
+                font-size: 12px;
+                line-height: 16px;
+                color: white;
+                margin: 0;
+                span{
+                    color: #bc945b;
+                }
+            }
+        }
+        .cont-imagen{
+            width: 50%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
