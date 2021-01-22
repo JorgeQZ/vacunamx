@@ -19,6 +19,9 @@ function add_theme_scripts() {
     // Map block
     wp_enqueue_style( 'block-map', get_template_directory_uri() . '/custom/css/block-map.css', array(), filemtime( get_stylesheet_directory() . '/custom/css/block-map.css' ), 'all');
 
+    wp_enqueue_script('map-tooltip', get_template_directory_uri().'/custom/js/map-tooltip.js', array('jquery'),filemtime( get_stylesheet_directory() . '/custom/js/map-tooltip.js' ), true);
+
+
      // Vaccine block
      wp_enqueue_style( 'block-vaccine', get_template_directory_uri() . '/custom/css/block-vaccine.css', array(), filemtime( get_stylesheet_directory() . '/custom/css/block-vaccine.css' ), 'all');
 
