@@ -64,3 +64,13 @@ button {
   max-width: 955px;
   margin: 0 auto;
 }
+
+#content {
+  padding-top: 74px;
+}
+
+.contenedor-wrapper {
+  width: 100%;
+  max-width: 955px;
+  margin: 0 auto;
+}
