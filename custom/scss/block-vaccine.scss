@@ -1,0 +1,30 @@
+$dot_size: 12px;
+$vaccine_min_height: 400px;
+$vaccine_max_height: 2000px;
+$vaccine_height: 70vh;
+$overlay_opacity: 0.6;
+.container-vaccine {
+    margin-top: 40px !important;
+    display: block;
+    background-image: url(../img/vaccine_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: $vaccine_min_height;
+    height: $vaccine_height;
+    max-height: $vaccine_max_height;
+    margin-bottom: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .vaccine-content {
+        .info-box {
+            // border: 1px solid
+        }
+
+        .img-vaccine {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
