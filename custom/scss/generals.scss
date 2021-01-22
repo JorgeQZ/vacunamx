@@ -28,6 +28,21 @@ button {
     outline: none;
 }
 
+// Arreglando margins y paddings
+.site-main > * {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.site-main,
+.widget-area,
+.site-footer {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 // Containers Aux
 .contenedor-wrapper {
     width: 100%;

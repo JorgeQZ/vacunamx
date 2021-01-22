@@ -1,13 +1,8 @@
 .container-vaccine {
-  margin-top: 40px !important;
   display: block;
   background-image: url(../img/vaccine_bg.jpg);
   background-position: center;
   background-size: cover;
-  min-height: 400px;
-  height: 70vh;
-  max-height: 2000px;
-  margin-bottom: 0 !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,6 +12,14 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.container-vaccine .vaccine-content .info-box {
+  color: #005b4c;
+  line-height: 1;
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ca9658;
 }
 
 .container-vaccine .vaccine-content .img-vaccine img {
