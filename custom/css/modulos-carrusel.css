@@ -60,7 +60,7 @@
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  top: calc(50% - 10px);
+  top: calc(50% - 5px);
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   -webkit-transition: all 0.3s;
