@@ -1,118 +1,378 @@
-// Variables
-$dot_size: 12px;
-$carousel_min_height: 700px;
-$carousel_max_height: 1000px;
-$carousel_height: 80vh;
-
 * {
     font-family: helvetica;
+    text-decoration: none;
 }
 
-.container-news {
-    height: $carousel_height;
-    min-height: $carousel_min_height;
-    max-height: $carousel_max_height;
+@media screen and (min-width: 0) {
+    // Variables
+    $dot_size: 12px;
+    $carousel_min_height: 300px;
+    $carousel_max_height: 600px;
+    $carousel_height: 50vh;
+    $overlay_opacity: 0.6;
+    .container-news {
+        background-color: grey;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
 
-    background-color: grey;
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    .column {
-        width: 50%;
-        background-color: red;
-        &:nth-child(odd) {
-            background-color: transparent;
+        .overlay {
+            background-size: cover !important;
+            background-position: center !important;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            opacity: $overlay_opacity;
         }
 
-        .grid-news-carousel {
-            .item {
-                background-color: black;
-                min-height: $carousel_min_height;
-                max-height: $carousel_max_height;
-                height: $carousel_height;
-                padding: 20px;
+        .column:nth-child(1) {
+            .grid-news-carousel {
                 position: relative;
-                display: flex;
-                color: white;
+                margin-bottom: -25px;
+                overflow: hidden;
+                .item {
+                    background-color: black;
+                    min-height: $carousel_min_height;
+                    max-height: $carousel_max_height;
+                    height: $carousel_height;
+                    padding: 20px;
+                    position: relative;
+                    display: flex;
+                    color: white;
 
-                .seemore {
-                    position: absolute;
-                    bottom: 20px;
-                    right: 20px;
-                    font-size: 16px;
-                    a {
+                    .seemore {
+                        position: absolute;
+                        font-size: 16px;
+                        padding: 5px;
+                        bottom: 10px;
+                        right: 10px;
+                        z-index: 2;
+                        a {
+                            position: relative;
+                            color: white;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            span {
+                                margin: 0 3px;
+                                img {
+                                    height: 25px;
+                                    width: auto;
+                                }
+                            }
+                        }
+                    }
+
+                    .content {
+                        justify-content: flex-start;
+                        align-self: flex-end;
+                        margin-bottom: 20px;
                         position: relative;
-                        color: white;
-                        z-index: 9999;
+                        z-index: 2;
+
+                        .title {
+                            line-height: 1;
+                            margin-bottom: 30px;
+                            width: 90%;
+                            max-width: 700px;
+                            position: relative;
+                            &::before {
+                                content: "";
+                                width: 10px;
+                                height: 5px;
+                                background-color: #fff;
+                                position: absolute;
+                                bottom: -15px;
+                                left: 0;
+                            }
+                            h3 {
+                                font-weight: 800;
+                            }
+                        }
+
+                        .excerpt {
+                            line-height: 1.2;
+                            width: 90%;
+                            max-width: 700px;
+                            margin: 20px 0;
+                            font-size: 20px;
+                            letter-spacing: 1px;
+                        }
                     }
                 }
 
-                .overlay {
-                    background-size: cover;
-                    background-position: center;
-                    position: absolute;
-                    height: 100%;
-                    width: 100%;
-                    top: 0;
-                    left: 0;
-                    z-index: 1;
-                    opacity: 0.5;
+                .owl-dots {
+                    position: relative;
+                    height: 30px;
+                    width: fit-content;
+                    margin: 0 auto;
+                    margin-top: -30px;
+
+                    button {
+                        span {
+                            background-color: transparent;
+                            border: 1px solid white;
+                            width: $dot_size;
+                            height: $dot_size;
+                        }
+
+                        &.active {
+                            span {
+                                background-color: #fff;
+                            }
+                        }
+                    }
                 }
+            }
+        }
+        .column:nth-child(2) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            .row-item {
+                min-height: $carousel_min_height;
+                max-height: $carousel_max_height;
+                height: $carousel_height;
+                background-color: black;
+                height: 100%;
+                width: 100%;
+                position: relative;
+                display: flex;
 
                 .content {
+                    padding: 20px;
+                    width: 100%;
                     align-self: flex-end;
-                    margin-bottom: 50px;
                     position: relative;
-                    z-index: 2;
-
+                    z-index: 1;
+                    color: white;
                     .title {
                         line-height: 1;
-                        margin-bottom: 30px;
-                        width: 90%;
+                        margin-bottom: 5px;
+                        width: 95%;
                         max-width: 700px;
                         position: relative;
-                        &::before {
-                            content: "";
-                            width: 10px;
-                            height: 5px;
-                            background-color: #fff;
-                            position: absolute;
-                            bottom: -15px;
-                            left: 0;
-                        }
+
                         h3 {
                             font-weight: 800;
                         }
                     }
+                }
 
-                    .excerpt {
-                        line-height: 1.2;
-                        width: 90%;
-                        max-width: 700px;
-                        margin: 20px 0;
-                        font-size: 20px;
-                        letter-spacing: 1px;
+                .seemore {
+                    position: absolute;
+                    font-size: 16px;
+                    padding: 5px;
+                    bottom: 20px;
+                    right: 10px;
+                    z-index: 2;
+                    a {
+                        position: relative;
+                        color: white;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        span {
+                            margin: 0 3px;
+                            img {
+                                height: 40px;
+                                width: auto;
+                            }
+                        }
                     }
                 }
             }
+        }
+    }
+}
 
-            .owl-dots {
-                position: absolute;
-                bottom: 0;
-                width: 100%;
-                margin: 0;
-                z-index: 0;
-                button {
-                    span {
-                        background-color: transparent;
-                        border: 1px solid white;
-                        width: $dot_size;
-                        height: $dot_size;
+@media screen and (min-width: 900px) {
+    // Variables
+    $dot_size: 12px;
+    $carousel_min_height: 400px;
+    $carousel_max_height: 2000px;
+    $carousel_height: 70vh;
+    $overlay_opacity: 0.6;
+    .container-news {
+        height: $carousel_height;
+        min-height: $carousel_min_height;
+        max-height: $carousel_max_height;
+
+        background-color: grey;
+        display: flex;
+        align-items: stretch;
+        flex-direction: row;
+        justify-content: center;
+        .column {
+            width: 50%;
+        }
+
+        .overlay {
+            background-size: cover !important;
+            background-position: center !important;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            opacity: $overlay_opacity;
+        }
+
+        .column:nth-child(1) {
+            .grid-news-carousel {
+                position: relative;
+                .item {
+                    background-color: black;
+                    min-height: $carousel_min_height;
+                    max-height: $carousel_max_height;
+                    height: $carousel_height;
+                    padding: 20px;
+                    position: relative;
+                    display: flex;
+                    color: white;
+
+                    .seemore {
+                        position: absolute;
+                        font-size: 16px;
+                        padding: 5px;
+                        bottom: 10px;
+                        right: 10px;
+                        z-index: 2;
+                        a {
+                            position: relative;
+                            color: white;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            span {
+                                margin: 0 3px;
+                                img {
+                                    height: 25px;
+                                    width: auto;
+                                }
+                            }
+                        }
                     }
 
-                    &.active {
+                    .content {
+                        justify-content: flex-start;
+                        align-self: flex-end;
+                        margin-bottom: 20px;
+                        position: relative;
+                        z-index: 2;
+
+                        .title {
+                            line-height: 1;
+                            margin-bottom: 30px;
+                            width: 90%;
+                            max-width: 700px;
+                            position: relative;
+                            &::before {
+                                content: "";
+                                width: 10px;
+                                height: 5px;
+                                background-color: #fff;
+                                position: absolute;
+                                bottom: -15px;
+                                left: 0;
+                            }
+                            h3 {
+                                font-weight: 800;
+                            }
+                        }
+
+                        .excerpt {
+                            line-height: 1.2;
+                            width: 90%;
+                            max-width: 700px;
+                            margin: 20px 0;
+                            font-size: 20px;
+                            letter-spacing: 1px;
+                        }
+                    }
+                }
+
+                .owl-dots {
+                    height: 35px;
+                    width: fit-content;
+                    margin: 0 auto;
+                    position: relative;
+                    margin-top: -35px;
+                    button {
                         span {
-                            background-color: #fff;
+                            background-color: transparent;
+                            border: 1px solid white;
+                            width: $dot_size;
+                            height: $dot_size;
+                        }
+
+                        &.active {
+                            span {
+                                background-color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .column:nth-child(2) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .row-item {
+                background-color: black;
+                height: $carousel_height/2;
+                min-height: 100px;
+
+                position: relative;
+                display: flex;
+
+                .content {
+                    padding: 20px;
+                    width: 100%;
+                    align-self: flex-end;
+                    position: relative;
+                    z-index: 1;
+                    color: white;
+                    .title {
+                        line-height: 1;
+                        margin-bottom: 5px;
+                        width: 90%;
+                        max-width: 700px;
+                        position: relative;
+
+                        h3 {
+                            font-weight: 800;
+                        }
+                    }
+                }
+
+                .seemore {
+                    position: absolute;
+                    font-size: 16px;
+                    padding: 5px;
+                    bottom: 20px;
+                    right: 10px;
+                    z-index: 2;
+                    a {
+                        position: relative;
+                        color: white;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        span {
+                            margin: 0 3px;
+                            img {
+                                height: 40px;
+                                width: auto;
+                            }
                         }
                     }
                 }
