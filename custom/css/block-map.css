@@ -1,0 +1,77 @@
+@media screen and (max-width: 899px) {
+  .container-map {
+    background-image: url(../img/map_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 60px 20px;
+  }
+  .container-map .subcont-map {
+    position: relative;
+  }
+  .container-map .subcont-map .doc {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: -60px;
+  }
+  .container-map .subcont-map .doc img {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .container-map .subcont-map .title {
+    color: white;
+    font-size: 40px;
+    line-height: 1;
+    margin-bottom: 50px;
+  }
+  .container-map .subcont-map .map {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container-map {
+    background-image: url(../img/map_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    max-height: 900px;
+    padding: 60px 30px;
+  }
+  .container-map .subcont-map {
+    position: relative;
+  }
+  .container-map .subcont-map .doc {
+    bottom: -60px;
+    width: 350px;
+    left: 0;
+    position: absolute;
+  }
+  .container-map .subcont-map .doc img {
+    width: 100%;
+  }
+  .container-map .subcont-map .title {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  .container-map .subcont-map .map {
+    width: 80%;
+    max-width: 900px;
+    margin-left: auto;
+  }
+}
+
+path {
+  -webkit-transition: fill 300ms;
+  transition: fill 300ms;
+  fill: white;
+  stroke-width: 2px;
+  stroke: #103b36;
+}
+
+path:hover {
+  cursor: pointer;
+  fill: #ca9658;
+}

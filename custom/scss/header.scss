@@ -1,30 +1,30 @@
-header{
+header {
     padding: 15px 0;
     background: #0a221e;
     border-bottom: 5px solid #bc945b;
     position: fixed;
     z-index: 99999;
     width: 100%;
-    .contenedor-header{
+    .contenedor-header {
         width: 100%;
         max-width: 955px;
         margin: 0 auto;
         display: flex;
-        align-items: center; 
-        justify-content: space-between;       
-        .contenedor-logo{
-            img{
+        align-items: center;
+        justify-content: space-between;
+        .contenedor-logo {
+            img {
                 width: auto;
                 height: 25px;
             }
         }
-        .contenedor-menu{
-            ul{
+        .contenedor-menu {
+            ul {
                 padding: 0 30px;
                 display: flex;
                 align-items: center;
                 list-style: none;
-                li{
+                li {
                     padding: 0 12px;
                     max-width: 111px;
                     font-size: 11px;
@@ -34,19 +34,19 @@ header{
                     height: 39px;
                     display: flex;
                     align-items: center;
-                    a{
+                    a {
                         color: white;
-                        transition:  all .3s;
-                        &:hover{
+                        transition: all 0.3s;
+                        &:hover {
                             color: #bc945b;
                         }
                     }
-                    &.active{
-                        a{
+                    &.active {
+                        a {
                             font-weight: 600;
                             color: #bc945b;
                         }
-                        &::after{
+                        &::after {
                             content: "";
                             position: absolute;
                             bottom: -15px;
@@ -63,21 +63,20 @@ header{
             }
         }
     }
-    .contenedor-movil{
+    .contenedor-movil {
         display: none;
     }
 }
 
 @media screen and (max-width: 1023px) {
-
-    header{ 
-        .contenedor-header{ 
+    header {
+        .contenedor-header {
             width: 90%;
-            .contenedor-menu{
+            .contenedor-menu {
                 display: none;
             }
-            .cont-burguer{
-                .burguer{
+            .cont-burguer {
+                .burguer {
                     width: 35px;
                     height: 35px;
                     display: flex;
@@ -86,7 +85,7 @@ header{
                     flex-direction: column;
                     z-index: 1000;
                     cursor: pointer;
-                    span{
+                    span {
                         width: 90%;
                         height: 2px;
                         margin: 4px 2px;
@@ -96,7 +95,7 @@ header{
                 }
             }
         }
-        .contenedor-movil{
+        .contenedor-movil {
             display: block;
             position: fixed;
             background: #0a221e;
@@ -107,23 +106,23 @@ header{
             z-index: 9;
             padding-top: 50px;
             transition: right 600ms ease;
-            .contenedor-menu{
-                ul{
+            .contenedor-menu {
+                ul {
                     padding: 0 30px;
                     list-style: none;
-                    li{
+                    li {
                         padding: 0 12px;
                         font-size: 14px;
                         line-height: 20px;
-                        a{
+                        a {
                             color: white;
-                            transition:  all .3s;
-                            &:hover{
+                            transition: all 0.3s;
+                            &:hover {
                                 color: #bc945b;
                             }
                         }
-                        &.active{
-                            a{
+                        &.active {
+                            a {
                                 font-weight: 600;
                                 color: #bc945b;
                             }
@@ -136,31 +135,29 @@ header{
             }
         }
     }
-
 }
 
 @media screen and (min-width: 768px) {
-
-    header{ 
-        .contenedor-movil{
+    header {
+        .contenedor-movil {
             max-width: 300px;
-            .contenedor-menu{
-                ul{
+            .contenedor-menu {
+                ul {
                     padding: 0 30px;
                     list-style: none;
-                    li{
+                    li {
                         padding: 0 12px;
                         font-size: 14px;
                         line-height: 20px;
-                        a{
+                        a {
                             color: white;
-                            transition:  all .3s;
-                            &:hover{
+                            transition: all 0.3s;
+                            &:hover {
                                 color: #bc945b;
                             }
                         }
-                        &.active{
-                            a{
+                        &.active {
+                            a {
                                 font-weight: 600;
                                 color: #bc945b;
                             }
@@ -168,10 +165,9 @@ header{
                     }
                 }
             }
-            .contenedor-movil{
+            .contenedor-movil {
                 transition: right 2000ms linear;
             }
         }
     }
-
 }

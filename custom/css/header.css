@@ -56,8 +56,8 @@ header .contenedor-header .contenedor-menu ul li {
 
 header .contenedor-header .contenedor-menu ul li a {
   color: white;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 header .contenedor-header .contenedor-menu ul li a:hover {
@@ -146,8 +146,8 @@ header .contenedor-movil {
   }
   header .contenedor-movil .contenedor-menu ul li a {
     color: white;
-    -webkit-transition: all .3s;
-    transition: all .3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
   }
   header .contenedor-movil .contenedor-menu ul li a:hover {
     color: #bc945b;
@@ -176,8 +176,8 @@ header .contenedor-movil {
   }
   header .contenedor-movil .contenedor-menu ul li a {
     color: white;
-    -webkit-transition: all .3s;
-    transition: all .3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
   }
   header .contenedor-movil .contenedor-menu ul li a:hover {
     color: #bc945b;
