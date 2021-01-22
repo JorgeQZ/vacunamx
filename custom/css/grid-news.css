@@ -28,7 +28,6 @@
   }
   .container-news .column:nth-child(1) .grid-news-carousel {
     position: relative;
-    margin-bottom: -25px;
     overflow: hidden;
   }
   .container-news .column:nth-child(1) .grid-news-carousel .item {
@@ -130,10 +129,10 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;

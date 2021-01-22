@@ -27,7 +27,7 @@
         .column:nth-child(1) {
             .grid-news-carousel {
                 position: relative;
-                margin-bottom: -25px;
+
                 overflow: hidden;
                 .item {
                     background-color: black;
@@ -126,7 +126,7 @@
         }
         .column:nth-child(2) {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             .row-item {
