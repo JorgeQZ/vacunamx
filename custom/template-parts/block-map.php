@@ -12,5 +12,10 @@
         <div class="doc">
             <img src="<?php echo get_template_directory_uri().'/custom/img/doc_map_middle.png'; ?>" alt="">
         </div>
+
+        <div class="controls">
+            <button onclick="zoomInMap()">+</button>
+            <button onclick="zoomOutMap()">-</button>
+        </div>
     </div>
 </div>

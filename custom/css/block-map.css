@@ -8,6 +8,37 @@
   .container-map .subcont-map {
     position: relative;
   }
+  .container-map .subcont-map .controls {
+    position: absolute;
+    left: calc(100% - 20px);
+    top: 0;
+  }
+  .container-map .subcont-map .controls button {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: #ca9658;
+    height: 20px;
+    width: 20px;
+    padding: 0;
+    margin: 3px 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 50%;
+    border: none;
+    line-height: 1;
+    font-size: 16px;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .container-map .subcont-map .doc {
     width: 100%;
     margin: 0 auto;
@@ -25,10 +56,18 @@
     margin-bottom: 50px;
   }
   .container-map .subcont-map .map {
+    border: 2px solid transparent;
+    overflow: hidden;
     width: 100%;
     max-width: 900px;
     margin: 20px auto;
     position: relative;
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+    margin-right: 30px;
+  }
+  .container-map .subcont-map .map.zoomedIn {
+    border: 2px solid #ca9658;
   }
 }
 
@@ -39,9 +78,41 @@
     background-size: cover;
     max-height: 900px;
     padding: 60px 30px;
+    position: relative;
   }
   .container-map .subcont-map {
     position: relative;
+  }
+  .container-map .subcont-map .controls {
+    position: absolute;
+    left: calc(100% - 20px);
+    top: calc(100% - 45px);
+  }
+  .container-map .subcont-map .controls button {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: #ca9658;
+    height: 20px;
+    width: 20px;
+    padding: 0;
+    margin: 3px 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 50%;
+    border: none;
+    line-height: 1;
+    font-size: 16px;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .container-map .subcont-map .doc {
     bottom: -60px;
@@ -58,17 +129,32 @@
     margin-bottom: 30px;
   }
   .container-map .subcont-map .map {
+    border: 2px solid transparent;
+    overflow: hidden;
     width: 80%;
     max-width: 900px;
     margin-left: auto;
     position: relative;
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+    margin-right: 30px;
+  }
+  .container-map .subcont-map .map.zoomedIn {
+    border: 2px solid #ca9658;
+  }
+  .container-map .subcont-map .map svg {
+    -webkit-transition: -webkit-transform 400ms;
+    transition: -webkit-transform 400ms;
+    transition: transform 400ms;
+    transition: transform 400ms, -webkit-transform 400ms;
   }
 }
 
 .tooltip-cont {
-  top: 0;
-  right: 0;
-  position: absolute;
+  top: 200px;
+  left: 200px;
+  position: fixed;
+  z-index: 3;
   display: none;
 }
 
@@ -82,8 +168,8 @@
   height: 12px;
   border-radius: 50%;
   border: 2px solid grey;
-  -webkit-transform: translate(-110px, -25px);
-          transform: translate(-110px, -25px);
+  -webkit-transform: translate(-110px, -50px);
+          transform: translate(-110px, -50px);
   position: relative;
 }
 
@@ -110,23 +196,29 @@
 .tooltip-cont .tooltip-title {
   color: white;
   padding: 5px 8px;
-  font-size: 12px;
+  font-size: 16px;
   background-color: #ca9658;
   border-radius: 0px 10px 0px 10px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
 }
 
 .tooltip-cont .tooltip-description {
-  font-size: 12px;
+  font-size: 14px;
   color: white;
   position: relative;
   margin-top: 15px;
   margin-left: 15px;
   line-height: 1;
   max-width: 150px;
-  text-shadow: 0 0 10px black;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #005b4c;
 }
 
 .tooltip-cont .tooltip-description:before {
@@ -135,8 +227,10 @@
   width: 5px;
   height: 2px;
   background-color: #fff;
-  top: -5px;
-  left: 0;
+  -webkit-box-shadow: 0 0 0px 1px #005b4c;
+          box-shadow: 0 0 0px 1px #005b4c;
+  top: -7px;
+  left: 5px;
 }
 
 path {

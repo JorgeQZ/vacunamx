@@ -5,7 +5,10 @@ function add_theme_scripts() {
 
     // Generales
     wp_deregister_script('jquery');
-    wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), null, true);
+    wp_enqueue_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), null, false);
+
+
+
 
 
     // OWL CAROUSEL
@@ -21,6 +24,11 @@ function add_theme_scripts() {
 
     wp_enqueue_script('map-tooltip', get_template_directory_uri().'/custom/js/map-tooltip.js', array('jquery'),filemtime( get_stylesheet_directory() . '/custom/js/map-tooltip.js' ), true);
 
+    wp_enqueue_script('jquery-draggable-custom', '//code.jquery.com/ui/1.12.1/jquery-ui.js', array(), null, false);
+
+    wp_enqueue_script('jquery-draggable-custom-mobile', get_template_directory_uri().'/custom/js/jquery.ui.touch-punch.min.js', array(), null, false);
+
+
 
      // Vaccine block
      wp_enqueue_style( 'block-vaccine', get_template_directory_uri() . '/custom/css/block-vaccine.css', array(), filemtime( get_stylesheet_directory() . '/custom/css/block-vaccine.css' ), 'all');
@@ -30,4 +38,7 @@ function add_theme_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
+
+
+
 ?>

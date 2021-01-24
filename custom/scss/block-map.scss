@@ -10,6 +10,28 @@
 
         .subcont-map {
             position: relative;
+            .controls {
+                position: absolute;
+                left: calc(100% - 20px);
+                top: 0;
+                button {
+                    appearance: none;
+                    background-color: $gold;
+                    height: 20px;
+                    width: 20px;
+                    padding: 0;
+                    margin: 3px 0;
+                    box-sizing: border-box;
+                    border-radius: 50%;
+                    border: none;
+                    line-height: 1;
+                    font-size: 16px;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
             .doc {
                 width: 100%;
                 margin: 0 auto;
@@ -28,10 +50,18 @@
             }
 
             .map {
+                border: 2px solid transparent;
+                overflow: hidden;
                 width: 100%;
                 max-width: 900px;
                 margin: 20px auto;
                 position: relative;
+                transition: all 400ms ease;
+                margin-right: 30px;
+
+                &.zoomedIn {
+                    border: 2px solid $gold;
+                }
             }
         }
     }
@@ -44,9 +74,31 @@
 
         max-height: 900px;
         padding: 60px 30px;
-
+        position: relative;
         .subcont-map {
             position: relative;
+            .controls {
+                position: absolute;
+                left: calc(100% - 20px);
+                top: calc(100% - 45px);
+                button {
+                    appearance: none;
+                    background-color: $gold;
+                    height: 20px;
+                    width: 20px;
+                    padding: 0;
+                    margin: 3px 0;
+                    box-sizing: border-box;
+                    border-radius: 50%;
+                    border: none;
+                    line-height: 1;
+                    font-size: 16px;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
             .doc {
                 bottom: -60px;
                 width: 350px;
@@ -63,10 +115,22 @@
             }
 
             .map {
+                border: 2px solid transparent;
+                overflow: hidden;
                 width: 80%;
                 max-width: 900px;
                 margin-left: auto;
                 position: relative;
+                transition: all 400ms ease;
+                margin-right: 30px;
+
+                &.zoomedIn {
+                    border: 2px solid $gold;
+                }
+
+                svg {
+                    transition: transform 400ms;
+                }
             }
         }
     }
@@ -75,9 +139,11 @@
 //===================================== MAP =====================================
 
 .tooltip-cont {
-    top: 0;
-    right: 0;
-    position: absolute;
+    top: 200px;
+    left: 200px;
+    position: fixed;
+
+    z-index: 3;
     display: none;
     &.active {
         display: block;
@@ -90,7 +156,7 @@
         border-radius: 50%;
         border: 2px solid grey;
 
-        transform: translate(-110px, -25px);
+        transform: translate(-110px, -50px);
         position: relative;
         &:before {
             content: "";
@@ -112,29 +178,39 @@
     .tooltip-title {
         color: white;
         padding: 5px 8px;
-        font-size: 12px;
+        font-size: 16px;
         background-color: $gold;
         border-radius: 0px 10px 0px 10px;
         width: fit-content;
+        border: 0.5px solid rgba(black, 0.5);
     }
 
     .tooltip-description {
-        font-size: 12px;
+        font-size: 14px;
         color: white;
+
         position: relative;
         margin-top: 15px;
         margin-left: 15px;
         line-height: 1;
         max-width: 150px;
-        text-shadow: 0 0 10px black;
+        width: fit-content;
+        padding: 10px;
+        border-radius: 8px;
+        background-color: rgba($darkGreen, 1);
+        // text-shadow: 0 0 4px $darkGreen;
+        // -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+        // -webkit-text-stroke-width: 0.5px;
+        // -webkit-text-stroke-color: black;
         &:before {
             content: "";
             position: absolute;
             width: 5px;
             height: 2px;
             background-color: #fff;
-            top: -5px;
-            left: 0;
+            box-shadow: 0 0 0px 1px $darkGreen;
+            top: -7px;
+            left: 5px;
         }
     }
 }
