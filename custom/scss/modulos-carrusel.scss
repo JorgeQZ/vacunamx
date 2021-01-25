@@ -89,6 +89,16 @@
                     line-height: 32px;
                     margin-bottom: 25px;
                     font-weight: bold;
+                    position: relative;
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        bottom: -13px;
+                        left: 0;
+                        width: 10px;
+                        height: 3px;
+                        background: #ca9658;
+                    }
                 }
                 p{
                     font-size: 14px;

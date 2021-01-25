@@ -128,6 +128,17 @@
   line-height: 32px;
   margin-bottom: 25px;
   font-weight: bold;
+  position: relative;
+}
+
+.contenedor-general-modulos .contenedor-modulos .contenedor-item .cont-pregunta h2:after {
+  content: "";
+  position: absolute;
+  bottom: -13px;
+  left: 0;
+  width: 10px;
+  height: 3px;
+  background: #ca9658;
 }
 
 .contenedor-general-modulos .contenedor-modulos .contenedor-item .cont-pregunta p {
