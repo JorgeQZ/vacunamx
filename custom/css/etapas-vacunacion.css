@@ -92,6 +92,9 @@
   width: 155px;
   -webkit-filter: contrast(0) opacity(0.6);
           filter: contrast(0) opacity(0.6);
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .contenedor-general-etapasvacunacion .contenedor-etapas-vacunacion .contenedor-esquema .cont-esquema .cont-item .cont-info {
@@ -153,6 +156,9 @@
   min-height: 160px;
   bottom: -205px;
   padding-top: 35px;
+  opacity: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .contenedor-general-etapasvacunacion .contenedor-etapas-vacunacion .contenedor-esquema .cont-esquema .cont-item .contenedor-info h4 {
@@ -183,9 +189,13 @@
   font-weight: 600;
 }
 
-.contenedor-general-etapasvacunacion .contenedor-etapas-vacunacion .contenedor-esquema .cont-esquema .cont-item.active img {
+.contenedor-general-etapasvacunacion .contenedor-etapas-vacunacion .contenedor-esquema .cont-esquema .cont-item:hover img {
   -webkit-filter: contrast(1);
           filter: contrast(1);
+}
+
+.contenedor-general-etapasvacunacion .contenedor-etapas-vacunacion .contenedor-esquema .cont-esquema .cont-item:hover .contenedor-info {
+  opacity: 1;
 }
 
 .contenedor-general-etapasvacunacion .contenedor-etapas-vacunacion .contenedor-esquema .cont-esquema .owl-stage-outer {
@@ -285,5 +295,12 @@
   }
   .contenedor-general-etapasvacunacion .contenedor-etapas-vacunacion .contenedor-enc .cont-enc h2:after {
     left: 50px;
+  }
+  .contenedor-general-etapasvacunacion .contenedor-etapas-vacunacion .contenedor-esquema .cont-esquema .owl-item.active img {
+    -webkit-filter: contrast(1);
+            filter: contrast(1);
+  }
+  .contenedor-general-etapasvacunacion .contenedor-etapas-vacunacion .contenedor-esquema .cont-esquema .owl-item.active .contenedor-info {
+    opacity: 1;
   }
 }
