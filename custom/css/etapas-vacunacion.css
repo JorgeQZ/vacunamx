@@ -67,8 +67,8 @@
 
 .contenedor-general-etapasvacunacion .contenedor-etapas-vacunacion .contenedor-esquema .cont-esquema .cont-item img {
   width: 155px;
-  -webkit-filter: contrast(0);
-          filter: contrast(0);
+  -webkit-filter: contrast(0) opacity(0.6);
+          filter: contrast(0) opacity(0.6);
 }
 
 .contenedor-general-etapasvacunacion .contenedor-etapas-vacunacion .contenedor-esquema .cont-esquema .cont-item .cont-info {
