@@ -252,8 +252,10 @@
     color: white;
   }
   .container-news .column:nth-child(1) .grid-news-carousel .item .overlay {
-    -webkit-transform: filter 400ms ease;
-            transform: filter 400ms ease;
+    -webkit-transition: -webkit-filter 400ms ease;
+    transition: -webkit-filter 400ms ease;
+    transition: filter 400ms ease;
+    transition: filter 400ms ease, -webkit-filter 400ms ease;
   }
   .container-news .column:nth-child(1) .grid-news-carousel .item:hover .overlay {
     -webkit-filter: grayscale(1);
@@ -372,8 +374,10 @@
     display: flex;
   }
   .container-news .column:nth-child(2) .row-item .overlay {
-    -webkit-transform: filter 400ms ease;
-            transform: filter 400ms ease;
+    -webkit-transition: -webkit-filter 400ms ease;
+    transition: -webkit-filter 400ms ease;
+    transition: filter 400ms ease;
+    transition: filter 400ms ease, -webkit-filter 400ms ease;
   }
   .container-news .column:nth-child(2) .row-item:hover .overlay {
     -webkit-filter: grayscale(1);

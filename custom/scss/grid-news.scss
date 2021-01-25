@@ -235,7 +235,7 @@
                     color: white;
 
                     .overlay {
-                        transform: filter 400ms ease;
+                        transition: filter 400ms ease;
                     }
 
                     &:hover {
@@ -344,7 +344,7 @@
                 position: relative;
                 display: flex;
                 .overlay {
-                    transform: filter 400ms ease;
+                    transition: filter 400ms ease;
                 }
 
                 &:hover {
