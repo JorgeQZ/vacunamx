@@ -1,3 +1,4 @@
+@import "variables";
 @media screen and (min-width: 0) {
     // Variables
     $dot_size: 12px;
@@ -233,6 +234,15 @@
                     display: flex;
                     color: white;
 
+                    .overlay {
+                        transform: filter 400ms ease;
+                    }
+
+                    &:hover {
+                        .overlay {
+                            filter: grayscale(1);
+                        }
+                    }
                     .seemore {
                         position: absolute;
                         font-size: 16px;
@@ -240,6 +250,10 @@
                         bottom: 10px;
                         right: 10px;
                         z-index: 2;
+                        transition: all 400ms ease;
+                        &:hover {
+                            background-color: $gold;
+                        }
                         a {
                             position: relative;
                             color: white;
@@ -329,7 +343,15 @@
 
                 position: relative;
                 display: flex;
+                .overlay {
+                    transform: filter 400ms ease;
+                }
 
+                &:hover {
+                    .overlay {
+                        filter: grayscale(1);
+                    }
+                }
                 .content {
                     padding: 20px;
                     width: 100%;
@@ -357,6 +379,10 @@
                     bottom: 20px;
                     right: 10px;
                     z-index: 2;
+                    transition: all 400ms ease;
+                    &:hover {
+                        background-color: $gold;
+                    }
                     a {
                         position: relative;
                         color: white;

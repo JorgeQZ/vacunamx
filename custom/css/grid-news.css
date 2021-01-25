@@ -251,6 +251,14 @@
     display: flex;
     color: white;
   }
+  .container-news .column:nth-child(1) .grid-news-carousel .item .overlay {
+    -webkit-transform: filter 400ms ease;
+            transform: filter 400ms ease;
+  }
+  .container-news .column:nth-child(1) .grid-news-carousel .item:hover .overlay {
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+  }
   .container-news .column:nth-child(1) .grid-news-carousel .item .seemore {
     position: absolute;
     font-size: 16px;
@@ -258,6 +266,11 @@
     bottom: 10px;
     right: 10px;
     z-index: 2;
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+  }
+  .container-news .column:nth-child(1) .grid-news-carousel .item .seemore:hover {
+    background-color: #ca9658;
   }
   .container-news .column:nth-child(1) .grid-news-carousel .item .seemore a {
     position: relative;
@@ -358,6 +371,14 @@
     display: -ms-flexbox;
     display: flex;
   }
+  .container-news .column:nth-child(2) .row-item .overlay {
+    -webkit-transform: filter 400ms ease;
+            transform: filter 400ms ease;
+  }
+  .container-news .column:nth-child(2) .row-item:hover .overlay {
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+  }
   .container-news .column:nth-child(2) .row-item .content {
     padding: 20px;
     width: 100%;
@@ -384,6 +405,11 @@
     bottom: 20px;
     right: 10px;
     z-index: 2;
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+  }
+  .container-news .column:nth-child(2) .row-item .seemore:hover {
+    background-color: #ca9658;
   }
   .container-news .column:nth-child(2) .row-item .seemore a {
     position: relative;

@@ -6,12 +6,7 @@
 
  get_header();
 ?>
-
-<br>
-<br>
-<br>
-<br>
-<br>
+<?php get_template_part( 'custom/template-parts/banner-slider');   ?>
 
 <?php get_template_part( 'custom/template-parts/etapas-vacunacion' ); ?>
 

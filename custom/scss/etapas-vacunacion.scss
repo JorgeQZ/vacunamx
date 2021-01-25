@@ -1,24 +1,26 @@
-.contenedor-general-etapasvacunacion{
+.contenedor-general-etapasvacunacion {
     background-image: url(../img/background-etapasvacunacion.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding-bottom: 100px;
-    .contenedor-etapas-vacunacion{
+    position: relative;
+    z-index: 2;
+    .contenedor-etapas-vacunacion {
         margin: 0 auto;
         position: relative;
         top: -85px;
-        .contenedor-enc{
+        .contenedor-enc {
             margin: 0 auto;
             display: flex;
             justify-content: center;
-            .cont-enc{
+            .cont-enc {
                 width: 295px;
                 padding: 20px 0;
                 background: white;
                 border-radius: 20px 20px 0 0;
                 box-shadow: 0px -2px 10px -8px rgba(0, 0, 0, 0.3);
-                h2{
+                h2 {
                     font-size: 24px;
                     line-height: 24px;
                     color: gray;
@@ -28,26 +30,26 @@
                 }
             }
         }
-        .contenedor-esquema{
+        .contenedor-esquema {
             display: flex;
             justify-content: center;
             background: white;
             border-radius: 30px;
             margin-bottom: 30px;
             //box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;            
-            .cont-esquema{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            .cont-esquema {
                 width: 85%;
                 margin: 0 auto;
                 padding: 45px 0;
-                .cont-item{
+                .cont-item {
                     position: relative;
                     margin-right: 5px;
-                    img{
+                    img {
                         width: 155px;
-                        filter: contrast(0) opacity(.6);
+                        filter: contrast(0) opacity(0.6);
                     }
-                    .cont-info{
+                    .cont-info {
                         position: absolute;
                         width: 135px;
                         height: 48px;
@@ -57,7 +59,7 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        p{
+                        p {
                             font-size: 14px;
                             line-height: 14px;
                             color: white;
@@ -66,7 +68,7 @@
                             text-align: center;
                         }
                     }
-                    .cont-index{
+                    .cont-index {
                         position: absolute;
                         width: 49px;
                         height: 49px;
@@ -76,7 +78,7 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        p{
+                        p {
                             font-size: 30px;
                             line-height: 30px;
                             color: white;
@@ -85,12 +87,12 @@
                             text-align: center;
                         }
                     }
-                    .contenedor-info{
+                    .contenedor-info {
                         position: absolute;
                         min-height: 160px;
                         bottom: -205px;
                         padding-top: 35px;
-                        h4{
+                        h4 {
                             font-size: 14px;
                             line-height: 14px;
                             color: #015c4d;
@@ -98,7 +100,7 @@
                             margin-bottom: 15px;
                             font-weight: bold;
                             position: relative;
-                            &:after{
+                            &:after {
                                 content: "";
                                 position: absolute;
                                 bottom: -7.5px;
@@ -108,7 +110,7 @@
                                 background: #015c4d;
                             }
                         }
-                        p{
+                        p {
                             font-size: 14px;
                             line-height: 14px;
                             color: #706f6f;
@@ -116,21 +118,21 @@
                             font-weight: 600;
                         }
                     }
-                    &.active{
-                        img{
+                    &.active {
+                        img {
                             filter: contrast(1);
                         }
                     }
                 }
-                .owl-stage-outer{
+                .owl-stage-outer {
                     overflow: visible;
                 }
-                .owl-item{
+                .owl-item {
                     display: flex;
                     justify-content: center;
                     opacity: 0;
-                    transition: all .2s;
-                    &.active{
+                    transition: all 0.2s;
+                    &.active {
                         opacity: 1;
                     }
                 }
@@ -158,10 +160,10 @@
                                 transform: scale(0.7);
                             }
                         }
-                        &.disabled{
+                        &.disabled {
                             filter: brightness(0.5);
                             opacity: 1;
-                            img{
+                            img {
                                 transform: scale(1);
                             }
                         }
@@ -172,25 +174,22 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px){
-
-    .contenedor-general-etapasvacunacion{
-        .contenedor-etapas-vacunacion{
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .contenedor-general-etapasvacunacion {
+        .contenedor-etapas-vacunacion {
             width: 85%;
         }
     }
-
 }
 
-@media screen and (max-width: 767px){
-
-    .contenedor-general-etapasvacunacion{
-        .contenedor-etapas-vacunacion{
+@media screen and (max-width: 767px) {
+    .contenedor-general-etapasvacunacion {
+        .contenedor-etapas-vacunacion {
             width: 80%;
-            .contenedor-enc{ 
-                .cont-enc{
+            .contenedor-enc {
+                .cont-enc {
                     width: 150px;
-                    h2{
+                    h2 {
                         font-size: 18px;
                         line-height: 18px;
                     }
@@ -198,5 +197,4 @@
             }
         }
     }
-
 }

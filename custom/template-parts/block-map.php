@@ -4,6 +4,7 @@
     <div class="contenedor-wrapper subcont-map">
         <div class="title">
             Mapa de vacunación
+            <div class="line-shape"></div>
         </div>
 
         <div class="map">
