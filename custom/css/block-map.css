@@ -132,16 +132,16 @@
   }
   .container-map .subcont-map .title .line-shape {
     position: relative;
-    width: 45px;
-    height: 2px;
+    width: 50px;
+    height: 2.5px;
     background-color: #ca9658;
   }
   .container-map .subcont-map .title .line-shape:before {
     content: "";
     top: 0%;
-    right: -25px;
+    right: -20px;
     width: 10px;
-    height: 2px;
+    height: 2.5px;
     position: absolute;
     background-color: #ca9658;
   }
