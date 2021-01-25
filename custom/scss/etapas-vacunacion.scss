@@ -1,0 +1,202 @@
+.contenedor-general-etapasvacunacion{
+    background-image: url(../img/background-etapasvacunacion.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+    .contenedor-etapas-vacunacion{
+        margin: 0 auto;
+        position: relative;
+        top: -85px;
+        .contenedor-enc{
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            .cont-enc{
+                width: 295px;
+                padding: 20px 0;
+                background: white;
+                border-radius: 20px 20px 0 0;
+                box-shadow: 0px -2px 10px -8px rgba(0, 0, 0, 0.3);
+                h2{
+                    font-size: 24px;
+                    line-height: 24px;
+                    color: gray;
+                    margin: 0;
+                    font-weight: 600;
+                    text-align: center;
+                }
+            }
+        }
+        .contenedor-esquema{
+            display: flex;
+            justify-content: center;
+            background: white;
+            border-radius: 30px;
+            margin-bottom: 30px;
+            //box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;            
+            .cont-esquema{
+                width: 85%;
+                margin: 0 auto;
+                padding: 45px 0;
+                .cont-item{
+                    position: relative;
+                    margin-right: 5px;
+                    img{
+                        width: 155px;
+                        filter: contrast(0);
+                    }
+                    .cont-info{
+                        position: absolute;
+                        width: 135px;
+                        height: 48px;
+                        top: 0;
+                        left: 0;
+                        border-radius: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        p{
+                            font-size: 14px;
+                            line-height: 14px;
+                            color: white;
+                            margin: 0;
+                            font-weight: 600;
+                            text-align: center;
+                        }
+                    }
+                    .cont-index{
+                        position: absolute;
+                        width: 49px;
+                        height: 49px;
+                        bottom: 0;
+                        left: 0;
+                        border-radius: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        p{
+                            font-size: 30px;
+                            line-height: 30px;
+                            color: white;
+                            margin: 0;
+                            font-weight: bold;
+                            text-align: center;
+                        }
+                    }
+                    .contenedor-info{
+                        position: absolute;
+                        min-height: 160px;
+                        bottom: -205px;
+                        padding-top: 35px;
+                        h4{
+                            font-size: 14px;
+                            line-height: 14px;
+                            color: #015c4d;
+                            margin: 0;
+                            margin-bottom: 15px;
+                            font-weight: bold;
+                            position: relative;
+                            &:after{
+                                content: "";
+                                position: absolute;
+                                bottom: -7.5px;
+                                left: 0;
+                                width: 5px;
+                                height: 2px;
+                                background: #015c4d;
+                            }
+                        }
+                        p{
+                            font-size: 14px;
+                            line-height: 14px;
+                            color: #706f6f;
+                            margin: 0;
+                            font-weight: 600;
+                        }
+                    }
+                    &.active{
+                        img{
+                            filter: contrast(1);
+                        }
+                    }
+                }
+                .owl-stage-outer{
+                    overflow: visible;
+                }
+                .owl-item{
+                    display: flex;
+                    justify-content: center;
+                    opacity: 0;
+                    transition: all .2s;
+                    &.active{
+                        opacity: 1;
+                    }
+                }
+                .owl-nav {
+                    margin: 0;
+                    position: absolute;
+                    width: 100%;
+                    bottom: 0;
+                    button {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 100%;
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition: all 0.3s;
+                        img {
+                            width: 13px;
+                            filter: brightness(0.5);
+                            transition: all 0.3s;
+                        }
+                        &:hover {
+                            background: transparent;
+                            img {
+                                transform: scale(0.7);
+                            }
+                        }
+                        &.disabled{
+                            filter: brightness(0.5);
+                            opacity: 1;
+                            img{
+                                transform: scale(1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+    .contenedor-general-etapasvacunacion{
+        .contenedor-etapas-vacunacion{
+            width: 85%;
+        }
+    }
+
+}
+
+@media screen and (max-width: 767px){
+
+    .contenedor-general-etapasvacunacion{
+        .contenedor-etapas-vacunacion{
+            width: 80%;
+            .contenedor-enc{ 
+                .cont-enc{
+                    width: 150px;
+                    h2{
+                        font-size: 18px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+}
