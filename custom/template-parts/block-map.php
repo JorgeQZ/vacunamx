@@ -10,8 +10,14 @@
         <div class="map">
             <?php get_template_part( 'custom/template-parts/map' ); ?>
         </div>
+        <div class="doc-mobil">
+            <img src="<?php echo get_template_directory_uri().'/custom/img/doc-mobil.png'; ?>" alt="">
+        </div>
         <div class="doc">
-            <img src="<?php echo get_template_directory_uri().'/custom/img/doc_map_middle.png'; ?>" alt="">
+            <img src="<?php echo get_template_directory_uri().'/custom/img/doc2.png'; ?>" alt="">
+        </div>
+        <div class="doc-bubble">
+            <img src="<?php echo get_template_directory_uri().'/custom/img/doc3.png'; ?>" alt="">
         </div>
 
         <div class="controls">

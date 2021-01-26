@@ -84,8 +84,9 @@
                         transition:  all 2s ease;
                         position: relative;
                         &.actual{
-                            width: 80%;
+                            width: 82%;
                         }
+                        /*
                         &::after{
                             content: "";
                             position: absolute;
@@ -97,6 +98,7 @@
                             background-repeat: no-repeat;
                             background-size: contain;
                         }
+                        */
                     }
                 }
                 img {

@@ -97,20 +97,22 @@
     -webkit-transition: all 2s ease;
     transition: all 2s ease;
     position: relative;
+    /*
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            width: 42px;
+                            height: 100%;
+                            top: 0;
+                            left: -42px;
+                            background-image: url(../img/fjeringa.png);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                        }
+                        */
   }
   .container-vaccine .vaccine-content .img-vaccine .cont-animacion .cont-contenido.actual {
-    width: 80%;
-  }
-  .container-vaccine .vaccine-content .img-vaccine .cont-animacion .cont-contenido::after {
-    content: "";
-    position: absolute;
-    width: 42px;
-    height: 100%;
-    top: 0;
-    left: -42px;
-    background-image: url(../img/fjeringa.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+    width: 82%;
   }
   .container-vaccine .vaccine-content .img-vaccine img {
     width: 100%;

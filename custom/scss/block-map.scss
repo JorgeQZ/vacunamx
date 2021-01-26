@@ -32,7 +32,7 @@
                     justify-content: center;
                 }
             }
-            .doc {
+            .doc-mobil {
                 width: 100%;
                 margin: 0 auto;
                 margin-bottom: -60px;
@@ -41,6 +41,13 @@
                     width: 100%;
                     margin: 0 auto;
                 }
+            }
+            .doc {
+                display: none;
+
+            }
+            .doc-bubble {
+                display: none;
             }
             .title {
                 color: white;
@@ -77,11 +84,10 @@
         position: relative;
         .subcont-map {
             position: relative;
-            padding-bottom: 200px;
             .controls {
                 position: absolute;
                 left: calc(100% - 20px);
-                top: calc(100% - 250px);
+                top: calc(100% - 45px);
                 button {
                     appearance: none;
                     background-color: $gold;
@@ -100,10 +106,22 @@
                     justify-content: center;
                 }
             }
+            .doc-mobil{
+                display: none;
+            }
             .doc {
-                bottom: -35px;
-                width: 450px;
+                bottom: -60px;
+                width: 195px;
                 left: 0;
+                position: absolute;
+                img {
+                    width: 100%;
+                }
+            }
+            .doc-bubble {
+                bottom: 115px;
+                width: 300px;
+                left: 50px;
                 position: absolute;
                 img {
                     width: 100%;
