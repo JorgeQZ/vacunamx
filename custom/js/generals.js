@@ -18,7 +18,7 @@ $(document).ready(function () {
             if (canAnimate) {
                 $(this.element).css('opacity', 0);
                 $(this.element).addClass('animate__fadeInUp animate__animated');
-                animateValue(obj, 329960, 329983, 2000);
+                animateValue(obj, 0, 329983, 1700);
             }
             $('.container-vaccine .vaccine-content .img-vaccine .cont-animacion .cont-contenido').addClass("actual");
 

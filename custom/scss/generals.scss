@@ -29,6 +29,11 @@ button {
     outline: none;
 }
 
+h1, h2, h3, h4, h5, h6, p, a, span{
+    font-family: "Montserrat";
+    font-weight: normal;
+}
+
 // Arreglando margins y paddings
 .site-main > * {
     margin-top: 0;

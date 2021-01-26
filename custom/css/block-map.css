@@ -87,7 +87,7 @@
   .container-map .subcont-map .controls {
     position: absolute;
     left: calc(100% - 20px);
-    top: calc(100% - 45px);
+    top: calc(100% - 250px);
   }
   .container-map .subcont-map .controls button {
     -webkit-appearance: none;
@@ -130,6 +130,7 @@
     margin-bottom: 30px;
     position: relative;
     line-height: 2;
+    font-weight: 600;
   }
   .container-map .subcont-map .title .line-shape {
     position: relative;

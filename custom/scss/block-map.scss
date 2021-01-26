@@ -81,7 +81,7 @@
             .controls {
                 position: absolute;
                 left: calc(100% - 20px);
-                top: calc(100% - 45px);
+                top: calc(100% - 250px);
                 button {
                     appearance: none;
                     background-color: $gold;
@@ -115,6 +115,7 @@
                 margin-bottom: 30px;
                 position: relative;
                 line-height: 2;
+                font-weight: 600;
                 .line-shape {
                     position: relative;
                     width: 50px;
