@@ -64,11 +64,17 @@
                 .cont-item {
                     position: relative;
                     margin-right: 5px;
+                    cursor: pointer;
+                    outline: none;
                     img {
                         width: 155px;
                         filter: contrast(0) opacity(0.6);
-                        cursor: pointer;
+                        outline: none;
                         transition: all 0.3s;
+                        &:focus{
+                            outline: 0 !important;
+                            border:0 none !important;                        
+                        }
                     }
                     .cont-info {
                         position: absolute;
@@ -146,6 +152,11 @@
                     //         //filter: contrast(1);
                     //     }
                     // }
+                    &:hover {
+                        img {
+                            filter: contrast(0) opacity(0.9);
+                        }
+                    }
                     &.active {
                         img {
                             filter: contrast(1);

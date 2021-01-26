@@ -82,6 +82,7 @@
   }
   .container-map .subcont-map {
     position: relative;
+    padding-bottom: 200px;
   }
   .container-map .subcont-map .controls {
     position: absolute;
@@ -115,8 +116,8 @@
             justify-content: center;
   }
   .container-map .subcont-map .doc {
-    bottom: -60px;
-    width: 350px;
+    bottom: -35px;
+    width: 450px;
     left: 0;
     position: absolute;
   }

@@ -1,6 +1,6 @@
 
 {
-    let $tooltip = $(".tooltip-cont");
+    var $tooltip = $(".tooltip-cont");
 
     $('path').hover(function () {
         $tooltip.addClass('active');
@@ -22,9 +22,9 @@
         }
     });
 
-    let zoom = 1;
-    let stepSize = .5;
-    let canDrag = false;
+    var zoom = 1;
+    var stepSize = .5;
+    var canDrag = false;
     function zoomInMap() {
         $map = $('#primaryMap');
         zoom += stepSize;
@@ -59,7 +59,7 @@
     }
 
     // Draggable map
-    let mapId = 'primaryMap';
+    var mapId = 'primaryMap';
 
     mapSVG = document.getElementById(mapId);
     $(mapSVG).on('mousedown', function (e) {
@@ -74,7 +74,7 @@
 }
 
 $(window).on('scroll', function () {
-    let $tooltip = $(".tooltip-cont");
+    var $tooltip = $(".tooltip-cont");
     $tooltip.removeClass('active');
     $tooltip.css({
         left: -100,

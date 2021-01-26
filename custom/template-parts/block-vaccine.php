@@ -12,7 +12,10 @@
                     Actualizado 14 ene 2021
                 </div>
             </div>
-            <img srcset="<?php echo get_template_directory_uri().'/custom/img/vaccine.png'?>" alt="Vacuna">
+            <img srcset="<?php echo get_template_directory_uri().'/custom/img/jeringa.png'?>" alt="Vacuna">
+            <div class="cont-animacion">
+                <div class="cont-contenido"></div>
+            </div>
         </div>
     </div>
 </div>

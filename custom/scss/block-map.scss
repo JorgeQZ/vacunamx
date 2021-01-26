@@ -77,6 +77,7 @@
         position: relative;
         .subcont-map {
             position: relative;
+            padding-bottom: 200px;
             .controls {
                 position: absolute;
                 left: calc(100% - 20px);
@@ -100,8 +101,8 @@
                 }
             }
             .doc {
-                bottom: -60px;
-                width: 350px;
+                bottom: -35px;
+                width: 450px;
                 left: 0;
                 position: absolute;
                 img {

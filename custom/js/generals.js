@@ -20,6 +20,8 @@ $(document).ready(function () {
                 $(this.element).addClass('animate__fadeInUp animate__animated');
                 animateValue(obj, 329960, 329983, 2000);
             }
+            $('.container-vaccine .vaccine-content .img-vaccine .cont-animacion .cont-contenido').addClass("actual");
+
         },
         offset: '100%',
         triggerOnce: true

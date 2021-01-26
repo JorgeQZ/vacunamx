@@ -129,7 +129,7 @@ header .contenedor-movil {
     bottom: 0;
     right: -100%;
     width: 100%;
-    min-height: calc(100vh - 116px);
+    min-height: calc(100vh - 70px);
     z-index: 9;
     padding-top: 50px;
     -webkit-transition: right 600ms ease;

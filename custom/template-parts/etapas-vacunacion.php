@@ -121,6 +121,7 @@
         margin: 0,
         dots: false,
         nav: true,
+        mouseDrag  : false,
         navText: ["<img src='<?php echo get_template_directory_uri().'/custom/img/left-arrow-white.png';?>'>", "<img src='<?php echo get_template_directory_uri().'/custom/img/right-arrow-white.png';?>'>"],
         responsive: {
             0: {
