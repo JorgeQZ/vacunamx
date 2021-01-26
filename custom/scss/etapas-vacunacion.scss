@@ -68,7 +68,7 @@
                         width: 155px;
                         filter: contrast(0) opacity(0.6);
                         cursor: pointer;
-                        transition: all .3s;
+                        transition: all 0.3s;
                     }
                     .cont-info {
                         position: absolute;
@@ -114,7 +114,7 @@
                         bottom: -205px;
                         padding-top: 35px;
                         opacity: 0;
-                        transition: all .3s;
+                        transition: all 0.3s;
                         h4 {
                             font-size: 14px;
                             line-height: 14px;
@@ -141,13 +141,13 @@
                             font-weight: 600;
                         }
                     }
+                    // &.active {
+                    //     img {
+                    //         //filter: contrast(1);
+                    //     }
+                    // }
                     &.active {
                         img {
-                            //filter: contrast(1);
-                        }
-                    }
-                    &:hover{
-                        img{
                             filter: contrast(1);
                         }
                         .contenedor-info {
@@ -214,7 +214,6 @@
 }
 
 @media screen and (max-width: 767px) {
-    
     .contenedor-general-etapasvacunacion {
         .contenedor-etapas-vacunacion {
             top: -60px;
@@ -236,11 +235,11 @@
                     }
                 }
             }
-            .contenedor-esquema{ 
-                .cont-esquema{ 
-                    .owl-item{
-                        &.active{
-                            img{
+            .contenedor-esquema {
+                .cont-esquema {
+                    .owl-item {
+                        &.active {
+                            img {
                                 filter: contrast(1);
                             }
                             .contenedor-info {

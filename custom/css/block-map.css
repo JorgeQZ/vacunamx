@@ -173,10 +173,12 @@
   position: fixed;
   z-index: 3;
   display: none;
+  opacity: 0;
 }
 
 .tooltip-cont.active {
   display: block;
+  opacity: 1;
 }
 
 .tooltip-cont .line-shape {

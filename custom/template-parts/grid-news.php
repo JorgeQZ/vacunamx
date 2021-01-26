@@ -93,7 +93,7 @@
 </div>
 
 <script>
-$('.owl-carousel').owlCarousel({
+$('.grid-news-carousel').owlCarousel({
     loop: false,
     margin: 0,
     nav: false,

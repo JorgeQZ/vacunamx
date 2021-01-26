@@ -4,8 +4,10 @@
             Total de personas vacunadas <strong>al día de hoy</strong>
         </div>
         <div class="img-vaccine">
-            <div class="numbers">
-                329,983
+            <div class="numbers" id="numbers">
+                <div id="numbers_text">
+                    329,983
+                </div>
                 <div class="subtext">
                     Actualizado 14 ene 2021
                 </div>
