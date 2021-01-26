@@ -27,8 +27,13 @@
                     <div class="title">
                         <h3><?php the_title(); ?></h3>
                     </div>
-                    <div class="excerpt">
-                        <p><?php the_excerpt(); ?></p>
+                    <div class="content-note">
+                        <div class="date">
+                            <p><?php echo get_the_date(); ?></p>
+                        </div>
+                        <div class="excerpt">
+                            <p><?php the_excerpt(); ?></p>
+                        </div>
                     </div>
                 </div>
 
@@ -73,6 +78,14 @@
             <div class="content">
                 <div class="title">
                     <h3><?php the_title(); ?></h3>
+                </div>
+                <div class="content-note">
+                    <div class="date">
+                        <p><?php echo get_the_date(); ?></p>
+                    </div>
+                    <div class="excerpt">
+                        <p><?php the_excerpt(); ?></p>
+                    </div>
                 </div>
             </div>
 

@@ -87,15 +87,6 @@
     max-width: 700px;
     position: relative;
   }
-  .container-news .column:nth-child(1) .grid-news-carousel .item .content .title::before {
-    content: "";
-    width: 10px;
-    height: 5px;
-    background-color: #fff;
-    position: absolute;
-    bottom: -15px;
-    left: 0;
-  }
   .container-news .column:nth-child(1) .grid-news-carousel .item .content .title h3 {
     font-weight: 800;
   }
@@ -261,6 +252,12 @@
     -webkit-filter: grayscale(1);
             filter: grayscale(1);
   }
+  .container-news .column:nth-child(1) .grid-news-carousel .item:hover .content .content-note {
+    max-height: 100px;
+  }
+  .container-news .column:nth-child(1) .grid-news-carousel .item:hover .content .content-note:before {
+    width: 10px;
+  }
   .container-news .column:nth-child(1) .grid-news-carousel .item .seemore {
     position: absolute;
     font-size: 16px;
@@ -306,30 +303,52 @@
   }
   .container-news .column:nth-child(1) .grid-news-carousel .item .content .title {
     line-height: 1;
-    margin-bottom: 30px;
     width: 90%;
     max-width: 700px;
     position: relative;
-  }
-  .container-news .column:nth-child(1) .grid-news-carousel .item .content .title::before {
-    content: "";
-    width: 10px;
-    height: 5px;
-    background-color: #fff;
-    position: absolute;
-    bottom: -15px;
-    left: 0;
+    -webkit-transition: all 300ms linear;
+    transition: all 300ms linear;
+    margin-bottom: 10px;
   }
   .container-news .column:nth-child(1) .grid-news-carousel .item .content .title h3 {
     font-weight: 800;
   }
-  .container-news .column:nth-child(1) .grid-news-carousel .item .content .excerpt {
-    line-height: 1.2;
+  .container-news .column:nth-child(1) .grid-news-carousel .item .content .content-note {
+    line-height: 1;
+    position: relative;
+    padding-top: 15px;
+    -webkit-transition: max-height 300ms linear;
+    transition: max-height 300ms linear;
+    max-height: 0;
+    margin-bottom: 10px;
+    overflow: hidden;
     width: 90%;
+  }
+  .container-news .column:nth-child(1) .grid-news-carousel .item .content .content-note p {
+    margin: 0;
+  }
+  .container-news .column:nth-child(1) .grid-news-carousel .item .content .content-note .date {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .container-news .column:nth-child(1) .grid-news-carousel .item .content .content-note .excerpt {
+    line-height: 1.2;
+    width: 100%;
     max-width: 700px;
-    margin: 20px 0;
+    margin: 10px 0;
     font-size: 20px;
     letter-spacing: 1px;
+  }
+  .container-news .column:nth-child(1) .grid-news-carousel .item .content .content-note::before {
+    content: "";
+    width: 0;
+    height: 5px;
+    background-color: #fff;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    -webkit-transition: width 400ms ease;
+    transition: width 400ms ease;
   }
   .container-news .column:nth-child(1) .grid-news-carousel .owl-dots {
     height: 35px;
@@ -383,6 +402,13 @@
     -webkit-filter: grayscale(1);
             filter: grayscale(1);
   }
+  .container-news .column:nth-child(2) .row-item:hover .content .content-note {
+    margin-bottom: 0;
+    max-height: 100px;
+  }
+  .container-news .column:nth-child(2) .row-item:hover .content .content-note:before {
+    width: 10px;
+  }
   .container-news .column:nth-child(2) .row-item .content {
     padding: 20px;
     width: 100%;
@@ -401,6 +427,42 @@
   }
   .container-news .column:nth-child(2) .row-item .content .title h3 {
     font-weight: 800;
+  }
+  .container-news .column:nth-child(2) .row-item .content .content-note {
+    line-height: 1;
+    position: relative;
+    padding-top: 15px;
+    -webkit-transition: max-height 400ms linear;
+    transition: max-height 400ms linear;
+    max-height: 0;
+    overflow: hidden;
+    width: 90%;
+  }
+  .container-news .column:nth-child(2) .row-item .content .content-note p {
+    margin: 0;
+  }
+  .container-news .column:nth-child(2) .row-item .content .content-note .date {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .container-news .column:nth-child(2) .row-item .content .content-note .excerpt {
+    line-height: 1.2;
+    width: 100%;
+    max-width: 700px;
+    margin: 10px 0;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  .container-news .column:nth-child(2) .row-item .content .content-note::before {
+    content: "";
+    width: 0;
+    height: 5px;
+    background-color: #fff;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    -webkit-transition: width 400ms ease;
+    transition: width 400ms ease;
   }
   .container-news .column:nth-child(2) .row-item .seemore {
     position: absolute;
