@@ -41,13 +41,13 @@ $(document).ready(function () {
         })
 
     // // Click en etapas
-    // $('.cont-item').on('click', function (e) {
-    //     e.preventDefault();
-    //     if (!$(this).hasClass('active')) {
-    //         $('.cont-item').removeClass('active');
-    //         $(this).addClass('active');
-    //     }
-    // });
+    $('.cont-item').on('click', function (e) {
+        e.preventDefault();
+        if (!$(this).hasClass('active')) {
+            $('.cont-item').removeClass('active');
+            $(this).addClass('active');
+        }
+    });
 });
 
 // Animate Numbers
