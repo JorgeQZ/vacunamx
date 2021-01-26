@@ -72,3 +72,12 @@
         }
     });
 }
+
+$(window).on('scroll', function () {
+    let $tooltip = $(".tooltip-cont");
+    $tooltip.removeClass('active');
+    $tooltip.css({
+        left: -100,
+        top: -100
+    });
+});
