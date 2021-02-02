@@ -30,6 +30,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'GMX';
+  src: url("../fonts/GMX-Bold.eot");
+  src: url("../fonts/GMX-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/GMX-Bold.woff2") format("woff2"), url("../fonts/GMX-Bold.woff") format("woff"), url("../fonts/GMX-Bold.ttf") format("truetype"), url("../fonts/GMX-Bold.svg#GMX-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -42,6 +50,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background: white;
 }
 
 img {
