@@ -2,7 +2,7 @@
 
 <?php
     if(get_field('slider_banner')){
-        echo do_shortcode(the_field('slider_banner'));
+        echo do_shortcode('[rev_slider alias="home"]');
     }
     else{
         if($img_featured){

@@ -7,7 +7,9 @@ function wp_request_states_data(){
     $url_states = $directory . 'custom/js/statesData.json';
     $url_states_vaccines = $directory . 'custom/js/vaccines.json';
 
-    wp_register_script( 'map_config', $directory . '/custom/js/mapStatesConfig.js', array('jquery'), false, true  );
+    if(is_front_page()){
+        wp_register_script( 'map_config', $directory . '/custom/js/mapStatesConfig.js', array('jquery'), false, true  );
+	}
 
     $request_states = wp_remote_get( $url_states );
 

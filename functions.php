@@ -464,27 +464,6 @@ function twenty_twenty_one_scripts() {
 		true
 	);
 
-	// wp_deregister_script('jquery');
-    // wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), null, true);
-
-	wp_enqueue_style( 'generals', get_template_directory_uri() . '/custom/css/generals.css', array(), filemtime( get_stylesheet_directory() . '/custom/css/generals.css' ), 'all');
-	wp_enqueue_style( 'header', get_template_directory_uri() . '/custom/css/header.css', array(), filemtime( get_stylesheet_directory() . '/custom/css/header.css' ), 'all');
-	wp_enqueue_style( 'footer', get_template_directory_uri() . '/custom/css/footer.css', array(), filemtime( get_stylesheet_directory() . '/custom/css/footer.css' ), 'all');
-
-	if(is_front_page()){
-		wp_enqueue_style( 'modulos-carrusel', get_template_directory_uri() . '/custom/css/modulos-carrusel.css', array(), filemtime( get_stylesheet_directory() . '/custom/css/modulos-carrusel.css' ), 'all');
-		wp_enqueue_style( 'etapas-vacunacion', get_template_directory_uri() . '/custom/css/etapas-vacunacion.css', array(), filemtime( get_stylesheet_directory() . '/custom/css/etapas-vacunacion.css' ), 'all');
-	}
-	else{
-		wp_enqueue_style( 'page', get_template_directory_uri() . '/custom/css/page.css', array(), filemtime( get_stylesheet_directory() . '/custom/css/page.css' ), 'all');
-	}
-	
-	wp_enqueue_script('generals_js', get_template_directory_uri().'/custom/js/generals.js', array('jquery'),filemtime( get_stylesheet_directory() . '/custom/js/generals.js' ), false);
-
-	wp_enqueue_style( 'animate', '//cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css',  array(), null, false);
-
-    wp_enqueue_script('jquery.waypoints.min', get_template_directory_uri().'/custom/js/jquery.waypoints.min.js', array('jquery'), false);
-
 }
 add_action( 'wp_enqueue_scripts', 'twenty_twenty_one_scripts' );
 
