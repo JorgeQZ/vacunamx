@@ -1,0 +1,32 @@
+{
+    "features": [
+        {
+            "properties": {
+                "state_code": 9,
+                "state_name": "Distrito Federal",
+                "vacunados": 30000
+            }
+        },
+        {
+            "properties": {
+                "state_code": 12,
+                "state_name": "guerrero",
+                "vacunados": 30000
+            }
+        },
+        {
+            "properties": {
+                "state_code": 19,
+                "state_name": "Nuevo León",
+                "vacunados": 400
+            }
+        },
+        {
+            "properties": {
+                "state_code": 2,
+                "state_name": "Baja California",
+                "vacunados": 10
+            }
+        }
+    ]
+}
