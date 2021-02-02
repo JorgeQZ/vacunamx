@@ -10,22 +10,25 @@ $(document).ready(function () {
 
 
     // // Animacion de numeros
-    let waypoint_numbers = new Waypoint({
-        element: document.getElementsByClassName('numbers')[0],
-        handler: function (direction) {
+    const element = document.querySelector(".numbers");
+    if (element != null) {
+        let waypoint_numbers = new Waypoint({
+            element: document.getElementsByClassName('numbers')[0],
+            handler: function (direction) {
 
-            const obj = document.getElementById("numbers_text");
-            if (canAnimate) {
-                $(this.element).css('opacity', 0);
-                $(this.element).addClass('animate__fadeInUp animate__animated');
-                animateValue(obj, 0, 329983, 1700);
-            }
-            $('.container-vaccine .vaccine-content .img-vaccine .cont-animacion .cont-contenido').addClass("actual");
+                const obj = document.getElementById("numbers_text");
+                if (canAnimate) {
+                    $(this.element).css('opacity', 0);
+                    $(this.element).addClass('animate__fadeInUp animate__animated');
+                    animateValue(obj, 0, 329983, 1700);
+                }
+                $('.container-vaccine .vaccine-content .img-vaccine .cont-animacion .cont-contenido').addClass("actual");
 
-        },
-        offset: '100%',
-        triggerOnce: true
-    });
+            },
+            offset: '100%',
+            triggerOnce: true
+        });
+    }
 
     // // Waypoints fade in
 
