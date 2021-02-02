@@ -32,7 +32,7 @@
                     justify-content: center;
                 }
             }
-            .doc-mobil {
+            .doc {
                 width: 100%;
                 margin: 0 auto;
                 margin-bottom: -60px;
@@ -41,13 +41,6 @@
                     width: 100%;
                     margin: 0 auto;
                 }
-            }
-            .doc {
-                display: none;
-
-            }
-            .doc-bubble {
-                display: none;
             }
             .title {
                 color: white;
@@ -106,22 +99,10 @@
                     justify-content: center;
                 }
             }
-            .doc-mobil{
-                display: none;
-            }
             .doc {
                 bottom: -60px;
-                width: 195px;
+                width: 350px;
                 left: 0;
-                position: absolute;
-                img {
-                    width: 100%;
-                }
-            }
-            .doc-bubble {
-                bottom: 115px;
-                width: 300px;
-                left: 50px;
                 position: absolute;
                 img {
                     width: 100%;
@@ -133,7 +114,6 @@
                 margin-bottom: 30px;
                 position: relative;
                 line-height: 2;
-                font-weight: 600;
                 .line-shape {
                     position: relative;
                     width: 50px;
