@@ -45,7 +45,13 @@
             .img-vaccine {
                 margin-bottom: 40px;
                 position: relative;
+                margin-top: 100px;
                 .numbers {
+                    position: absolute;
+                    top: -70px;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
                     height: 70px;
                     width: 200px;
                     font-size: 38px;
@@ -59,7 +65,7 @@
                     font-weight: bolder;
                     z-index: 9;
                     //color: $gold;
-                    color: white;
+                    color: #ca9658;
                     .subtext {
                         font-size: 10px;
                         color: $lightGrey;
@@ -67,10 +73,16 @@
                 }
                 .cont-animacion{
                     position: absolute;
-                    top: 38px;
+                    /*
+                    bottom: 11.5%;
                     left: 11.3%;
                     width: 62%;
-                    height: 58%;
+                    height: 44%;
+                    */
+                    bottom: 16%;
+                    left: 11.3%;
+                    width: 62%;
+                    height: 68%;
                     //background: $gold;
                     display: flex;
                     justify-content: flex-end;
@@ -86,19 +98,6 @@
                         &.actual{
                             width: 82%;
                         }
-                        /*
-                        &::after{
-                            content: "";
-                            position: absolute;
-                            width: 42px;
-                            height: 100%;
-                            top: 0;
-                            left: -42px;
-                            background-image: url(../img/fjeringa.png);
-                            background-repeat: no-repeat;
-                            background-size: contain;
-                        }
-                        */
                     }
                 }
                 img {
@@ -154,9 +153,9 @@
             .img-vaccine {
                 margin-bottom: 40px;
                 position: relative;
+                margin-top: 0;
                 .numbers {
                     position: absolute;
-
                     height: 70px;
                     width: 200px;
                     font-size: 38px;
@@ -169,6 +168,7 @@
                     top: calc(50% - 35px);
                     font-weight: bolder;
                     left: 22%;
+                    right: inherit;
                     color: white;
                     //color: $gold;
                     .subtext {
@@ -177,6 +177,42 @@
                         color: white;
                     }
                 }
+                /*
+                .cont-animacion{
+                    position: absolute;
+                    bottom: 21%;
+                    left: 11.3%;
+                    width: 62%;
+                    height: 58%;
+                    //background: $gold;
+                    display: flex;
+                    justify-content: flex-end;
+                    z-index: -1;
+                    .cont-contenido{
+                        width: 100%;
+                        height: 100%;
+                        background: $gold;
+                        background-image: url(../img/fjeringa.png);
+                        transition-delay: 3s;
+                        transition:  all 2s ease;
+                        position: relative;
+                        &.actual{
+                            width: 82%;
+                        }
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            width: 42px;
+                            height: 100%;
+                            top: 0;
+                            left: -42px;
+                            background-image: url(../img/fjeringa.png);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                        }
+                    }
+                }
+                */
                 img {
                     width: 100%;
                 }
