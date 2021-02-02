@@ -1,0 +1,25 @@
+.blog-cont {
+  padding: 60px;
+}
+
+.blog-cont .title {
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  line-height: 3;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #6f7271;
+  position: relative;
+}
+
+.blog-cont .title:before {
+  content: "";
+  width: 15px;
+  height: 5px;
+  background-color: #ca9658;
+  position: absolute;
+  top: 100%;
+  left: calc(50% - 7.5px);
+}

@@ -71,8 +71,6 @@
                 ?>
 
         <div class="row-item">
-
-
             <div class="overlay" style="background-image: url( <?php echo get_the_post_thumbnail_url('','large') ?>) !important; background-size: cover !important;  background-position: center !important;"></div>
 
             <div class="content">

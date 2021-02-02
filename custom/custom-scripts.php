@@ -35,6 +35,13 @@ function add_theme_scripts() {
     // Grid News
     wp_enqueue_style( 'grid-news', get_template_directory_uri() . '/custom/css/grid-news.css', array(), filemtime( get_stylesheet_directory() . '/custom/css/grid-news.css' ), 'all');
 
+
+
+	if(is_page_template('blog.php')){
+        wp_enqueue_style( 'blog', get_template_directory_uri() . '/custom/css/blog.css', array(), filemtime( get_stylesheet_directory() . '/custom/css/blog.css' ), 'all');
+
+	}
+
 }
 
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );

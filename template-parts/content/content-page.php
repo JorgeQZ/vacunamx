@@ -14,14 +14,14 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
     <?php if ( ! is_front_page() ) : ?>
-    <header class="entry-header alignwide">
+    <div class="entry-header alignwide">
         <?php get_template_part( 'template-parts/header/entry-header' ); ?>
         <?php twenty_twenty_one_post_thumbnail(); ?>
-    </header>
+    </div>
     <?php elseif ( has_post_thumbnail() ) : ?>
-    <header class="entry-header alignwide">
+    <div class="entry-header alignwide">
         <?php twenty_twenty_one_post_thumbnail(); ?>
-    </header>
+    </div>
     <?php endif; ?>
 
     <div class="entry-content">
@@ -40,7 +40,7 @@
     </div><!-- .entry-content -->
 
     <?php if ( get_edit_post_link() ) : ?>
-    <footer class="entry-footer default-max-width">
+    <div class="entry-footer default-max-width">
         <?php
 			edit_post_link(
 				sprintf(
@@ -52,6 +52,6 @@
 				'</span>'
 			);
 			?>
-    </footer><!-- .entry-footer -->
+    </div><!-- .entry-footer -->
     <?php endif; ?>
 </article><!-- #post-<?php the_ID(); ?> -->
