@@ -1,0 +1,94 @@
+.contenedor-wrapper {
+    max-width: 1015px;
+    padding: 0 30px;
+}
+
+.contenedor-general-banner {
+    height: 250px;
+    width: 100%;
+    background: #002a5b;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 !important;
+    .cont-contenido-page {
+        width: 63%;
+        h1 {
+            color: white;
+            margin: 0;
+            text-transform: uppercase;
+            font-family: 'GMX';
+            font-size: 44px;
+            line-height: 46px;
+            position: relative;
+        }
+    }
+}
+
+.contenedor-general-page{
+    margin: 0 !important;
+    padding: 35px 0 100px;
+    background-image: url(../img/bg-page.jpg);
+    background-position: center;
+    background-size: cover;
+
+    h2{
+        font-size: 26px;
+        line-height: 30px;
+        font-weight: 600;
+        position: relative;
+        color: #0a221e;
+        margin-bottom: 20px;
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 35px;
+            height: 2px;
+            background: #ca9658;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 40px;
+            width: 10px;
+            height: 2px;
+            background: #ca9658;
+        }
+    }
+
+    p{
+        font-size: 18px;
+        line-height: 20px;
+        margin: 20px 0;
+    }
+
+    ul{
+        padding-left: 20px;
+        li{
+            font-size: 18px;
+            line-height: 20px;
+            font-weight: 600;
+            color: #c7a676;
+        }
+    }
+
+}
+
+@media screen and (max-width: 767px){
+    .contenedor-general-banner {
+        .cont-contenido-page {
+            width: 100%;
+            h1 {
+                font-size: 34px;
+                line-height: 36px;
+            }
+        }
+    }
+}
