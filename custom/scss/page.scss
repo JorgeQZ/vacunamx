@@ -79,9 +79,88 @@
         }
     }
 
+
+    .kt-tabs-title-list{
+        justify-content: flex-start !important;
+        li{
+            border: 1px solid #b8b8b8;
+            border-radius: 0 !important;
+            margin: 0 !important;
+            a{
+                color: #ba1c40 !important;
+                border: 0 !important;
+                font-size: 18px !important;
+                line-height: 20px !important;
+                border-radius: 0 !important;
+            }
+            &.kt-tab-title-active{
+                a{
+                    background:#ba1c40 !important;
+                    color: white !important;
+                    span{
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+    .kt-tabs-content-wrap{
+        .wp-block-kadence-tab{
+            padding: 20px 0;
+            .uagb-faq-item{
+                border: 0;
+                border-bottom: 1px solid #b8b8b8;
+                padding: 20px;
+                outline: none;
+                transition: all .3s;
+                .uagb-faq-questions{
+                    padding: 0 !important;
+                    .uagb-question{
+                        color: #ca9658;
+                        font-weight: bold;
+                        font-size: 22px;
+                        line-height: 24px;
+                    }
+                    .uagb-faq-icon-wrap{
+                        display: none;
+                    }
+                    .fl{
+                        width: 20px;
+                        transform: rotate(90deg);
+                        opacity: .5;
+                        transition: all .3s;
+                    }
+                }
+                .uagb-faq-content{
+                    span{
+                        margin: 10px 0;
+                        p{
+                            color: white;
+                            font-size: 18px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+                &.uagb-faq-item-active{
+                    background: #005b4c;
+                    .uagb-faq-questions{
+                        .uagb-question{
+                            color: #e5caa3;
+                        }
+                        .fl{
+                            transform: rotate(270deg);
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 @media screen and (max-width: 767px){
+
     .contenedor-general-banner {
         .cont-contenido-page {
             width: 100%;
@@ -91,4 +170,32 @@
             }
         }
     }
+
+    .contenedor-general-page{
+        .kt-tabs-title-list{
+            li{
+                width: 100%;
+                a{
+                    text-align: center;
+                    span{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .kt-tabs-content-wrap{
+            .wp-block-kadence-tab{
+                .uagb-faq-item{
+                    padding: 10px;
+                    .uagb-faq-questions{
+                        justify-content: space-between;
+                        .uagb-question{
+                            width: 75%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
