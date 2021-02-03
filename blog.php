@@ -8,6 +8,7 @@ $current_page = max( 1, $current_page );
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 $offset_start = 2;
 $per_page = 4;
+$range = 2;
 $offset = ( $current_page - 1 ) * $per_page + $offset_start;
 ?>
 
@@ -31,7 +32,8 @@ $offset = ( $current_page - 1 ) * $per_page + $offset_start;
     $total_rows = max( 0, $queried_post->found_posts - $offset_start );
     $total_pages = ceil( $total_rows / $per_page );
 
-   $count_post = $queried_post->post_count;
+
+    $count_post = $queried_post->post_count;
     if($queried_post->have_posts()):
         set_query_var('news_posts', $queried_post->posts);
         switch ($count_post):
@@ -41,13 +43,56 @@ $offset = ( $current_page - 1 ) * $per_page + $offset_start;
                 echo '</div>';
 
             break;
-        endswitch;
-        echo '<div class="contenedor-wrapper">';
-        echo paginate_links( array(
 
-            'total'   => $total_pages,
-            'current' => $current_page,
-        ) );
+            case 3:
+                echo '<div class="contenedor-wrapper">';
+                get_template_part( 'custom/template-parts/news-grid/news-grid-3');
+                echo '</div>';
+            break;
+
+            case 2:
+                echo '<div class="contenedor-wrapper">';
+                get_template_part( 'custom/template-parts/news-grid/news-grid-2');
+                echo '</div>';
+            break;
+
+            case 1:
+                echo '<div class="contenedor-wrapper">';
+                get_template_part( 'custom/template-parts/news-grid/news-grid-1');
+                echo '</div>';
+            break;
+
+            case 0:
+                echo '<div class="contenedor-wrapper">';
+                get_template_part( 'custom/template-parts/news-grid/news-grid-0');
+                echo '</div>';
+            break;
+        endswitch;
+
+        echo '<div class="pag-cont">';
+        if($paged > 1):
+            echo  "<a class='item' href=".get_pagenum_link($paged - 1)."><<</a>";
+        endif;
+
+        for($i=1; $i<= $total_pages; $i++){
+            if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $per_page )){
+                if($paged == $i):
+                    echo "<span class='item current'>".$i."</span>";
+                else:
+                    echo "<a href='".get_pagenum_link($i)."' class='item'>".$i."</a>";
+                endif;
+            }
+        }
+
+        if($paged < $total_pages):
+            echo  "<a class='item' href=".get_pagenum_link($paged + 1).">>></a>";
+        endif;
+
+        echo '</div>';
+
+    else:
+        echo '<div class="contenedor-wrapper">';
+        get_template_part( 'custom/template-parts/news-grid/news-grid-0');
         echo '</div>';
     endif;
     wp_reset_postdata();
