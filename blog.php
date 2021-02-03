@@ -36,15 +36,19 @@ $offset = ( $current_page - 1 ) * $per_page + $offset_start;
         set_query_var('news_posts', $queried_post->posts);
         switch ($count_post):
             case 4:
+                echo '<div class="contenedor-wrapper">';
                 get_template_part( 'custom/template-parts/news-grid/news-grid-4');
+                echo '</div>';
+
             break;
         endswitch;
-
+        echo '<div class="contenedor-wrapper">';
         echo paginate_links( array(
 
             'total'   => $total_pages,
             'current' => $current_page,
         ) );
+        echo '</div>';
     endif;
     wp_reset_postdata();
 

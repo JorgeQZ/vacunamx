@@ -30,7 +30,7 @@ function add_theme_scripts() {
 	else{
 		wp_enqueue_style( 'page', get_template_directory_uri() . '/custom/css/page.css', array(), filemtime( get_stylesheet_directory() . '/custom/css/page.css' ), 'all');
 	}
-	
+
 	wp_enqueue_script('generals_js', get_template_directory_uri().'/custom/js/generals.js', array('jquery'),filemtime( get_stylesheet_directory() . '/custom/js/generals.js' ), false);
 
 	wp_enqueue_style( 'animate', '//cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css',  array(), null, false);
@@ -51,6 +51,9 @@ function add_theme_scripts() {
 
 
 	if(is_page_template('blog.php')){
+        // Grid News
+        wp_enqueue_style( 'grid-news', get_template_directory_uri() . '/custom/css/grid-news.css', array(), filemtime( get_stylesheet_directory() . '/custom/css/grid-news.css' ), 'all');
+
         wp_enqueue_style( 'blog', get_template_directory_uri() . '/custom/css/blog.css', array(), filemtime( get_stylesheet_directory() . '/custom/css/blog.css' ), 'all');
 
 	}
