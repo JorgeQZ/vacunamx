@@ -39,7 +39,9 @@
   padding: 35px 0 100px;
   background-image: url(../img/bg-page.jpg);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .contenedor-general-page h2 {
@@ -89,6 +91,98 @@
   color: #c7a676;
 }
 
+.contenedor-general-page .kt-tabs-title-list {
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+}
+
+.contenedor-general-page .kt-tabs-title-list li {
+  border: 1px solid #b8b8b8;
+  border-radius: 0 !important;
+  margin: 0 !important;
+}
+
+.contenedor-general-page .kt-tabs-title-list li a {
+  color: #ba1c40 !important;
+  border: 0 !important;
+  font-size: 18px !important;
+  line-height: 20px !important;
+  border-radius: 0 !important;
+}
+
+.contenedor-general-page .kt-tabs-title-list li.kt-tab-title-active a {
+  background: #ba1c40 !important;
+  color: white !important;
+}
+
+.contenedor-general-page .kt-tabs-title-list li.kt-tab-title-active a span {
+  font-weight: bold;
+}
+
+.contenedor-general-page .kt-tabs-content-wrap .wp-block-kadence-tab {
+  padding: 50px 0 20px 0;
+  background: transparent !important;
+}
+
+.contenedor-general-page .kt-tabs-content-wrap .wp-block-kadence-tab .uagb-faq-item {
+  border: 0;
+  border-bottom: 1px solid #b8b8b8;
+  padding: 20px;
+  background: transparent;
+  outline: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.contenedor-general-page .kt-tabs-content-wrap .wp-block-kadence-tab .uagb-faq-item .uagb-faq-questions {
+  padding: 0 !important;
+}
+
+.contenedor-general-page .kt-tabs-content-wrap .wp-block-kadence-tab .uagb-faq-item .uagb-faq-questions .uagb-question {
+  color: #ca9658;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.contenedor-general-page .kt-tabs-content-wrap .wp-block-kadence-tab .uagb-faq-item .uagb-faq-questions .uagb-faq-icon-wrap {
+  display: none;
+}
+
+.contenedor-general-page .kt-tabs-content-wrap .wp-block-kadence-tab .uagb-faq-item .uagb-faq-questions .fl {
+  width: 20px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  opacity: .5;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.contenedor-general-page .kt-tabs-content-wrap .wp-block-kadence-tab .uagb-faq-item .uagb-faq-content span {
+  margin: 10px 0;
+}
+
+.contenedor-general-page .kt-tabs-content-wrap .wp-block-kadence-tab .uagb-faq-item .uagb-faq-content span p {
+  color: white;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.contenedor-general-page .kt-tabs-content-wrap .wp-block-kadence-tab .uagb-faq-item.uagb-faq-item-active {
+  background: #005b4c;
+}
+
+.contenedor-general-page .kt-tabs-content-wrap .wp-block-kadence-tab .uagb-faq-item.uagb-faq-item-active .uagb-faq-questions .uagb-question {
+  color: #e5caa3;
+}
+
+.contenedor-general-page .kt-tabs-content-wrap .wp-block-kadence-tab .uagb-faq-item.uagb-faq-item-active .uagb-faq-questions .fl {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  opacity: 1;
+}
+
 @media screen and (max-width: 767px) {
   .contenedor-general-banner .cont-contenido-page {
     width: 100%;
@@ -96,5 +190,28 @@
   .contenedor-general-banner .cont-contenido-page h1 {
     font-size: 34px;
     line-height: 36px;
+  }
+  .contenedor-general-page {
+    background-image: unset;
+  }
+  .contenedor-general-page .kt-tabs-title-list li {
+    width: 100%;
+  }
+  .contenedor-general-page .kt-tabs-title-list li a {
+    text-align: center;
+  }
+  .contenedor-general-page .kt-tabs-title-list li a span {
+    width: 100%;
+  }
+  .contenedor-general-page .kt-tabs-content-wrap .wp-block-kadence-tab .uagb-faq-item {
+    padding: 10px;
+  }
+  .contenedor-general-page .kt-tabs-content-wrap .wp-block-kadence-tab .uagb-faq-item .uagb-faq-questions {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contenedor-general-page .kt-tabs-content-wrap .wp-block-kadence-tab .uagb-faq-item .uagb-faq-questions .uagb-question {
+    width: 75%;
   }
 }

@@ -3541,12 +3541,13 @@ hr.wp-block-separator.is-style-dots:before {
 	margin-bottom: 0 !important;
 	margin-top: 0 !important;
 }
+/*
 @media only screen and (max-width: 481px) {
 	.wp-block-spacer[style] {
 		height: var(--global--spacing-unit) !important;
 	}
 }
-
+*/
 table,
 .wp-block-table {
 	width: 100%;
