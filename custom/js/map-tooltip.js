@@ -1,34 +1,43 @@
 
-{
-    var $tooltip = $(".tooltip-cont");
+$(document).ready(function (e) {
+    let $tooltip = $(".tooltip-cont");
 
-    $('path').hover(function () {
+    $('path').on('mouseenter', function (e) {
+        e.preventDefault();
+        // console.log(e.type)
         $tooltip.addClass('active');
         $('.tooltip-title').html($(this).attr('title'));
-    }, function () {
+        $('path').removeClass('hover');
+        $(this).addClass('hover');
+    });
+
+
+    $('path').on('mouseleave', function (e) {
+        e.preventDefault();
+        // console.log(e.type)
         $tooltip.removeClass('active');
         $tooltip.css({
             left: -100,
             top: -100
         });
+        $('path').removeClass('hover');
     });
 
-    $(document).on('mousemove', function (e) {
+    $(document).on('mousemove touchmove', function (e) {
+        e.preventDefault();
 
-        console.log(e.clientX, e.pageX, $(window).width());
+        // console.log(e.type);
         let screen_width = $(window).width();
-
         let max_limit_posX = screen_width * .7;
-        console.info(max_limit_posX);
 
         if (screen_width < 1440) {
             if (e.clientX < max_limit_posX) {
                 $tooltip.removeClass('inverse');
-
             } else {
                 $tooltip.addClass('inverse');
             }
         }
+
         if ($tooltip.hasClass('active')) {
             $tooltip.css({
                 left: e.clientX + 120,
@@ -38,48 +47,14 @@
 
     });
 
-    var zoom = 1;
-    var stepSize = .5;
-    var canDrag = false;
-    function zoomInMap() {
-        $map = $('#primaryMap');
-        zoom += stepSize;
-        canDrag = true;
 
-
-        $('.map').addClass('zoomedIn');
-        $map.css({
-            transform: "scale(" + zoom + ")"
-        })
-
-    }
-
-    function zoomOutMap() {
-        $map = $('#primaryMap');
-        if (zoom > 1) {
-            zoom -= stepSize;
-            if (zoom == 1) {
-                $('.map').removeClass('zoomedIn');
-                canDrag = false;
-                $map.css({
-                    left: 0,
-                    top: 0,
-
-                });
-            }
-        }
-        $map.css({
-            transform: "scale(" + zoom + ")"
-        })
-
-    }
 
     // Draggable map
-    var mapId = 'primaryMap';
-
+    let mapId = 'primaryMap';
     mapSVG = document.getElementById(mapId);
-    $(mapSVG).on('mousedown', function (e) {
-        console.log(canDrag);
+
+    $(mapSVG).on('mousedown touchmove', function (e) {
+        e.preventDefault();
         if (canDrag) {
             $('#' + mapId).draggable({ disabled: false });
         } else {
@@ -87,13 +62,66 @@
 
         }
     });
-}
+});
+
+
 
 $(window).on('scroll', function () {
-    var $tooltip = $(".tooltip-cont");
+    let $tooltip = $(".tooltip-cont");
     $tooltip.removeClass('active');
+    $('path').removeClass('hover');
+
     $tooltip.css({
         left: -100,
         top: -100
     });
 });
+
+
+// Zoom funtions
+
+$('.zoom-in').on('click touchend', function (e) {
+    e.preventDefault();
+    zoomInMap();
+});
+
+$('.zoom-out').on('click touchend', function (e) {
+    e.preventDefault();
+    zoomOutMap();
+});
+
+let zoom = 1;
+let stepSize = .5;
+let canDrag = false;
+
+function zoomInMap() {
+    $map = $('#primaryMap');
+    zoom += stepSize;
+    canDrag = true;
+
+
+    $('.map').addClass('zoomedIn');
+    $map.css({
+        transform: "scale(" + zoom + ")"
+    })
+
+}
+
+function zoomOutMap() {
+    $map = $('#primaryMap');
+    if (zoom > 1) {
+        zoom -= stepSize;
+        if (zoom == 1) {
+            $('.map').removeClass('zoomedIn');
+            canDrag = false;
+            $map.css({
+                left: 0,
+                top: 0,
+
+            });
+        }
+    }
+    $map.css({
+        transform: "scale(" + zoom + ")"
+    });
+}

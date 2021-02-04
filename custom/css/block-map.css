@@ -277,7 +277,7 @@ path {
   stroke: #103b36;
 }
 
-path:hover {
+path.hover {
   cursor: pointer;
   fill: #ca9658;
 }

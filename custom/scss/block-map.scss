@@ -251,7 +251,7 @@ path {
     fill: white;
     stroke-width: 2px;
     stroke: #103b36;
-    &:hover {
+    &.hover {
         cursor: pointer;
         fill: $gold;
     }

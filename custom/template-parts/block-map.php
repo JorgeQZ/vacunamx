@@ -15,8 +15,8 @@
         </div>
 
         <div class="controls">
-            <button onclick="zoomInMap()">+</button>
-            <button onclick="zoomOutMap()">-</button>
+            <button class="zoom-in">+</button>
+            <button class="zoom-out">-</button>
         </div>
     </div>
 </div>
