@@ -14,12 +14,28 @@
     });
 
     $(document).on('mousemove', function (e) {
+
+        console.log(e.clientX, e.pageX, $(window).width());
+        let screen_width = $(window).width();
+
+        let max_limit_posX = screen_width * .7;
+        console.info(max_limit_posX);
+
+        if (screen_width < 1440) {
+            if (e.clientX < max_limit_posX) {
+                $tooltip.removeClass('inverse');
+
+            } else {
+                $tooltip.addClass('inverse');
+            }
+        }
         if ($tooltip.hasClass('active')) {
             $tooltip.css({
                 left: e.clientX + 120,
                 top: e.clientY - 50
             });
         }
+
     });
 
     var zoom = 1;

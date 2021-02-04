@@ -181,6 +181,23 @@
   opacity: 1;
 }
 
+.tooltip-cont.inverse {
+  width: 400px;
+  -webkit-transform: rotateY(180deg) translateX(630px);
+          transform: rotateY(180deg) translateX(630px);
+}
+
+.tooltip-cont.inverse .tooltip-title,
+.tooltip-cont.inverse .tooltip-description {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.tooltip-cont.inverse .tooltip-description:before {
+  content: "";
+  left: calc(100% - 15px);
+}
+
 .tooltip-cont .line-shape {
   background-color: #fff;
   width: 12px;
