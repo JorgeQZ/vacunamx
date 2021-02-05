@@ -21,9 +21,14 @@ $(document).ready(function (e) {
     //         top: -100
     //     });
     //     $('path').removeClass('hover');
-    // });
+    // });+
 
-    $(document).on('mousemove click', function (e) {
+
+    // Draggable map
+    let mapId = 'primaryMap';
+    mapSVG = document.getElementById(mapId);
+
+    $(mapSVG).on('mousemove click', function (e) {
         e.preventDefault();
 
         console.log(e.type);
@@ -56,9 +61,7 @@ $(document).ready(function (e) {
 
 
 
-    // Draggable map
-    let mapId = 'primaryMap';
-    mapSVG = document.getElementById(mapId);
+
 
     $(mapSVG).on('mousedown touchmove', function (e) {
         e.preventDefault();
