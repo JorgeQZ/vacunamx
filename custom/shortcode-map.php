@@ -12,9 +12,9 @@ function map_scripts(){
     $url_states = $directory . 'custom/js/statesData.json';
     $url_states_vaccines = $directory . 'custom/js/vaccines.json';
 
-    if(is_front_page()){
-        wp_register_script( 'map_config', $directory . '/custom/js/mapStatesConfig.js', array('jquery'), false, true  );
-	}
+
+    wp_register_script( 'map_config', $directory . '/custom/js/mapStatesConfig.js', array('jquery'), false,  false  );
+
 
     $request_states = wp_remote_get( $url_states );
 
@@ -42,9 +42,11 @@ function map_scripts(){
 
 function map_leaflet(){
     map_scripts();
+
     ob_start();
     echo '<div id="map"></div>';
     ob_end_flush();
+
 }
 
 add_shortcode('map_leaflet', 'map_leaflet');

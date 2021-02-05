@@ -6,6 +6,9 @@
         <article class="post post-<?php echo $posts[0]->ID ?>">
             <div class="post-title">
                 <?php echo get_the_title($posts[0]->ID); ?>
+                <div class="date">
+                    <p><?php echo get_the_date( $date_format, $posts[0]->ID ); ?></p>
+                </div>
             </div>
             <div class="vermas">
                 <a href="<?php echo get_the_permalink($posts[0]->ID); ?>">

@@ -63,12 +63,17 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .container-news .column:nth-child(1) .grid-news-carousel .item .seemore a:focus, .container-news .column:nth-child(1) .grid-news-carousel .item .seemore a:active {
+    background: transparent;
+    text-decoration: none;
+  }
   .container-news .column:nth-child(1) .grid-news-carousel .item .seemore a span {
     margin: 0 3px;
   }
   .container-news .column:nth-child(1) .grid-news-carousel .item .seemore a span img {
     height: 25px;
     width: auto;
+    outline: none;
   }
   .container-news .column:nth-child(1) .grid-news-carousel .item .content {
     -webkit-box-pack: start;
@@ -183,12 +188,17 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .container-news .column:nth-child(2) .row-item .seemore a:focus, .container-news .column:nth-child(2) .row-item .seemore a:active {
+    background: transparent;
+    text-decoration: none;
+  }
   .container-news .column:nth-child(2) .row-item .seemore a span {
     margin: 0 3px;
   }
   .container-news .column:nth-child(2) .row-item .seemore a span img {
     height: 40px;
     width: auto;
+    outline: none;
   }
 }
 
@@ -285,12 +295,17 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .container-news .column:nth-child(1) .grid-news-carousel .item .seemore a:focus, .container-news .column:nth-child(1) .grid-news-carousel .item .seemore a:active {
+    background: transparent;
+    text-decoration: none;
+  }
   .container-news .column:nth-child(1) .grid-news-carousel .item .seemore a span {
     margin: 0 3px;
   }
   .container-news .column:nth-child(1) .grid-news-carousel .item .seemore a span img {
     height: 25px;
     width: auto;
+    outline: none;
   }
   .container-news .column:nth-child(1) .grid-news-carousel .item .content {
     -webkit-box-pack: start;
@@ -307,8 +322,8 @@
     width: 90%;
     max-width: 700px;
     position: relative;
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
     margin-bottom: 10px;
   }
   .container-news .column:nth-child(1) .grid-news-carousel .item .content .title h3 {
@@ -318,8 +333,8 @@
     line-height: 1;
     position: relative;
     padding-top: 15px;
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
     max-height: 0;
     margin-bottom: 10px;
     overflow: hidden;
@@ -349,8 +364,8 @@
     position: absolute;
     top: 0px;
     left: 0;
-    -webkit-transition: width .4s ease;
-    transition: width .4s ease;
+    -webkit-transition: width 0.4s ease;
+    transition: width 0.4s ease;
   }
   .container-news .column:nth-child(1) .grid-news-carousel .owl-dots {
     height: 35px;
@@ -435,8 +450,8 @@
     line-height: 1;
     position: relative;
     padding-top: 15px;
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
     max-height: 0;
     overflow: hidden;
     width: 90%;
@@ -475,8 +490,8 @@
     bottom: 20px;
     right: 10px;
     z-index: 2;
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
   }
   .container-news .column:nth-child(2) .row-item .seemore:hover {
     background-color: #ca9658;
@@ -494,11 +509,16 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .container-news .column:nth-child(2) .row-item .seemore a:focus, .container-news .column:nth-child(2) .row-item .seemore a:active {
+    background: transparent;
+    text-decoration: none;
+  }
   .container-news .column:nth-child(2) .row-item .seemore a span {
     margin: 0 3px;
   }
   .container-news .column:nth-child(2) .row-item .seemore a span img {
     height: 40px;
     width: auto;
+    outline: none;
   }
 }

@@ -1,13 +1,13 @@
 <?php
 /**
- * Template Name: Blog
+ * Template Name: Noticias
  */
 get_header();
 $current_page = get_query_var('paged');
 $current_page = max( 1, $current_page );
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 $offset_start = 2;
-$per_page = 1;
+$per_page = 4;
 $range = 2;
 $offset = ( $current_page - 1 ) * $per_page + $offset_start;
 ?>

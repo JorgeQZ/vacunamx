@@ -4,21 +4,21 @@
             "properties": {
                 "state_code": 9,
                 "state_name": "Distrito Federal",
-                "vacunados": 30000
+                "vacunados": 100
             }
         },
         {
             "properties": {
                 "state_code": 12,
                 "state_name": "guerrero",
-                "vacunados": 30000
+                "vacunados": 200
             }
         },
         {
             "properties": {
                 "state_code": 19,
                 "state_name": "Nuevo León",
-                "vacunados": 400
+                "vacunados": 1000
             }
         },
         {
