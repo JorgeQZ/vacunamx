@@ -634,3 +634,4 @@ if (-1 !== navigator.userAgent.indexOf('MSIE') || -1 !== navigator.appVersion.in
 add_action( 'wp_footer', 'twentytwentyone_add_ie_class' );
 include "custom/custom-scripts.php";
 include "custom/shortcode-map.php";
+include "custom/shortcode-table.php";
