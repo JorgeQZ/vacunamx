@@ -4,7 +4,7 @@ $(document).ready(function (e) {
 
     $('path').on('mouseenter', function (e) {
         e.preventDefault();
-        // console.log(e.type)
+        console.log(e.type)
         $tooltip.addClass('active');
         $('.tooltip-title').html($(this).attr('title'));
         $('path').removeClass('hover');
@@ -12,21 +12,21 @@ $(document).ready(function (e) {
     });
 
 
-    $('path').on('mouseleave', function (e) {
-        e.preventDefault();
-        // console.log(e.type)
-        $tooltip.removeClass('active');
-        $tooltip.css({
-            left: -100,
-            top: -100
-        });
-        $('path').removeClass('hover');
-    });
+    // $('path').on('mouseleave', function (e) {
+    //     e.preventDefault();
+    //     // console.log(e.type)
+    //     $tooltip.removeClass('active');
+    //     $tooltip.css({
+    //         left: -100,
+    //         top: -100
+    //     });
+    //     $('path').removeClass('hover');
+    // });
 
-    $(document).on('mousemove touchmove', function (e) {
+    $(document).on('mousemove click', function (e) {
         e.preventDefault();
 
-        // console.log(e.type);
+        console.log(e.type);
         let screen_width = $(window).width();
         let max_limit_posX = screen_width * .7;
 
@@ -39,10 +39,17 @@ $(document).ready(function (e) {
         }
 
         if ($tooltip.hasClass('active')) {
-            $tooltip.css({
-                left: e.clientX + 120,
-                top: e.clientY - 50
-            });
+            if (screen_width < 768) {
+                $tooltip.css({
+                    left: e.clientX,
+                    top: e.clientY - 125
+                });
+            } else {
+                $tooltip.css({
+                    left: e.clientX + 120,
+                    top: e.clientY - 50
+                });
+            }
         }
 
     });
@@ -69,6 +76,7 @@ $(document).ready(function (e) {
 $(window).on('scroll', function () {
     let $tooltip = $(".tooltip-cont");
     $tooltip.removeClass('active');
+
     $('path').removeClass('hover');
 
     $tooltip.css({
