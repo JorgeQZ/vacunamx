@@ -1,0 +1,420 @@
+.contenedor-general-calendariovacunacion {
+  position: relative;
+  z-index: 2;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion {
+  margin: 0 auto;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema {
+  width: 100%;
+  margin: 0 auto;
+  padding: 35px 0 20px;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .cont-item {
+  position: relative;
+  margin-right: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .cont-item img {
+  width: 155px;
+  -webkit-filter: contrast(0) opacity(0.6);
+          filter: contrast(0) opacity(0.6);
+  outline: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .cont-item img:focus {
+  outline: 0 !important;
+  border: 0 none !important;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .cont-item .cont-circulos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .cont-item .cont-circulos .circulo {
+  width: 55px;
+  height: 55px;
+  background: #245c4f;
+  background: #b2b2b2;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 30px;
+  margin-right: 5px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  position: relative;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .cont-item .cont-circulos .circulo .sombra {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  width: 125px;
+  height: 35px;
+  background-image: url(../img/sombra-cal_vac.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  opacity: .5;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .cont-item .cont-circulos img {
+  height: auto;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .cont-item .cont-circulos img:nth-child(1) {
+  width: 55px;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .cont-item .cont-circulos img:nth-child(2) {
+  width: 115px;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .cont-item .cont-info {
+  position: absolute;
+  width: 135px;
+  height: 48px;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .cont-item .cont-info p {
+  font-size: 14px;
+  line-height: 14px;
+  color: white;
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .cont-item .cont-index {
+  position: absolute;
+  width: 49px;
+  height: 49px;
+  bottom: 0;
+  left: 0;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .cont-item .cont-index p {
+  font-size: 30px;
+  line-height: 30px;
+  color: white;
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .cont-item .contenedor-info {
+  padding-top: 35px;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .cont-item .contenedor-info h4 {
+  font-size: 14px;
+  line-height: 14px;
+  color: #015c4d;
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: bold;
+  position: relative;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .cont-item .contenedor-info h4:after {
+  content: "";
+  position: absolute;
+  bottom: -7.5px;
+  left: 0;
+  width: 5px;
+  height: 2px;
+  background: #015c4d;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .cont-item .contenedor-info p {
+  font-size: 14px;
+  line-height: 14px;
+  color: #706f6f;
+  margin: 0;
+  font-weight: 600;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .cont-item:hover .cont-circulos .circulo {
+  background: #8d8d8d;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .cont-item:hover .cont-circulos .circulo .sombra {
+  opacity: .85;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .cont-item:hover .cont-circulos img {
+  -webkit-filter: contrast(0) opacity(0.9);
+          filter: contrast(0) opacity(0.9);
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .cont-item.prev .cont-circulos img {
+  -webkit-filter: contrast(1);
+          filter: contrast(1);
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .cont-item.active .cont-circulos .circulo {
+  background: #245c4f;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .cont-item.active .cont-circulos .circulo .sombra {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  opacity: 1;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .cont-item.active .cont-circulos img {
+  -webkit-filter: contrast(1);
+          filter: contrast(1);
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .cont-item.active .contenedor-info {
+  opacity: 1;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .owl-stage-outer {
+  overflow: visible;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .owl-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .owl-item.active {
+  opacity: 1;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .owl-item:last-child .cont-item .cont-circulos img:nth-child(2) {
+  visibility: hidden;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .owl-nav {
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .owl-nav button {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .owl-nav button img {
+  width: 13px;
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .owl-nav button:hover {
+  background: transparent;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .owl-nav button:hover img {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .owl-nav button.disabled {
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+  opacity: 1;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .owl-nav button.disabled img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-general-contenido .contenedor-contenido-tabs .cont-contenido-tab {
+  display: none;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-general-contenido .contenedor-contenido-tabs .cont-contenido-tab .cont-primario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 255px;
+  width: 100%;
+  background-image: url(../img/cont-primario.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0 80px 0 50px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-general-contenido .contenedor-contenido-tabs .cont-contenido-tab .cont-primario .cont-text {
+  width: 100%;
+  max-width: 315px;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-general-contenido .contenedor-contenido-tabs .cont-contenido-tab .cont-primario .cont-text p {
+  font-size: 22px;
+  line-height: 24px;
+  color: white;
+  margin: 0;
+  font-weight: 600;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-general-contenido .contenedor-contenido-tabs .cont-contenido-tab .cont-primario img {
+  padding-top: 10px;
+  height: 100%;
+  width: auto;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-general-contenido .contenedor-contenido-tabs .cont-contenido-tab .cont-primario:before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  width: 0;
+  height: 0;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-bottom: 25px solid #235b50;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-general-contenido .contenedor-contenido-tabs .cont-contenido-tab .cont-primario.pos1::before {
+  left: 2.5%;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-general-contenido .contenedor-contenido-tabs .cont-contenido-tab .cont-primario.pos2::before {
+  left: 20%;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-general-contenido .contenedor-contenido-tabs .cont-contenido-tab .cont-primario.pos3::before {
+  left: 40%;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-general-contenido .contenedor-contenido-tabs .cont-contenido-tab .cont-primario.pos4::before {
+  left: 60%;
+}
+
+.contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-general-contenido .contenedor-contenido-tabs .cont-contenido-tab .cont-primario.pos5::before {
+  left: 80%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-general-contenido .contenedor-contenido-tabs .cont-contenido-tab .cont-primario {
+    padding: 0 40px 0 25px;
+  }
+  .contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-general-contenido .contenedor-contenido-tabs .cont-contenido-tab .cont-primario:before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .owl-item.active img {
+    -webkit-filter: contrast(1);
+            filter: contrast(1);
+  }
+  .contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-esquema .cont-esquema .owl-item.active .contenedor-info {
+    opacity: 1;
+  }
+  .contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-general-contenido .contenedor-contenido-tabs .cont-contenido-tab .cont-primario {
+    padding: 30px 25px 0 25px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-general-contenido .contenedor-contenido-tabs .cont-contenido-tab .cont-primario img {
+    width: 100%;
+  }
+  .contenedor-general-calendariovacunacion .contenedor-calendario-vacunacion .contenedor-general-contenido .contenedor-contenido-tabs .cont-contenido-tab .cont-primario:before {
+    display: none;
+  }
+}

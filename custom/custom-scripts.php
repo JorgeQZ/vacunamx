@@ -28,7 +28,8 @@ function add_theme_scripts() {
         wp_enqueue_style( 'grid-news', get_template_directory_uri() . '/custom/css/grid-news.css', array(), filemtime( get_stylesheet_directory() . '/custom/css/grid-news.css' ), 'all');
 	}
 	else{
-		wp_enqueue_style( 'page', get_template_directory_uri() . '/custom/css/page.css', array(), filemtime( get_stylesheet_directory() . '/custom/css/page.css' ), 'all');
+        wp_enqueue_style( 'page', get_template_directory_uri() . '/custom/css/page.css', array(), filemtime( get_stylesheet_directory() . '/custom/css/page.css' ), 'all');
+        wp_enqueue_style( 'calendariovacunacion', get_template_directory_uri() . '/custom/css/calendariovacunacion.css', array(), filemtime( get_stylesheet_directory() . '/custom/css/calendariovacunacion.css' ), 'all');
 	}
 
 	wp_enqueue_script('generals_js', get_template_directory_uri().'/custom/js/generals.js', array('jquery'),filemtime( get_stylesheet_directory() . '/custom/js/generals.js' ), false);
@@ -61,6 +62,28 @@ function add_theme_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
+
+
+
+add_action('acf/init', 'my_acf_init_block_types');
+function my_acf_init_block_types() {
+
+    // Check function exists.
+    if( function_exists('acf_register_block_type') ) {
+
+        // Carrusel de Nosotros.
+        acf_register_block_type(array(
+            'name'              => 'calendario-vacunacion',
+            'title'             => __('Calendario Vacunación'),
+            'description'       => __('Calendario Vacunación.'),
+            'render_template'   => 'custom/blocks/calendario-vacunacion.php',
+            'category'          => 'formatting',
+            'icon'              => 'star-filled',
+            'keywords'          => array( 'calendario-vacunacion', 'quote' ),
+        ));
+
+    }
+}
 
 
 
