@@ -19,10 +19,12 @@ header {
             }
         }
         .contenedor-menu {
+            width: 100%;
             ul {
                 padding: 0 30px;
                 display: flex;
                 align-items: center;
+                justify-content: center;
                 list-style: none;
                 li {
                     padding: 0 12px;
