@@ -594,3 +594,16 @@
   color: white;
   text-decoration: none;
 }
+
+.overlay {
+  -webkit-transition: -webkit-filter 300ms ease;
+  transition: -webkit-filter 300ms ease;
+  transition: filter 300ms ease;
+  transition: filter 300ms ease, -webkit-filter 300ms ease;
+}
+
+.column:hover > .overlay,
+.row:hover > .overlay {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}

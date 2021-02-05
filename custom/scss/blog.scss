@@ -447,3 +447,15 @@
         }
     }
 }
+
+.overlay {
+    transition: filter 300ms ease;
+}
+.column,
+.row {
+    &:hover {
+        > .overlay {
+            filter: grayscale(1);
+        }
+    }
+}
