@@ -74,6 +74,8 @@ header .contenedor-header .contenedor-menu ul li a:hover {
 header .contenedor-header .contenedor-menu ul li a:focus {
   background: transparent !important;
   color: #bc945b !important;
+  outline: none !important;
+  text-decoration: none !important;
 }
 
 header .contenedor-header .contenedor-menu ul li.current-menu-item a {

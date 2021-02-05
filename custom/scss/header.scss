@@ -45,6 +45,8 @@ header {
                         &:focus {
                             background: transparent !important;
                             color: #bc945b !important;
+                            outline: none !important;
+                            text-decoration: none !important;
                         }
                     }
                     &.current-menu-item {
