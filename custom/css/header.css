@@ -166,6 +166,12 @@ header .contenedor-movil {
   header .contenedor-movil .contenedor-menu ul li a:hover {
     color: #bc945b;
   }
+  header .contenedor-movil .contenedor-menu ul li a:focus {
+    background: transparent !important;
+    color: #bc945b !important;
+    outline: none !important;
+    text-decoration: none !important;
+  }
   header .contenedor-movil .contenedor-menu ul li.active a {
     font-weight: 600;
     color: #bc945b;
