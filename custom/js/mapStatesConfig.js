@@ -29,7 +29,10 @@ $(document).ready(function () {
     let statesData_vaccines = JSON.parse(dataStates.vaccines);
 
     let atributesMap = {
-        "fillOpacity": 0.6
+        "fillOpacity": 0.3,
+        "fillColor": '#fff',
+        "color": '#bd0026',
+        "weight": 2
     }
     let map_mexico = L.geoJson(statesData, { style: atributesMap }).addTo(map);
 
@@ -53,7 +56,8 @@ $(document).ready(function () {
     $.each(statesData_vaccines.features, function (i, item) {
         console.log(item, getColor(item.properties.vacunados));
         $('#' + item.properties.state_code).css({
-            fill: getColor(item.properties.vacunados)
+            fill: getColor(item.properties.vacunados),
+            "fill-opacity": 0.5
         });
     });
 
