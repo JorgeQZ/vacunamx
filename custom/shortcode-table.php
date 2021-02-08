@@ -17,11 +17,13 @@ function table_vaccines(){
         <div class="title">
             CALENDARIO DE ENTREGAS (miles de personas inmunizadas)
         </div>
-        <table>
+    </div>
+    <div class="contenedor-wrapper table-sub-cont">
+        <table class="vaccines" cellspacing="0" cellpadding="0">
             <!-- header -->
             <thead class="header-data">
                 <th></th>
-                <th>
+                <th class="border-right">
                     2020
                 </th>
                 <th colspan="12">
@@ -31,7 +33,7 @@ function table_vaccines(){
             <!-- lab HEADER -->
             <tr class="head-data">
                 <td>
-                    <strong>Laboratorio</strong>
+                    Laboratorio
                 </td>
                 <td>DIC</td>
                 <td>ENE</td>
@@ -130,8 +132,8 @@ function table_vaccines(){
 
             <!-- lab HEADER -->
             <tr class="footer-table">
-                <td>
-                    <strong>TOTAL</strong>
+                <td class="border-right">
+                    TOTAL
                 </td>
                 <td>2,265</td>
                 <td>3,469</td>
@@ -151,15 +153,18 @@ function table_vaccines(){
 
 
         </table>
-
+    </div>
+    <div class="contenedor-wrapper table-sub-cont">
         <div class="desc">
-            Los contratos establecidos hasta hoy permitirían la inmunización de hasta 116.69 millones de personas al término de 2021.
-            <br>
-            <small>
-                (*) / Pendiente de confirmación del fabricante elegido.
-            </small>
+            Los contratos establecidos hasta hoy permitirían la inmunización <br> de hasta 116.69 millones de personas al término de 2021.
+        </div>
+        <div class="desc-small">
+
+            (*) / Pendiente de confirmación del fabricante elegido.
+
         </div>
     </div>
+</div>
 </div>
 <?php
     ob_end_flush();

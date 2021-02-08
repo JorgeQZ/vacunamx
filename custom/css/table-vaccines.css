@@ -1,51 +1,137 @@
 .table-cont {
   background-color: #f8f8f8;
-  padding: 60px 0;
+  padding: 60px 15px;
 }
 
 .table-cont .table-sub-cont {
   overflow-x: auto;
+  width: 100%;
+  padding: 0;
 }
 
 .table-cont .table-sub-cont .title {
-  font-weight: 100;
+  font-weight: bold;
   text-align: center;
   color: #ba1c40;
-  font-size: 25px;
+  font-size: 26px;
+  line-height: 1;
 }
 
 .table-cont .table-sub-cont .desc {
   margin: 0 auto;
-  padding: 30px 0;
+  margin-top: 10px;
+  padding: 5px 0;
   text-align: center;
   color: #ba1c40;
-  font-size: 30px;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 600;
 }
 
-.table-cont .table-sub-cont .desc small {
+.table-cont .table-sub-cont .desc-small {
   color: #1d1d1d;
-}
-
-table {
-  width: 100%;
-  max-width: 1015px;
-}
-
-.header-data,
-.footer-table {
-  background-color: #ba1c40;
-  color: white;
-}
-
-.head-data strong {
+  font-weight: 300;
+  text-align: center;
   font-size: 18px;
+}
+
+.vaccines {
+  margin: 10px 0;
+  border-collapse: collapse;
+  padding: 0;
+  width: 100%;
+}
+
+.vaccines,
+.vaccines th,
+.vaccines tr,
+.vaccines td {
+  border: none;
+  padding: 10px 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1;
+  font-size: 16px;
+}
+
+.head-data {
+  font-family: "Montserrat";
+}
+
+.head-data td {
+  font-weight: bold;
+  line-height: 1;
+  font-size: 20px;
+  padding: 15px 5px;
+}
+
+.head-data td:not(:nth-child(1)) {
+  color: #ba1c40;
+}
+
+.head-data td:first-child {
+  font-size: 24px;
 }
 
 td {
   vertical-align: middle;
   text-align: center;
-  font-size: 12px;
-  padding: 0;
+  font-size: 16px;
   height: 10px;
-  background-color: pink;
+  color: #6e7372;
+}
+
+td:first-child {
+  text-align: left;
+  color: #1d1d1d;
+}
+
+td:last-child {
+  text-align: right;
+}
+
+.header-data,
+.footer-table {
+  background-color: #ba1c40;
+}
+
+.header-data td,
+.header-data th,
+.footer-table td,
+.footer-table th {
+  font-weight: 600;
+  font-style: normal;
+  color: white;
+}
+
+.header-data,
+.header-data th {
+  padding: 5px 5px;
+  font-size: 26px;
+  line-height: 1.3;
+  padding-right: 10px;
+}
+
+.footer-table td:first-child {
+  text-align: left;
+  text-indent: 20px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.border-right {
+  position: relative;
+}
+
+.border-right:before {
+  content: "";
+  height: 70%;
+  position: absolute;
+  right: 0;
+  width: 1px;
+  top: 15%;
+  background-color: white;
 }
