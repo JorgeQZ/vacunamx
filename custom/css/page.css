@@ -43,6 +43,15 @@
   background-repeat: no-repeat;
 }
 
+.contenedor-general-page h1 {
+  font-family: 'GMX';
+  font-size: 46px;
+  line-height: 50px;
+  color: #bc955c;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
 .contenedor-general-page h2 {
   font-size: 26px;
   line-height: 30px;
@@ -77,6 +86,7 @@
   font-size: 18px;
   line-height: 20px;
   margin: 20px 0;
+  color: #272727;
 }
 
 .contenedor-general-page ul {
@@ -168,6 +178,13 @@
   line-height: 20px;
 }
 
+.contenedor-general-page .kt-tabs-content-wrap .wp-block-kadence-tab .uagb-faq-item .uagb-faq-content ul li, .contenedor-general-page .kt-tabs-content-wrap .wp-block-kadence-tab .uagb-faq-item .uagb-faq-content ol li {
+  color: white;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: normal;
+}
+
 .contenedor-general-page .kt-tabs-content-wrap .wp-block-kadence-tab .uagb-faq-item.uagb-faq-item-active {
   background: #005b4c;
 }
@@ -182,6 +199,55 @@
   opacity: 1;
 }
 
+.contenedor-general-page.contenedor-singlepage {
+  background-image: none;
+}
+
+.contenedor-general-page.contenedor-singlepage p {
+  color: #6f7271;
+}
+
+.contenedor-general-page.contenedor-singlepage .contenedor-enc-singlepage {
+  padding: 20px 0 40px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.contenedor-general-page.contenedor-singlepage .contenedor-enc-singlepage h1 {
+  margin-bottom: 0;
+}
+
+.contenedor-general-page.contenedor-singlepage .contenedor-enc-singlepage::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 170px;
+  height: 3px;
+  background: #98989a;
+  border-radius: 10px;
+}
+
+.contenedor-general-page.contenedor-singlepage .fecha {
+  color: #9f2241;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.contenedor-general-page.contenedor-singlepage .fecha::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 8px;
+  height: 2px;
+  background: #98989a;
+  border-radius: 10px;
+}
+
 @media screen and (max-width: 767px) {
   .contenedor-general-banner .cont-contenido-page {
     width: 100%;
@@ -192,6 +258,10 @@
   }
   .contenedor-general-page {
     background-image: unset;
+  }
+  .contenedor-general-page h1 {
+    font-size: 36px;
+    line-height: 40px;
   }
   .contenedor-general-page .kt-tabs-title-list li {
     width: 100%;

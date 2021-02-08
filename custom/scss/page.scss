@@ -35,6 +35,14 @@
     background-position: top right;
     background-size: 373px 800px;
     background-repeat: no-repeat;
+    h1{
+        font-family: 'GMX';
+        font-size: 46px;
+        line-height: 50px;
+        color: #bc955c;
+        margin: 0;
+        margin-bottom: 20px;
+    }
     h2{
         font-size: 26px;
         line-height: 30px;
@@ -67,6 +75,7 @@
         font-size: 18px;
         line-height: 20px;
         margin: 20px 0;
+        color: #272727;
     }
 
     ul{
@@ -78,7 +87,6 @@
             color: #c7a676;
         }
     }
-
 
     .kt-tabs-title-list{
         justify-content: flex-start !important;
@@ -142,6 +150,14 @@
                             line-height: 20px;
                         }
                     }
+                    ul, ol{
+                        li{
+                            color: white;
+                            font-size: 18px;
+                            line-height: 20px;
+                            font-weight: normal;
+                        }
+                    }
                 }
                 &.uagb-faq-item-active{
                     background: #005b4c;
@@ -155,6 +171,49 @@
                         }
                     }
                 }
+            }
+        }
+    }
+
+    &.contenedor-singlepage{
+        background-image: none;
+        p{
+            color: #6f7271;
+        }
+        .contenedor-enc-singlepage{
+            padding: 20px 0 40px;
+            position: relative;
+            margin-bottom: 50px;
+            h1{
+                margin-bottom: 0;
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 170px;
+                height: 3px;
+                background: #98989a;
+                border-radius: 10px;
+            }
+        }
+        .fecha{
+            color: #9f2241;
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: bold;
+            position: relative;
+            margin-bottom: 30px;
+            &::before{
+                content: "";
+                position: absolute;
+                bottom: -15px;
+                left: 0;
+                width: 8px;
+                height: 2px;
+                background: #98989a;
+                border-radius: 10px;
             }
         }
     }
@@ -175,6 +234,10 @@
 
     .contenedor-general-page{
         background-image: unset;
+        h1{
+            font-size: 36px;
+            line-height: 40px;
+        }
         .kt-tabs-title-list{
             li{
                 width: 100%;

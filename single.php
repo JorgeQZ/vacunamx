@@ -15,8 +15,9 @@ get_header();
 while ( have_posts() ) :
 	the_post();
 
-	get_template_part( 'template-parts/content/content-single' );
+	get_template_part( 'custom/template-parts/content-single' );
 
+	
 	if ( is_attachment() ) {
 		// Parent post navigation.
 		the_post_navigation(
@@ -28,6 +29,7 @@ while ( have_posts() ) :
 	}
 
 	// If comments are open or there is at least one comment, load up the comment template.
+	/*
 	if ( comments_open() || get_comments_number() ) {
 		comments_template();
 	}
@@ -45,6 +47,7 @@ while ( have_posts() ) :
 			'prev_text' => '<p class="meta-nav">' . $twentytwentyone_prev . $twentytwentyone_previous_label . '</p><p class="post-title">%title</p>',
 		)
 	);
+	*/
 endwhile; // End of the loop.
 
 get_footer();
