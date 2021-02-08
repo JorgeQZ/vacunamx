@@ -194,7 +194,7 @@
 @media screen and (min-width: 900px) {
     // Variables
     $dot_size: 12px;
-    $carousel_min_height: 400px;
+    $carousel_min_height: 700px;
     $carousel_max_height: 2000px;
     $carousel_height: 70vh;
     $overlay_opacity: 0.6;
@@ -378,7 +378,7 @@
             .row-item {
                 background-color: black;
                 height: $carousel_height/2;
-                min-height: 100px;
+                min-height: $carousel_min_height/2;
 
                 position: relative;
                 display: flex;

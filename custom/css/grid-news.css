@@ -206,7 +206,7 @@
   .container-news {
     margin-top: 0 !important;
     height: 70vh;
-    min-height: 400px;
+    min-height: 700px;
     max-height: 2000px;
     background-color: grey;
     display: -webkit-box;
@@ -242,7 +242,7 @@
   }
   .container-news .column:nth-child(1) .grid-news-carousel .item {
     background-color: black;
-    min-height: 400px;
+    min-height: 700px;
     max-height: 2000px;
     height: 70vh;
     padding: 20px;
@@ -403,7 +403,7 @@
   .container-news .column:nth-child(2) .row-item {
     background-color: black;
     height: 35vh;
-    min-height: 100px;
+    min-height: 350px;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
