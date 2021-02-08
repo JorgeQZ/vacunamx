@@ -618,6 +618,8 @@
 .pag-cont .item.previous img, .pag-cont .item.next img {
   width: 25px;
   outline: none !important;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
 }
 
 .pag-cont .item.previous img.hover, .pag-cont .item.next img.hover {

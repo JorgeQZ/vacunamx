@@ -468,7 +468,7 @@
             img {
                 width: 25px;
                 outline: none !important;
-
+                transition: 300ms ease;
                 &.hover {
                     position: absolute;
                     opacity: 0;
