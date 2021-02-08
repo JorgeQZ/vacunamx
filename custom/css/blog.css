@@ -557,6 +557,19 @@
   color: #ca9658;
 }
 
+.overlay {
+  -webkit-transition: -webkit-filter 300ms ease;
+  transition: -webkit-filter 300ms ease;
+  transition: filter 300ms ease;
+  transition: filter 300ms ease, -webkit-filter 300ms ease;
+}
+
+.column:hover > .overlay,
+.row:hover > .overlay {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
 .pag-cont {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -591,19 +604,46 @@
 .pag-cont .item.current, .pag-cont .item:hover, .pag-cont .item:focus, .pag-cont .item:active {
   background-color: #ba1c40;
   background: #ba1c40 !important;
+  outline: none !important;
   color: white;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
-.overlay {
-  -webkit-transition: -webkit-filter 300ms ease;
-  transition: -webkit-filter 300ms ease;
-  transition: filter 300ms ease;
-  transition: filter 300ms ease, -webkit-filter 300ms ease;
+.pag-cont .item.previous, .pag-cont .item.next {
+  position: relative;
+  width: 25px;
+  border: none;
 }
 
-.column:hover > .overlay,
-.row:hover > .overlay {
-  -webkit-filter: grayscale(1);
-          filter: grayscale(1);
+.pag-cont .item.previous img, .pag-cont .item.next img {
+  width: 25px;
+  outline: none !important;
+}
+
+.pag-cont .item.previous img.hover, .pag-cont .item.next img.hover {
+  position: absolute;
+  opacity: 0;
+}
+
+.pag-cont .item.previous:hover, .pag-cont .item.previous:focus, .pag-cont .item.previous:active, .pag-cont .item.next:hover, .pag-cont .item.next:focus, .pag-cont .item.next:active {
+  background: transparent !important;
+}
+
+.pag-cont .item.previous:hover img, .pag-cont .item.previous:focus img, .pag-cont .item.previous:active img, .pag-cont .item.next:hover img, .pag-cont .item.next:focus img, .pag-cont .item.next:active img {
+  outline: none;
+}
+
+.pag-cont .item.previous:hover img.hover, .pag-cont .item.previous:focus img.hover, .pag-cont .item.previous:active img.hover, .pag-cont .item.next:hover img.hover, .pag-cont .item.next:focus img.hover, .pag-cont .item.next:active img.hover {
+  opacity: 1;
+}
+
+.custom-pag {
+  color: #ba1c40;
+  font-size: 14px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 5px auto;
+  margin-top: 10px;
+  font-weight: bold;
 }
