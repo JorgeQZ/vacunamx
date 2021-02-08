@@ -4,7 +4,7 @@ $(document).ready(function (e) {
 
     $('path').on('mouseenter', function (e) {
         e.preventDefault();
-        console.log(e.type)
+
         $tooltip.addClass('active');
         $('.tooltip-title').html($(this).attr('title'));
         $('path').removeClass('hover');
@@ -31,7 +31,7 @@ $(document).ready(function (e) {
     $(mapSVG).on('mousemove click', function (e) {
         e.preventDefault();
 
-        console.log(e.type);
+
         let screen_width = $(window).width();
         let max_limit_posX = screen_width * .7;
 

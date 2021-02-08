@@ -3,9 +3,49 @@
   padding: 60px 0;
 }
 
-.table-cont .title {
+.table-cont .table-sub-cont {
+  overflow-x: auto;
+}
+
+.table-cont .table-sub-cont .title {
   font-weight: 100;
   text-align: center;
   color: #ba1c40;
   font-size: 25px;
+}
+
+.table-cont .table-sub-cont .desc {
+  margin: 0 auto;
+  padding: 30px 0;
+  text-align: center;
+  color: #ba1c40;
+  font-size: 30px;
+}
+
+.table-cont .table-sub-cont .desc small {
+  color: #1d1d1d;
+}
+
+table {
+  width: 100%;
+  max-width: 1015px;
+}
+
+.header-data,
+.footer-table {
+  background-color: #ba1c40;
+  color: white;
+}
+
+.head-data strong {
+  font-size: 18px;
+}
+
+td {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 12px;
+  padding: 0;
+  height: 10px;
+  background-color: pink;
 }
