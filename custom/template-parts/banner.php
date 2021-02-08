@@ -14,7 +14,11 @@
             <div class="contenedor-wrapper">
                 <div class="cont-contenido-page">
                     <h1>
-                        <?php the_title(); ?>
+                        <?php
+                            if (!is_singular('post')) {
+                                the_title();
+                            }
+                        ?>
                     </h1>
                 </div>
             </div>
