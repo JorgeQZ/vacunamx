@@ -65,7 +65,7 @@
                     </p>
                 </div>
                 <div class="cont-imagen">
-                    <img src="<?php echo get_template_directory_uri().'/custom/img/como-funciona-la-vacuna.png';?>" alt="">
+                    <img src="<?php echo get_template_directory_uri().'/custom/img/como-funciona-la-vacuna2.png';?>" alt="">
                 </div>
             </div>
             <div class="contenedor-item">
