@@ -175,6 +175,13 @@
         }
     }
 
+    .a-center{
+        align-items: center;
+        .uagb-columns__inner-wrap{
+            align-items: center;
+        }
+    }
+
     &.contenedor-singlepage{
         background-image: none;
         p{
