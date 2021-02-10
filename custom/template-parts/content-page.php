@@ -36,4 +36,10 @@
 
 	</div>
 
+	<?php
+		if( get_field('calendario_de_entregas')){
+			echo do_shortcode('[table_vaccines]');
+		}
+	?>
+
 </article><!-- #post-<?php the_ID(); ?> -->
