@@ -82,6 +82,14 @@
   background: #ca9658;
 }
 
+.contenedor-general-page h3 {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: bold;
+  color: #245c4f;
+  margin-bottom: 20px;
+}
+
 .contenedor-general-page p {
   font-size: 18px;
   line-height: 20px;
@@ -98,6 +106,18 @@
   line-height: 20px;
   font-weight: 600;
   color: #c7a676;
+}
+
+.contenedor-general-page .blocks-gallery-grid {
+  padding-left: 0;
+}
+
+.contenedor-general-page .s-margin {
+  margin-bottom: 0;
+}
+
+.contenedor-general-page .m-l-special {
+  margin-left: 5px;
 }
 
 .contenedor-general-page .kt-tabs-title-list {
@@ -258,6 +278,11 @@
   height: 2px;
   background: #98989a;
   border-radius: 10px;
+}
+
+.contenedor-general-page.contenedor-general-fullwidth {
+  background-image: none;
+  padding: 0;
 }
 
 @media screen and (max-width: 767px) {

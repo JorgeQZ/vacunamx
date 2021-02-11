@@ -70,6 +70,13 @@
             background: #ca9658;
         }
     }
+    h3{
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: bold;
+        color: #245c4f;
+        margin-bottom: 20px;
+    }
 
     p{
         font-size: 18px;
@@ -86,6 +93,18 @@
             font-weight: 600;
             color: #c7a676;
         }
+    }
+
+    .blocks-gallery-grid{
+        padding-left: 0;
+    }
+
+    .s-margin{
+        margin-bottom: 0;
+    }
+
+    .m-l-special{
+        margin-left: 5px;
     }
 
     .kt-tabs-title-list{
@@ -225,6 +244,10 @@
         }
     }
 
+    &.contenedor-general-fullwidth{
+        background-image: none;
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 767px){
