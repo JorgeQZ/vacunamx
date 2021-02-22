@@ -1,6 +1,7 @@
 .table-cont {
   background-color: #f8f8f8;
   padding: 60px 15px;
+  margin-top: 0 !important;
 }
 
 .table-cont .table-sub-cont {
