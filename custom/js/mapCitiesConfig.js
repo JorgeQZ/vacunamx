@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var map = new L.Map("map", {
+    var map = new L.Map("map-cities", {
         center: [24.760001, -102.618469],
         zoom: 4.58,
 
@@ -23,22 +23,25 @@ $(document).ready(function () {
     }).addTo(map);
 
     // Get shapes of states
-    let statesData = JSON.parse(dataStates.states);
+    let citiesData = JSON.parse(dataCities.cities);
 
     // Get number of vaccines by statest
-    let statesData_vaccines = JSON.parse(dataStates.vaccines);
+    let citiesData_vaccines = JSON.parse(dataCities.vaccines);
 
     let atributesMap = {
-        "fillOpacity": 0.3,
+        "fillOpacity": 0.1,
         "fillColor": '#fff',
-        "color": '#bd0026',
-        "weight": 2
+        "color": '#ff00334f',
+        "weight": 1
     }
-    let map_mexico = L.geoJson(statesData, { style: atributesMap }).addTo(map);
+    let map_mexico = L.geoJson(citiesData, { style: atributesMap }).addTo(map);
 
     // Set to each path an ID
     map_mexico.eachLayer(function (layer) {
-        layer._path.id = layer.feature.properties.state_code;
+        layer._path.id = layer.feature.properties.state_code + '_' + layer.feature.properties.mun_code;
+        layer._path.setAttribute('mun_code', layer.feature.properties.mun_code)
+        layer._path.setAttribute('mun_name', layer.feature.properties.mun_name)
+        layer._path.setAttribute('state_code', layer.feature.properties.state_code)
     }).addTo(map);
 
     function getColor(d) {
@@ -53,10 +56,10 @@ $(document).ready(function () {
     }
 
     // Set color state by vaccines
-    $.each(statesData_vaccines.features, function (i, item) {
-        // console.log(item, getColor(item.properties.vacunados));
-        $('#' + item.properties.state_code).css({
-            fill: getColor(item.properties.vacunados),
+    $.each(citiesData_vaccines, function (i, item) {
+        console.log(item, i);
+        $('#' + item.state_code + '_' + item.mun_code).css({
+            fill: getColor(item.vacunados),
             "fill-opacity": 0.5
         });
     });

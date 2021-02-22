@@ -1,0 +1,14 @@
+{
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "id": null,
+                "state_code": 9,
+                "mun_code": 12,
+                "mun_name": "Tlalpan",
+                "vacunados": 100
+            }
+        }
+    ]
+}
