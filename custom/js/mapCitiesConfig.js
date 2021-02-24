@@ -31,8 +31,8 @@ $(document).ready(function () {
     let atributesMap = {
         "fillOpacity": 0.1,
         "fillColor": '#fff',
-        "color": '#ff00334f',
-        "weight": 1
+        "color": '#05ff0073',
+        "weight": 0.5
     }
     let map_mexico = L.geoJson(citiesData, { style: atributesMap }).addTo(map);
 
@@ -55,12 +55,23 @@ $(document).ready(function () {
                                     '#FFEDA0';
     }
 
+    function getOpacity(d) {
+        return d > 1000 ? '1' :
+            d > 500 ? '0.9' :
+                d > 200 ? '0.8' :
+                    d > 100 ? '0.7' :
+                        d > 50 ? '0.6' :
+                            d > 20 ? '0.5' :
+                                d > 10 ? '0.4' :
+                                    '0.3';
+    }
+
     // Set color state by vaccines
     $.each(citiesData_vaccines, function (i, item) {
         console.log(item, i);
         $('#' + item.state_code + '_' + item.mun_code).css({
-            fill: getColor(item.vacunados),
-            "fill-opacity": 0.5
+            fill: 'green',
+            "fill-opacity": getOpacity(item.vacunados)
         });
     });
 

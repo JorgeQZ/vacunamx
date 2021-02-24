@@ -165,6 +165,102 @@ function table_vaccines(){
         </div>
     </div>
 </div>
+
+
+<div class="table-cont">
+    <div class="contenedor-wrapper table-sub-cont">
+        <div class="title">
+            Estatus regulatorio de las vacunas contra el virus SARS-CoV-2 en México
+        </div>
+    </div>
+    <div class="contenedor-wrapper table-sub-cont">
+        <table cellspacing="0" cellpadding="0" class="vaccines  vaccines_alt">
+            <!-- header -->
+            <thead class="header-data_min">
+                <th>Vacuna (farmacéutica)</th>
+                <th>Plataforma de diseño</th>
+                <th>Dosis de esquema</th>
+                <th>Fase de ensayo clínico</th>
+                <th>Estatus regulatorio en México</th>
+                <th>Fecha de autorización</th>
+                <th>Estudio clínico en México</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>BNT162b2</strong><br>(Pfizer, Inc,/BioNTech)</td>
+                    <td>ARNm</td>
+                    <td>2</td>
+                    <td>III</td>
+                    <td>Autorizada para uso de emergencia</td>
+                    <td>11/12/2020</td>
+                    <td>NO</td>
+                </tr>
+                <tr>
+                    <td><strong>AZD1222</strong><br>(AstraZeneca/Universidad de Oxford)</td>
+                    <td>Adenovirus</td>
+                    <td>2</td>
+                    <td>III</td>
+                    <td>Autorizada para uso de emergencia</td>
+                    <td>04/01/201</td>
+                    <td>NO</td>
+                </tr>
+                <tr>
+                    <td><strong>Sputnik V</strong><br>(Instituto Gamaleya)</td>
+                    <td>Vector viral no replicante</td>
+                    <td>2</td>
+                    <td>III</td>
+                    <td>Autorizada para uso de emergencia</td>
+                    <td>09/02/2021</td>
+                    <td>Solicitud en proceso de revisión</td>
+                </tr>
+                <tr>
+                    <td><strong>Ad5-nCoV</strong><br>(CanSino Biologics Inc)</td>
+                    <td>Vector viral no replicante</td>
+                    <td>1</td>
+                    <td>III</td>
+                    <td>Autorizada para uso de emergencia</td>
+                    <td>09/02/2021</td>
+                    <td>Protocolo de estudio fase III autorizada</td>
+                </tr>
+                <tr>
+                    <td><strong>CoronaVac</strong><br>(Sinovac Research and Development Co)</td>
+                    <td>Virus Inactivo</td>
+                    <td>2</td>
+                    <td>III</td>
+                    <td>Autorizada para uso de emergencia</td>
+                    <td>09/02/2021</td>
+                    <td>NO</td>
+                </tr>
+                <tr>
+                    <td><strong>Ad26.COV2.5</strong><br>(Janssen/Johnson & Johnson)</td>
+                    <td>Adenovirus</td>
+                    <td>1</td>
+                    <td>III</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>Protocolo de estudio fase III autorizado</td>
+                </tr>
+                <tr>
+                    <td><strong>CVnCoV</strong><br>(CureVac AG)</td>
+                    <td>ARNm</td>
+                    <td>2</td>
+                    <td>III</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>Protocolo de estudio fase III autorizado</td>
+                </tr>
+                <tr>
+                    <td><strong>NVX-CoV2373</strong><br>(Novavax, Inc)</td>
+                    <td>Subunidad proteica</td>
+                    <td>2</td>
+                    <td>III</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>Protocolo de estudio fase III autorizado</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
 <?php
     ob_end_flush();
