@@ -95,6 +95,94 @@
         }
     }
 
+    .formulario-efectosadversos{
+        width: 50%;
+        min-width: 477px;
+        margin: 0 auto;
+        label{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: #0a221e;
+            span{
+                width: 56%;
+                input{
+                    width: calc(100% - 20px);
+                    height: 40px;
+                    outline: none;
+                    margin-left: 20px;
+                    border: 1px solid #a0a0a3;
+                    &.wpcf7-not-valid{
+                        margin-bottom: 10px;
+                    }
+                }
+                select{
+                    width: calc(100% - 20px);
+                    height: 40px;
+                    outline: none;
+                    margin-left: 20px;
+                    border: 1px solid #a0a0a3;
+                    padding: 0px 10px;
+                    &.wpcf7-not-valid{
+                        margin-bottom: 10px;
+                    }
+                }
+                textarea{
+                    width: calc(100% - 20px);
+                    height: 100px;
+                    outline: none;
+                    margin-left: 20px;
+                    border: 1px solid #a0a0a3;
+                    resize: none;
+                    &.wpcf7-not-valid{
+                        margin-bottom: 5px;
+                    }
+                }
+                .wpcf7-not-valid-tip{
+                    width: 100%;
+                    font-size: 12px;
+                    position: absolute;
+                    bottom: -10px;
+                    left: 20px;
+                }
+            }
+        }
+        br{
+            display: none;
+        }
+        input[type="submit"]{
+            float: right;
+            font-size: 14px;
+            background: #ba1c40;
+            color: white;
+            border: 0;
+            padding: 10px 30px;
+            border: 1px solid #ba1c40;
+            outline: none;
+            transition: all .3s;
+            &:hover{
+                color: #ba1c40;
+                background: transparent;
+            }
+        }
+    }
+
+    .wpcf7-response-output{
+        margin: 0 !important;
+        padding: 0 !important;
+        border: 0 !important;
+        margin-top: 50px !important;
+        font-size: 14px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        text-decoration: underline;
+        color: #0a221e;
+    }
+
     .blocks-gallery-grid{
         padding-left: 0;
     }
@@ -267,6 +355,31 @@
         h1{
             font-size: 36px;
             line-height: 40px;
+        }
+        .formulario-efectosadversos{
+            width: 100%;
+            min-width: unset;
+            label{
+                flex-direction: column;
+                span{
+                    width: 100%;
+                    input{
+                        margin-left: 0;
+                        width: 100%;
+                    }
+                    select{
+                        margin-left: 0;
+                        width: 100%;
+                    }
+                    textarea{
+                        margin-left: 0;
+                        width: 100%;
+                    }
+                    .wpcf7-not-valid-tip{
+                        left: 0;
+                    }
+                }
+            }
         }
         .kt-tabs-title-list{
             li{
