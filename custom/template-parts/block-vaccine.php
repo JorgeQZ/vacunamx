@@ -1,12 +1,12 @@
 <div class="container-vaccine">
     <div class="contenedor-tabs">
-        <div class="tab active" tab="1">Etapa 1</div>
-        <div class="tab" tab="2">Etapa 2</div>
+        <div class="tab" tab="1">Etapa 1</div>
+        <div class="tab active btn-active" tab="2">Etapa 2</div>
         <div class="tab" tab="3">Etapa 3</div>
         <div class="tab" tab="4">Etapa 4</div>
     </div>
     <div class="contenedor-contenido-tabs">
-        <div class="contenido-tab active">
+        <div class="contenido-tab">
             <div class="contenedor-wrapper vaccine-content">
                 <div class="info-box">
                     Total de personas vacunadas <strong>en etapa 1</strong>
@@ -35,7 +35,7 @@
                 </div>
             </div>
         </div>
-        <div class="contenido-tab">
+        <div class="contenido-tab active">
             <div class="contenedor-wrapper vaccine-content">
                 <div class="info-box">
                     Total de personas vacunadas <strong>en etapa 2</strong>
@@ -54,7 +54,7 @@
                             Población total Adultos mayores 
                         </div>
                         <div id="numbers_text" class="datoprincipal">
-                            <span class="count">4460754</span>
+                            <span class="count">4793417</span>
                         </div>
                     </div>
                     <img srcset="<?php echo get_template_directory_uri().'/custom/img/jeringa.png'?>" alt="Vacuna">

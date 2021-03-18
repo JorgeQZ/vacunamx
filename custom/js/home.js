@@ -5,10 +5,8 @@ $(document).ready(function () {
 
     // // Animacion de numeros
     let waypoint_numbers = new Waypoint({
-        element: document.getElementsByClassName('numbers')[0],
+        element: document.getElementsByClassName('numbers')[1],
         handler: function (direction) {
-
-            console.log("fafa");
 
             const obj = $('.datoprincipal').get(0);
             if (canAnimate) {
@@ -17,7 +15,7 @@ $(document).ready(function () {
                 //animateValue(obj, 0, 15, 1700);
                 animarDatos();
             }
-            $('.container-vaccine .contenedor-contenido-tabs .contenido-tab:nth-child(1) .vaccine-content .img-vaccine .cont-animacion .cont-contenido').addClass("actual");
+            $('.container-vaccine .contenedor-contenido-tabs .contenido-tab:nth-child(2) .vaccine-content .img-vaccine .cont-animacion .cont-contenido').addClass("actual");
 
         },
         offset: '100%',
@@ -49,7 +47,7 @@ $(document).ready(function () {
     });
 
     // Click Vacuna
-    $('.container-vaccine .contenedor-tabs .tab').on('click', function (e) {
+    $('.container-vaccine .contenedor-tabs .tab.btn-active').on('click', function (e) {
         e.preventDefault();
         if (!$(this).hasClass('active')) {
             $('.container-vaccine .contenedor-tabs .tab.active').removeClass('active');
