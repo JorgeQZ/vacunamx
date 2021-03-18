@@ -35,7 +35,19 @@ $(document).ready(function () {
         }, {
             offset: '75%',
             triggerOnce: true
-        })
+        });
+
+        $('.contenedor-tabs')
+        .css({ 'opacity': '0' })
+        .waypoint(function (direction) {
+            if (direction === 'down') {
+                $(this.element).addClass('animate__fadeIn animate__animated');
+            }
+
+        }, {
+            offset: '75%',
+            triggerOnce: true
+        });
 
     // // Click en etapas
     $('.cont-item').on('click', function (e) {
