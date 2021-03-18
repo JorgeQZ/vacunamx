@@ -15,7 +15,10 @@
     position: relative;
     margin: 0 !important;
     .cont-contenido-page {
-        width: 63%;
+        width: 80%;
+        margin: 0 auto;
+        border: 2px solid white;
+        padding: 25px 7%;
         h1 {
             color: white;
             margin: 0;
@@ -24,6 +27,7 @@
             font-size: 44px;
             line-height: 46px;
             position: relative;
+            text-align: center;
         }
     }
 }
@@ -87,11 +91,13 @@
 
     ul{
         padding-left: 20px;
+        color: #272727;
         li{
             font-size: 18px;
             line-height: 20px;
-            font-weight: 600;
-            color: #c7a676;
+            strong{
+                font-weight: 600;
+            }
         }
     }
 
@@ -343,9 +349,10 @@
     .contenedor-general-banner {
         .cont-contenido-page {
             width: 100%;
+            padding: 30px 10px;
             h1 {
-                font-size: 34px;
-                line-height: 36px;
+                font-size: 28px;
+                line-height: 30px;
             }
         }
     }

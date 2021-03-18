@@ -21,7 +21,10 @@
 }
 
 .contenedor-general-banner .cont-contenido-page {
-  width: 63%;
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid white;
+  padding: 25px 7%;
 }
 
 .contenedor-general-banner .cont-contenido-page h1 {
@@ -32,6 +35,7 @@
   font-size: 44px;
   line-height: 46px;
   position: relative;
+  text-align: center;
 }
 
 .contenedor-general-page {
@@ -99,13 +103,16 @@
 
 .contenedor-general-page ul {
   padding-left: 20px;
+  color: #272727;
 }
 
 .contenedor-general-page ul li {
   font-size: 18px;
   line-height: 20px;
+}
+
+.contenedor-general-page ul li strong {
   font-weight: 600;
-  color: #c7a676;
 }
 
 .contenedor-general-page .formulario-efectosadversos {
@@ -399,10 +406,11 @@
 @media screen and (max-width: 767px) {
   .contenedor-general-banner .cont-contenido-page {
     width: 100%;
+    padding: 30px 10px;
   }
   .contenedor-general-banner .cont-contenido-page h1 {
-    font-size: 34px;
-    line-height: 36px;
+    font-size: 28px;
+    line-height: 30px;
   }
   .contenedor-general-page {
     background-image: unset;

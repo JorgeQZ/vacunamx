@@ -134,6 +134,9 @@ header {
                                 outline: none !important;
                                 text-decoration: none !important;
                             }
+                            br{
+                                display: none;
+                            }
                         }
                         &.active {
                             a {
