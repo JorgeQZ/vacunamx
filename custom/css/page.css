@@ -21,7 +21,10 @@
 }
 
 .contenedor-general-banner .cont-contenido-page {
-  width: 63%;
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid white;
+  padding: 25px 7%;
 }
 
 .contenedor-general-banner .cont-contenido-page h1 {
@@ -32,6 +35,7 @@
   font-size: 44px;
   line-height: 46px;
   position: relative;
+  text-align: center;
 }
 
 .contenedor-general-page {
@@ -99,13 +103,127 @@
 
 .contenedor-general-page ul {
   padding-left: 20px;
+  color: #272727;
 }
 
 .contenedor-general-page ul li {
   font-size: 18px;
   line-height: 20px;
+}
+
+.contenedor-general-page ul li strong {
   font-weight: 600;
-  color: #c7a676;
+}
+
+.contenedor-general-page .formulario-efectosadversos {
+  width: 50%;
+  min-width: 477px;
+  margin: 0 auto;
+}
+
+.contenedor-general-page .formulario-efectosadversos label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #0a221e;
+}
+
+.contenedor-general-page .formulario-efectosadversos label span {
+  width: 56%;
+}
+
+.contenedor-general-page .formulario-efectosadversos label span input {
+  width: calc(100% - 20px);
+  height: 40px;
+  outline: none;
+  margin-left: 20px;
+  border: 1px solid #a0a0a3;
+}
+
+.contenedor-general-page .formulario-efectosadversos label span input.wpcf7-not-valid {
+  margin-bottom: 10px;
+}
+
+.contenedor-general-page .formulario-efectosadversos label span select {
+  width: calc(100% - 20px);
+  height: 40px;
+  outline: none;
+  margin-left: 20px;
+  border: 1px solid #a0a0a3;
+  padding: 0px 10px;
+}
+
+.contenedor-general-page .formulario-efectosadversos label span select.wpcf7-not-valid {
+  margin-bottom: 10px;
+}
+
+.contenedor-general-page .formulario-efectosadversos label span textarea {
+  width: calc(100% - 20px);
+  height: 100px;
+  outline: none;
+  margin-left: 20px;
+  border: 1px solid #a0a0a3;
+  resize: none;
+}
+
+.contenedor-general-page .formulario-efectosadversos label span textarea.wpcf7-not-valid {
+  margin-bottom: 5px;
+}
+
+.contenedor-general-page .formulario-efectosadversos label span .wpcf7-not-valid-tip {
+  width: 100%;
+  font-size: 12px;
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+}
+
+.contenedor-general-page .formulario-efectosadversos br {
+  display: none;
+}
+
+.contenedor-general-page .formulario-efectosadversos input[type="submit"] {
+  float: right;
+  font-size: 14px;
+  background: #ba1c40;
+  color: white;
+  border: 0;
+  padding: 10px 30px;
+  border: 1px solid #ba1c40;
+  outline: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.contenedor-general-page .formulario-efectosadversos input[type="submit"]:hover {
+  color: #ba1c40;
+  background: transparent;
+}
+
+.contenedor-general-page .wpcf7-response-output {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  margin-top: 50px !important;
+  font-size: 14px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  text-decoration: underline;
+  color: #0a221e;
 }
 
 .contenedor-general-page .blocks-gallery-grid {
@@ -288,10 +406,11 @@
 @media screen and (max-width: 767px) {
   .contenedor-general-banner .cont-contenido-page {
     width: 100%;
+    padding: 30px 10px;
   }
   .contenedor-general-banner .cont-contenido-page h1 {
-    font-size: 34px;
-    line-height: 36px;
+    font-size: 28px;
+    line-height: 30px;
   }
   .contenedor-general-page {
     background-image: unset;
@@ -299,6 +418,34 @@
   .contenedor-general-page h1 {
     font-size: 36px;
     line-height: 40px;
+  }
+  .contenedor-general-page .formulario-efectosadversos {
+    width: 100%;
+    min-width: unset;
+  }
+  .contenedor-general-page .formulario-efectosadversos label {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contenedor-general-page .formulario-efectosadversos label span {
+    width: 100%;
+  }
+  .contenedor-general-page .formulario-efectosadversos label span input {
+    margin-left: 0;
+    width: 100%;
+  }
+  .contenedor-general-page .formulario-efectosadversos label span select {
+    margin-left: 0;
+    width: 100%;
+  }
+  .contenedor-general-page .formulario-efectosadversos label span textarea {
+    margin-left: 0;
+    width: 100%;
+  }
+  .contenedor-general-page .formulario-efectosadversos label span .wpcf7-not-valid-tip {
+    left: 0;
   }
   .contenedor-general-page .kt-tabs-title-list li {
     width: 100%;

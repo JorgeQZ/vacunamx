@@ -172,6 +172,9 @@ header .contenedor-movil {
     outline: none !important;
     text-decoration: none !important;
   }
+  header .contenedor-movil .contenedor-menu ul li a br {
+    display: none;
+  }
   header .contenedor-movil .contenedor-menu ul li.active a {
     font-weight: 600;
     color: #bc945b;

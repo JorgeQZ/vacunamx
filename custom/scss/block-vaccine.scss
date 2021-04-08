@@ -16,6 +16,42 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
+        .contenedor-tabs{
+            position: absolute;
+            top: 20px;
+            display: flex;
+            width: 252px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            .tab{
+                padding: 2px 7px;
+                border: 1px solid #002d26;
+                background: transparent;
+                color: #002d26;
+                font-weight: bold;
+                font-size: 12px;
+                cursor: pointer;
+                transition: all .3s;
+                &:hover{
+                    background: #002d26;
+                    color: white;
+                }
+                &.active{
+                    background: #002d26;
+                    color: white;
+                }
+            }
+        }
+        .contenedor-contenido-tabs{
+            .contenido-tab{
+                display: none;
+                &.active{
+                    display: block;
+                }
+            }
+        }
         .vaccine-content {
             .info-box {
                 color: $darkGreen;
@@ -43,7 +79,7 @@
             }
 
             .img-vaccine {
-                margin-bottom: 40px;
+                margin-bottom: 60px;
                 position: relative;
                 margin-top: 100px;
                 .numbers {
@@ -66,9 +102,41 @@
                     z-index: 9;
                     //color: $gold;
                     color: #ca9658;
+                    .datoprincipal{
+                        font-weight: bold;
+                    }
                     .subtext {
                         font-size: 10px;
                         color: $lightGrey;
+                    }
+                }
+                .numbers-total {
+                    position: absolute;
+                    top: inherit;
+                    bottom: -70px;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    height: 70px;
+                    width: 200px;
+                    font-size: 38px;
+                    text-align: center;
+                    line-height: 1.2;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin: 0 auto;
+                    font-weight: bolder;
+                    z-index: 9;
+                    //color: $gold;
+                    color: #005b4c;
+                    .datoprincipal{
+                        font-weight: bold;
+                    }
+                    .subtext {
+                        font-size: 10px;
+                        color: #005b4c;
                     }
                 }
                 .cont-animacion{
@@ -124,6 +192,16 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        .contenedor-tabs{
+            top: 30px;
+            right: 20%;
+            width: auto;
+            left: inherit;
+            .tab{
+                padding: 2px 15px;
+                font-size: 14px;
+            }
+        }
         .vaccine-content {
             .info-box {
                 color: $darkGreen;
@@ -175,6 +253,30 @@
                         font-size: 10px;
                         //color: $lightGrey;
                         color: white;
+                    }
+                }
+                .numbers-total {
+                    position: absolute;
+                    height: 70px;
+                    width: 200px;
+                    font-size: 38px;
+                    text-align: center;
+                    line-height: 1.2;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    top: calc(23% - 35px);
+                    bottom: inherit;
+                    font-weight: bolder;
+                    left: inherit;
+                    right: -2.5%;
+                    color: #005b4c;
+                    //color: $gold;
+                    .subtext {
+                        font-size: 10px;
+                        //color: $lightGrey;
+                        color: #005b4c;
                     }
                 }
                 /*
