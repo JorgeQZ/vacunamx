@@ -58,8 +58,14 @@ $(document).ready(function () {
         }
     });
 
+    var actualInicial = $('.container-vaccine .contenedor-tabs .tab.btn-active:nth-child(2)').attr("valorPrincipal");
+    var actualPosicion = $('.container-vaccine .contenedor-tabs .tab.btn-active:nth-child(2)').attr("valorPosition");
+    $("<style type='text/css'> .container-vaccine .vaccine-content .img-vaccine .cont-animacion .cont-contenido.actual { width: "+ actualInicial +"%; } .container-vaccine .vaccine-content .img-vaccine .numbers{ left: "+ actualPosicion +"%; } </style>").appendTo("head");
+
     // Click Vacuna
     $('.container-vaccine .contenedor-tabs .tab.btn-active').on('click', function (e) {
+        var valorPrincipal = $(this).attr("valorPrincipal");
+        var valorPosition = $(this).attr("valorPosition");
         e.preventDefault();
         if (!$(this).hasClass('active')) {
             $('.container-vaccine .contenedor-tabs .tab.active').removeClass('active');
@@ -69,12 +75,16 @@ $(document).ready(function () {
             $(".container-vaccine .contenedor-contenido-tabs .contenido-tab").eq(indice-1).fadeIn(500);
             //animarDatos();
             $('.container-vaccine .vaccine-content .img-vaccine .cont-animacion .cont-contenido').removeClass("actual");
-            $('.container-vaccine .contenedor-contenido-tabs .contenido-tab:nth-child('+ indice +') .vaccine-content .img-vaccine .cont-animacion .cont-contenido').addClass("actual");
-            /*
-            .animate({
-                width:'60%'
+            
+            $('.container-vaccine .vaccine-content .img-vaccine .cont-animacion .cont-contenido').css("width","");
+            
+            //$('.container-vaccine .contenedor-contenido-tabs .contenido-tab:nth-child('+ indice +') .vaccine-content .img-vaccine .cont-animacion .cont-contenido').addClass("actual");
+            
+            $('.container-vaccine .contenedor-contenido-tabs .contenido-tab:nth-child('+ indice +') .vaccine-content .img-vaccine .cont-animacion .cont-contenido').animate({
+                width: valorPrincipal+'%'
             });
-            */
+            $('.container-vaccine .contenedor-contenido-tabs .contenido-tab:nth-child('+ indice +') .vaccine-content .img-vaccine .numbers').css("left", valorPosition+'%' );
+            
             $('.container-vaccine .contenedor-contenido-tabs .contenido-tab:nth-child('+ indice +') .datos-vacunacion').addClass('animate__fadeInUp animate__animated');
         }
     });
