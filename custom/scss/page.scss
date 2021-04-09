@@ -173,6 +173,34 @@
                 background: transparent;
             }
         }
+        .wpcf7-checkbox{
+            display: block;
+            label{
+                margin-bottom: 0;
+                .wpcf7-list-item-label{
+                    width: 85%;
+                    margin-left: 20px;
+                    font-size: 12px;
+                    line-height: 14px;
+                }
+            }
+            + .wpcf7-not-valid-tip{
+                width: 100%;
+                font-size: 12px;
+                margin-left: 88px;
+            }
+        }
+        small{
+            display: block;
+            font-size: 12px;
+            line-height: 14px;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            a{
+                text-decoration: underline;
+            }
+        }
     }
 
     .wpcf7-response-output{
@@ -385,6 +413,14 @@
                     .wpcf7-not-valid-tip{
                         left: 0;
                     }
+                }
+            }
+            .wpcf7-checkbox{
+                label{
+                    flex-direction: row;
+                }
+                + .wpcf7-not-valid-tip{
+                    margin-left: 65px;
                 }
             }
         }

@@ -208,6 +208,40 @@
   background: transparent;
 }
 
+.contenedor-general-page .formulario-efectosadversos .wpcf7-checkbox {
+  display: block;
+}
+
+.contenedor-general-page .formulario-efectosadversos .wpcf7-checkbox label {
+  margin-bottom: 0;
+}
+
+.contenedor-general-page .formulario-efectosadversos .wpcf7-checkbox label .wpcf7-list-item-label {
+  width: 85%;
+  margin-left: 20px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.contenedor-general-page .formulario-efectosadversos .wpcf7-checkbox + .wpcf7-not-valid-tip {
+  width: 100%;
+  font-size: 12px;
+  margin-left: 88px;
+}
+
+.contenedor-general-page .formulario-efectosadversos small {
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.contenedor-general-page .formulario-efectosadversos small a {
+  text-decoration: underline;
+}
+
 .contenedor-general-page .wpcf7-response-output {
   margin: 0 !important;
   padding: 0 !important;
@@ -446,6 +480,15 @@
   }
   .contenedor-general-page .formulario-efectosadversos label span .wpcf7-not-valid-tip {
     left: 0;
+  }
+  .contenedor-general-page .formulario-efectosadversos .wpcf7-checkbox label {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contenedor-general-page .formulario-efectosadversos .wpcf7-checkbox + .wpcf7-not-valid-tip {
+    margin-left: 65px;
   }
   .contenedor-general-page .kt-tabs-title-list li {
     width: 100%;

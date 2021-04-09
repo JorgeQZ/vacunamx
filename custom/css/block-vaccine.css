@@ -188,7 +188,7 @@
     position: relative;
   }
   .container-vaccine .vaccine-content .img-vaccine .cont-animacion .cont-contenido.actual {
-    width: 82%;
+    width: 0%;
   }
   .container-vaccine .vaccine-content .img-vaccine img {
     width: 100%;
