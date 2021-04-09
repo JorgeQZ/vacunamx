@@ -57,7 +57,10 @@ function add_theme_scripts() {
 
         wp_enqueue_style( 'blog', get_template_directory_uri() . '/custom/css/blog.css', array(), filemtime( get_stylesheet_directory() . '/custom/css/blog.css' ), 'all');
 
-	}
+    }
+
+    wp_enqueue_style( 'accesibilidad', get_template_directory_uri() . '/custom/css/accesibilidad.css', array(), filemtime( get_stylesheet_directory() . '/custom/css/accesibilidad.css' ), 'all');
+
 
 }
 

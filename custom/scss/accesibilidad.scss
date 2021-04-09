@@ -1,0 +1,268 @@
+/* Accessability */
+
+/*
+--- Alto contraste ---
+*/
+body.pojo-a11y-high-contrast .site {
+    header .contenedor-header .menu .menu-item {
+        background: #0a221e !important;
+    }
+
+    header {
+        background: #0a221e !important;
+
+        .contenedor-header, .menu {
+            background: #0a221e !important;
+        }
+
+        .contenedor-header #menu-menu-principal {
+            background: #0a221e !important;
+        }
+
+        a {
+            color: white !important;
+        }
+    }
+
+    footer {
+        background: #0a221e !important;
+        background-color: #0a221e !important;
+
+        .contenedor-footer {
+            background: #0a221e !important;
+
+            .contenedor-logo, .contenedor-enlaces {
+                background: #0a221e !important;
+
+                a {
+                    color: white !important;
+                    border: 1px solid #bc945b;
+                    padding: 1px;
+                    margin-bottom: 2px;
+                }
+            }
+        }
+    }
+
+    header .contenedor-header .contenedor-menu {
+        .menu a {
+            padding: 2px 1px;
+            border: 1px solid #bc945b;
+        }
+
+        ul li.current-menu-item a:link {
+            color: #bc945b;
+        }
+    }
+
+    header img, footer img {
+        border: 1px solid #bc945b;
+        background: none !important;
+        padding: 3px;
+    }
+
+    .contenedor-general-etapasvacunacion,
+    .container-map,
+    .contenedor-general-modulos {
+        background-color: #0a221e !important;
+        border: 1px solid #bc945b;
+
+        h2 {
+            color: #bc945b !important;
+        }
+    }
+
+    .container-vaccine {
+        background-color: #fff !important;
+
+        .contenedor-wrapper, .contenedor-contenido-tabs, .contenido-tab, .img-vaccine, .cont-animacion {
+            background-color: transparent !important;
+        }
+
+        .info-inbox {
+            background: black !important;
+            background-color: black !important;
+        }
+
+        .tab.active {
+            background-color: #bc945b !important;
+        }
+    }
+
+    .contenedor-esquema .cont-item {
+        background: none !important;
+        padding: 2px;
+        border: 1px solid #bc945b;
+
+        .cont-info, .cont-index, img {
+            background: none !important;
+            padding: 2px;
+        }
+
+        .contenedor-info {
+            padding: 2px;
+            border: 1px solid #bc945b;
+
+            h4 {
+                color: #bc945b !important;
+            }
+        }
+    }
+
+    .contenedor-general-etapasvacunacion .contenedor-etapas-vacunacion {
+        background: none !important;
+
+        .contenedor-enc {
+            background: none !important;
+        }
+    }
+
+    .container-vaccine .vaccine-content .img-vaccine img {
+        background: transparent !important;
+        background-color: transparent !important;
+    }
+
+    .container-vaccine .vaccine-content .img-vaccine .cont-animacion .cont-contenido {
+        background: #bc945b !important;
+        background-color: #bc945b !important;
+    }
+
+    strong, h1, h2, h3, h4, a {
+        color: #bc945b !important;
+    }
+
+    .title {
+        h1, h2, h3, h4 {
+            color: #bc945b !important;
+        }
+    }
+
+    .subtext {
+        position: relative;
+        z-index: 1;
+    }
+
+    .line-shape {
+        background-color: #bc945b !important;
+    }
+
+    .container-map {
+        // background-image: url(../img/map_bg.jpg) !important;
+        background-color: #0a221e !important;
+
+        .controls {
+            button {
+                background-color: #bc945b !important;
+            }
+        }
+    }
+
+    .contenedor-wrapper {
+        background: #0a221e !important;
+        background-color: #0a221e !important;
+
+        .title {
+            background: #0a221e !important;
+            background-color: #0a221e !important;
+        }
+
+        .map {
+            background: #0a221e !important;
+            background-color: #0a221e !important;
+
+            svg {
+                background: #0a221e !important;
+                background-color: #0a221e !important;
+            }
+        }
+    }
+
+    .doc {
+        background: transparent !important;
+        background-color: transparent !important;
+        background-image: none !important;
+
+        img {
+            background: transparent !important;
+            background-color: transparent !important;
+            background-image: none !important;
+        }
+    }
+
+    // Slider
+    .owl-nav, .owl-dots {
+        button {
+            background: #bc945b !important;
+            background-color: #bc945b !important;
+
+            img {
+                background-color: transparent !important;
+            }
+        }
+    }
+
+    .tooltip-cont {
+        border: 2px solid #0a221e;
+    }
+
+    .seemore {
+        border: 1px solid #bc945b !important;
+
+        a span {
+            color: #bc945b !important;
+
+            img {
+                background-color: transparent !important;
+            }
+        }
+    }
+
+    .contenedor-item {
+        padding: 2px 10px;
+    }
+
+    .contenedor-bullet {
+        border: 1px solid #bc945b !important;
+
+        &.active {
+            p {
+                color: #bc945b !important;
+            }
+        }
+    }
+}
+
+/**
+* Contraste Negativo
+*/
+
+body.pojo-a11y-negative-contrast {
+    .site {
+        background: #0a221e !important;
+        background-color: #0a221e !important;
+
+        header {
+            background: #0a221e !important;
+            background-color: #0a221e !important;
+        }
+
+        .container-vaccine {
+            .img-vaccine {
+                img {
+                    background: none !important;
+                    background-color: transparent !important;
+                }
+            }
+
+            .cont-animacion {
+                background: none !important;
+                background-color: transparent !important;
+
+                .cont-contenido {
+                    background: #bc945b !important;
+                    background-color: #bc945b !important;
+                }
+            }
+        }
+    }
+}

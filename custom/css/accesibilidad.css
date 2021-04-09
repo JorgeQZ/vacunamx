@@ -1,0 +1,248 @@
+/* Accessability */
+/*
+--- Alto contraste ---
+*/
+body.pojo-a11y-high-contrast .site header .contenedor-header .menu .menu-item {
+  background: #0a221e !important;
+}
+
+body.pojo-a11y-high-contrast .site header {
+  background: #0a221e !important;
+}
+
+body.pojo-a11y-high-contrast .site header .contenedor-header, body.pojo-a11y-high-contrast .site header .menu {
+  background: #0a221e !important;
+}
+
+body.pojo-a11y-high-contrast .site header .contenedor-header #menu-menu-principal {
+  background: #0a221e !important;
+}
+
+body.pojo-a11y-high-contrast .site header a {
+  color: white !important;
+}
+
+body.pojo-a11y-high-contrast .site footer {
+  background: #0a221e !important;
+  background-color: #0a221e !important;
+}
+
+body.pojo-a11y-high-contrast .site footer .contenedor-footer {
+  background: #0a221e !important;
+}
+
+body.pojo-a11y-high-contrast .site footer .contenedor-footer .contenedor-logo, body.pojo-a11y-high-contrast .site footer .contenedor-footer .contenedor-enlaces {
+  background: #0a221e !important;
+}
+
+body.pojo-a11y-high-contrast .site footer .contenedor-footer .contenedor-logo a, body.pojo-a11y-high-contrast .site footer .contenedor-footer .contenedor-enlaces a {
+  color: white !important;
+  border: 1px solid #bc945b;
+  padding: 1px;
+  margin-bottom: 2px;
+}
+
+body.pojo-a11y-high-contrast .site header .contenedor-header .contenedor-menu .menu a {
+  padding: 2px 1px;
+  border: 1px solid #bc945b;
+}
+
+body.pojo-a11y-high-contrast .site header .contenedor-header .contenedor-menu ul li.current-menu-item a:link {
+  color: #bc945b;
+}
+
+body.pojo-a11y-high-contrast .site header img, body.pojo-a11y-high-contrast .site footer img {
+  border: 1px solid #bc945b;
+  background: none !important;
+  padding: 3px;
+}
+
+body.pojo-a11y-high-contrast .site .contenedor-general-etapasvacunacion,
+body.pojo-a11y-high-contrast .site .container-map,
+body.pojo-a11y-high-contrast .site .contenedor-general-modulos {
+  background-color: #0a221e !important;
+  border: 1px solid #bc945b;
+}
+
+body.pojo-a11y-high-contrast .site .contenedor-general-etapasvacunacion h2,
+body.pojo-a11y-high-contrast .site .container-map h2,
+body.pojo-a11y-high-contrast .site .contenedor-general-modulos h2 {
+  color: #bc945b !important;
+}
+
+body.pojo-a11y-high-contrast .site .container-vaccine {
+  background-color: #fff !important;
+}
+
+body.pojo-a11y-high-contrast .site .container-vaccine .contenedor-wrapper, body.pojo-a11y-high-contrast .site .container-vaccine .contenedor-contenido-tabs, body.pojo-a11y-high-contrast .site .container-vaccine .contenido-tab, body.pojo-a11y-high-contrast .site .container-vaccine .img-vaccine, body.pojo-a11y-high-contrast .site .container-vaccine .cont-animacion {
+  background-color: transparent !important;
+}
+
+body.pojo-a11y-high-contrast .site .container-vaccine .info-inbox {
+  background: black !important;
+  background-color: black !important;
+}
+
+body.pojo-a11y-high-contrast .site .container-vaccine .tab.active {
+  background-color: #bc945b !important;
+}
+
+body.pojo-a11y-high-contrast .site .contenedor-esquema .cont-item {
+  background: none !important;
+  padding: 2px;
+  border: 1px solid #bc945b;
+}
+
+body.pojo-a11y-high-contrast .site .contenedor-esquema .cont-item .cont-info, body.pojo-a11y-high-contrast .site .contenedor-esquema .cont-item .cont-index, body.pojo-a11y-high-contrast .site .contenedor-esquema .cont-item img {
+  background: none !important;
+  padding: 2px;
+}
+
+body.pojo-a11y-high-contrast .site .contenedor-esquema .cont-item .contenedor-info {
+  padding: 2px;
+  border: 1px solid #bc945b;
+}
+
+body.pojo-a11y-high-contrast .site .contenedor-esquema .cont-item .contenedor-info h4 {
+  color: #bc945b !important;
+}
+
+body.pojo-a11y-high-contrast .site .contenedor-general-etapasvacunacion .contenedor-etapas-vacunacion {
+  background: none !important;
+}
+
+body.pojo-a11y-high-contrast .site .contenedor-general-etapasvacunacion .contenedor-etapas-vacunacion .contenedor-enc {
+  background: none !important;
+}
+
+body.pojo-a11y-high-contrast .site .container-vaccine .vaccine-content .img-vaccine img {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+body.pojo-a11y-high-contrast .site .container-vaccine .vaccine-content .img-vaccine .cont-animacion .cont-contenido {
+  background: #bc945b !important;
+  background-color: #bc945b !important;
+}
+
+body.pojo-a11y-high-contrast .site strong, body.pojo-a11y-high-contrast .site h1, body.pojo-a11y-high-contrast .site h2, body.pojo-a11y-high-contrast .site h3, body.pojo-a11y-high-contrast .site h4, body.pojo-a11y-high-contrast .site a {
+  color: #bc945b !important;
+}
+
+body.pojo-a11y-high-contrast .site .title h1, body.pojo-a11y-high-contrast .site .title h2, body.pojo-a11y-high-contrast .site .title h3, body.pojo-a11y-high-contrast .site .title h4 {
+  color: #bc945b !important;
+}
+
+body.pojo-a11y-high-contrast .site .subtext {
+  position: relative;
+  z-index: 1;
+}
+
+body.pojo-a11y-high-contrast .site .line-shape {
+  background-color: #bc945b !important;
+}
+
+body.pojo-a11y-high-contrast .site .container-map {
+  background-color: #0a221e !important;
+}
+
+body.pojo-a11y-high-contrast .site .container-map .controls button {
+  background-color: #bc945b !important;
+}
+
+body.pojo-a11y-high-contrast .site .contenedor-wrapper {
+  background: #0a221e !important;
+  background-color: #0a221e !important;
+}
+
+body.pojo-a11y-high-contrast .site .contenedor-wrapper .title {
+  background: #0a221e !important;
+  background-color: #0a221e !important;
+}
+
+body.pojo-a11y-high-contrast .site .contenedor-wrapper .map {
+  background: #0a221e !important;
+  background-color: #0a221e !important;
+}
+
+body.pojo-a11y-high-contrast .site .contenedor-wrapper .map svg {
+  background: #0a221e !important;
+  background-color: #0a221e !important;
+}
+
+body.pojo-a11y-high-contrast .site .doc {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+body.pojo-a11y-high-contrast .site .doc img {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+body.pojo-a11y-high-contrast .site .owl-nav button, body.pojo-a11y-high-contrast .site .owl-dots button {
+  background: #bc945b !important;
+  background-color: #bc945b !important;
+}
+
+body.pojo-a11y-high-contrast .site .owl-nav button img, body.pojo-a11y-high-contrast .site .owl-dots button img {
+  background-color: transparent !important;
+}
+
+body.pojo-a11y-high-contrast .site .tooltip-cont {
+  border: 2px solid #0a221e;
+}
+
+body.pojo-a11y-high-contrast .site .seemore {
+  border: 1px solid #bc945b !important;
+}
+
+body.pojo-a11y-high-contrast .site .seemore a span {
+  color: #bc945b !important;
+}
+
+body.pojo-a11y-high-contrast .site .seemore a span img {
+  background-color: transparent !important;
+}
+
+body.pojo-a11y-high-contrast .site .contenedor-item {
+  padding: 2px 10px;
+}
+
+body.pojo-a11y-high-contrast .site .contenedor-bullet {
+  border: 1px solid #bc945b !important;
+}
+
+body.pojo-a11y-high-contrast .site .contenedor-bullet.active p {
+  color: #bc945b !important;
+}
+
+/**
+* Contraste Negativo
+*/
+body.pojo-a11y-negative-contrast .site {
+  background: #0a221e !important;
+  background-color: #0a221e !important;
+}
+
+body.pojo-a11y-negative-contrast .site header {
+  background: #0a221e !important;
+  background-color: #0a221e !important;
+}
+
+body.pojo-a11y-negative-contrast .site .container-vaccine .img-vaccine img {
+  background: none !important;
+  background-color: transparent !important;
+}
+
+body.pojo-a11y-negative-contrast .site .container-vaccine .cont-animacion {
+  background: none !important;
+  background-color: transparent !important;
+}
+
+body.pojo-a11y-negative-contrast .site .container-vaccine .cont-animacion .cont-contenido {
+  background: #bc945b !important;
+  background-color: #bc945b !important;
+}
