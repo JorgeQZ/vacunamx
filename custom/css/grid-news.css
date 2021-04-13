@@ -167,6 +167,9 @@
   .container-news .column:nth-child(2) .row-item .content .title h3 {
     font-weight: 800;
   }
+  .container-news .column:nth-child(2) .row-item .content .content-note {
+    display: none;
+  }
   .container-news .column:nth-child(2) .row-item .seemore {
     position: absolute;
     font-size: 16px;

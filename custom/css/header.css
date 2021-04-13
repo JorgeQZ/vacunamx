@@ -136,6 +136,14 @@ header .contenedor-movil {
     transition: transform 400ms ease;
     transition: transform 400ms ease, -webkit-transform 400ms ease;
   }
+  header .contenedor-header .cont-burguer .burguer.active span:nth-child(1) {
+    -webkit-transform: rotateZ(45deg) translate(4px, 4px);
+            transform: rotateZ(45deg) translate(4px, 4px);
+  }
+  header .contenedor-header .cont-burguer .burguer.active span:nth-child(2) {
+    -webkit-transform: rotateZ(-45deg) translate(3px, -3px);
+            transform: rotateZ(-45deg) translate(3px, -3px);
+  }
   header .contenedor-movil {
     display: block;
     position: fixed;

@@ -6,7 +6,8 @@ $(document).ready(function (e) {
         e.preventDefault();
 
         $tooltip.addClass('active');
-        $('.tooltip-title').html($(this).attr('title'));
+        $('.tooltip-title').html($(this).attr('data-title'));
+        $('.tooltip-number').html($(this).attr('data-vacunados'));
         $('path').removeClass('hover');
         $(this).addClass('hover');
     });

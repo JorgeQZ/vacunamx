@@ -5,6 +5,7 @@ header {
     position: fixed;
     z-index: 100;
     width: 100%;
+
     .contenedor-header {
         width: 100%;
         max-width: 955px;
@@ -12,20 +13,24 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         .contenedor-logo {
             img {
                 width: auto;
                 height: 25px;
             }
         }
+
         .contenedor-menu {
             width: 100%;
+
             ul {
                 padding: 0 30px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 list-style: none;
+
                 li {
                     padding: 0 12px;
                     max-width: 135px;
@@ -36,12 +41,15 @@ header {
                     height: 39px;
                     display: flex;
                     align-items: center;
+
                     a {
                         color: white;
                         transition: all 0.3s;
+
                         &:hover {
                             color: #bc945b;
                         }
+
                         &:focus {
                             background: transparent !important;
                             color: #bc945b !important;
@@ -49,11 +57,13 @@ header {
                             text-decoration: none !important;
                         }
                     }
+
                     &.current-menu-item {
                         a {
                             font-weight: 600;
                             color: #bc945b;
                         }
+
                         &::after {
                             content: "";
                             position: absolute;
@@ -71,6 +81,7 @@ header {
             }
         }
     }
+
     .contenedor-movil {
         display: none;
     }
@@ -80,9 +91,11 @@ header {
     header {
         .contenedor-header {
             width: 90%;
+
             .contenedor-menu {
                 display: none;
             }
+
             .cont-burguer {
                 .burguer {
                     width: 35px;
@@ -93,6 +106,7 @@ header {
                     flex-direction: column;
                     z-index: 1000;
                     cursor: pointer;
+
                     span {
                         width: 90%;
                         height: 2px;
@@ -100,9 +114,22 @@ header {
                         background-color: #fff;
                         transition: transform 400ms ease;
                     }
+
+                    &.active {
+                        span {
+                            &:nth-child(1) {
+                                transform: rotateZ(45deg) translate(4px, 4px);
+                            }
+
+                            &:nth-child(2) {
+                                transform: rotateZ(-45deg) translate(3px, -3px);
+                            }
+                        }
+                    }
                 }
             }
         }
+
         .contenedor-movil {
             display: block;
             position: fixed;
@@ -114,30 +141,37 @@ header {
             z-index: 9;
             padding-top: 50px;
             transition: right 600ms ease;
+
             .contenedor-menu {
                 ul {
                     padding: 0 30px;
                     list-style: none;
+
                     li {
                         padding: 0 12px;
                         font-size: 14px;
                         line-height: 20px;
+
                         a {
                             color: white;
                             transition: all 0.3s;
+
                             &:hover {
                                 color: #bc945b;
                             }
+
                             &:focus {
                                 background: transparent !important;
                                 color: #bc945b !important;
                                 outline: none !important;
                                 text-decoration: none !important;
                             }
-                            br{
+
+                            br {
                                 display: none;
                             }
                         }
+
                         &.active {
                             a {
                                 font-weight: 600;
@@ -147,6 +181,7 @@ header {
                     }
                 }
             }
+
             &.active {
                 right: 0;
             }
@@ -158,21 +193,26 @@ header {
     header {
         .contenedor-movil {
             max-width: 300px;
+
             .contenedor-menu {
                 ul {
                     padding: 0 30px;
                     list-style: none;
+
                     li {
                         padding: 0 12px;
                         font-size: 14px;
                         line-height: 20px;
+
                         a {
                             color: white;
                             transition: all 0.3s;
+
                             &:hover {
                                 color: #bc945b;
                             }
                         }
+
                         &.active {
                             a {
                                 font-weight: 600;
@@ -182,6 +222,7 @@ header {
                     }
                 }
             }
+
             .contenedor-movil {
                 transition: right 2000ms linear;
             }

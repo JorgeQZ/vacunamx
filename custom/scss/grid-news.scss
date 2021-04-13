@@ -1,4 +1,5 @@
 @import "variables";
+
 @media screen and (min-width: 0) {
     // Variables
     $dot_size: 12px;
@@ -6,6 +7,7 @@
     $carousel_max_height: 600px;
     $carousel_height: 50vh;
     $overlay_opacity: 0.6;
+
     .container-news {
         background-color: grey;
         display: flex;
@@ -28,8 +30,8 @@
         .column:nth-child(1) {
             .grid-news-carousel {
                 position: relative;
-
                 overflow: hidden;
+
                 .item {
                     background-color: black;
                     min-height: $carousel_min_height;
@@ -47,19 +49,23 @@
                         bottom: 10px;
                         right: 10px;
                         z-index: 2;
+
                         a {
                             position: relative;
                             color: white;
                             display: flex;
                             align-items: center;
                             justify-content: center;
+
                             &:focus,
                             &:active {
                                 background: transparent;
                                 text-decoration: none;
                             }
+
                             span {
                                 margin: 0 3px;
+
                                 img {
                                     height: 25px;
                                     width: auto;
@@ -123,11 +129,13 @@
                 }
             }
         }
+
         .column:nth-child(2) {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+
             .row-item {
                 min-height: $carousel_min_height;
                 max-height: $carousel_max_height;
@@ -145,6 +153,7 @@
                     position: relative;
                     z-index: 1;
                     color: white;
+
                     .title {
                         line-height: 1;
                         margin-bottom: 5px;
@@ -156,6 +165,10 @@
                             font-weight: 800;
                         }
                     }
+
+                    .content-note {
+                        display: none;
+                    }
                 }
 
                 .seemore {
@@ -165,19 +178,23 @@
                     bottom: 20px;
                     right: 10px;
                     z-index: 2;
+
                     a {
                         position: relative;
                         color: white;
                         display: flex;
                         align-items: center;
                         justify-content: center;
+
                         &:focus,
                         &:active {
                             background: transparent;
                             text-decoration: none;
                         }
+
                         span {
                             margin: 0 3px;
+
                             img {
                                 height: 40px;
                                 width: auto;
@@ -198,17 +215,18 @@
     $carousel_max_height: 2000px;
     $carousel_height: 70vh;
     $overlay_opacity: 0.6;
+
     .container-news {
         margin-top: 0 !important;
         height: $carousel_height;
         min-height: $carousel_min_height;
         max-height: $carousel_max_height;
-
         background-color: grey;
         display: flex;
         align-items: stretch;
         flex-direction: row;
         justify-content: center;
+
         .column {
             width: 50%;
         }
@@ -228,6 +246,7 @@
         .column:nth-child(1) {
             .grid-news-carousel {
                 position: relative;
+
                 .item {
                     background-color: black;
                     min-height: $carousel_min_height;
@@ -251,12 +270,14 @@
                             .content-note {
                                 max-height: 100px;
                                 opacity: 1;
+
                                 &:before {
                                     width: 10px;
                                 }
                             }
                         }
                     }
+
                     .seemore {
                         position: absolute;
                         font-size: 16px;
@@ -265,22 +286,27 @@
                         right: 10px;
                         z-index: 2;
                         transition: all 400ms ease;
+
                         &:hover {
                             background-color: $gold;
                         }
+
                         a {
                             position: relative;
                             color: white;
                             display: flex;
                             align-items: center;
                             justify-content: center;
+
                             &:focus,
                             &:active {
                                 background: transparent;
                                 text-decoration: none;
                             }
+
                             span {
                                 margin: 0 3px;
+
                                 img {
                                     height: 25px;
                                     width: auto;
@@ -304,10 +330,12 @@
                             position: relative;
                             transition: all 0.4s ease;
                             margin-bottom: 10px;
+
                             h3 {
                                 font-weight: 800;
                             }
                         }
+
                         .content-note {
                             line-height: 1;
                             position: relative;
@@ -318,13 +346,16 @@
                             overflow: hidden;
                             width: 90%;
                             opacity: 0;
+
                             p {
                                 margin: 0;
                             }
+
                             .date {
                                 font-size: 14px;
                                 margin-top: 10px;
                             }
+
                             .excerpt {
                                 line-height: 1.2;
                                 width: 100%;
@@ -333,6 +364,7 @@
                                 font-size: 20px;
                                 letter-spacing: 1px;
                             }
+
                             &::before {
                                 content: "";
                                 width: 0;
@@ -353,6 +385,7 @@
                     margin: 0 auto;
                     position: relative;
                     margin-top: -35px;
+
                     button {
                         span {
                             background-color: transparent;
@@ -370,18 +403,20 @@
                 }
             }
         }
+
         .column:nth-child(2) {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+
             .row-item {
                 background-color: black;
-                height: $carousel_height/2;
-                min-height: $carousel_min_height/2;
-
+                height: $carousel_height / 2;
+                min-height: $carousel_min_height / 2;
                 position: relative;
                 display: flex;
+
                 .overlay {
                     transition: filter 400ms ease;
                 }
@@ -390,17 +425,20 @@
                     .overlay {
                         filter: grayscale(1);
                     }
+
                     .content {
                         .content-note {
                             margin-bottom: 0;
                             max-height: 100px;
                             opacity: 1;
+
                             &:before {
                                 width: 10px;
                             }
                         }
                     }
                 }
+
                 .content {
                     padding: 20px;
                     width: 100%;
@@ -408,6 +446,7 @@
                     position: relative;
                     z-index: 1;
                     color: white;
+
                     .title {
                         line-height: 1;
                         margin-bottom: 5px;
@@ -429,13 +468,16 @@
                         overflow: hidden;
                         width: 90%;
                         opacity: 0;
+
                         p {
                             margin: 0;
                         }
+
                         .date {
                             font-size: 14px;
                             margin-top: 10px;
                         }
+
                         .excerpt {
                             line-height: 1.2;
                             width: 100%;
@@ -444,6 +486,7 @@
                             font-size: 20px;
                             letter-spacing: 1px;
                         }
+
                         &::before {
                             content: "";
                             width: 0;
@@ -465,22 +508,27 @@
                     right: 10px;
                     z-index: 2;
                     transition: all 0.4s ease;
+
                     &:hover {
                         background-color: $gold;
                     }
+
                     a {
                         position: relative;
                         color: white;
                         display: flex;
                         align-items: center;
                         justify-content: center;
+
                         &:focus,
                         &:active {
                             background: transparent;
                             text-decoration: none;
                         }
+
                         span {
                             margin: 0 3px;
+
                             img {
                                 height: 40px;
                                 width: auto;

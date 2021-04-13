@@ -23,7 +23,7 @@
         <div class="cont-burguer">
             <div class="burguer">
                 <span></span>
-                <span></span>
+
                 <span></span>
             </div>
         </div>

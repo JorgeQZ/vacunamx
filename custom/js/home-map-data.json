@@ -1,0 +1,132 @@
+{
+    "Vacunas": [
+        {
+            "Estado": "Aguascalientes",
+            "vacunados": "135,446"
+        },
+        {
+            "Estado": "Baja California",
+            "vacunados": "236,531"
+        },
+        {
+            "Estado": "Baja California Sur",
+            "vacunados": "84,606"
+        },
+        {
+            "Estado": "Campeche",
+            "vacunados": "163,147"
+        },
+        {
+            "Estado": "Chiapas",
+            "vacunados": "221,403"
+        },
+        {
+            "Estado": "Chihuahua",
+            "vacunados": "290,929"
+        },
+        {
+            "Estado": "Ciudad de México",
+            "vacunados": "1,870,855"
+        },
+        {
+            "Estado": "Coahuila",
+            "vacunados": "321,216"
+        },
+        {
+            "Estado": "Colima",
+            "vacunados": "81,319"
+        },
+        {
+            "Estado": "Durango",
+            "vacunados": "164,374"
+        },
+        {
+            "Estado": "Estado de México",
+            "vacunados": "1,832,243"
+        },
+        {
+            "Estado": "Guanajuato",
+            "vacunados": "559,477"
+        },
+        {
+            "Estado": "Guerrero",
+            "vacunados": "227,832"
+        },
+        {
+            "Estado": "Hidalgo",
+            "vacunados": "351,953"
+        },
+        {
+            "Estado": "Jalisco",
+            "vacunados": "779,491"
+        },
+        {
+            "Estado": "Michoacán",
+            "vacunados": "390,117"
+        },
+        {
+            "Estado": "Morelos",
+            "vacunados": "228,990"
+        },
+        {
+            "Estado": "Nayarit",
+            "vacunados": "124,018"
+        },
+        {
+            "Estado": "Nuevo León",
+            "vacunados": "412,740"
+        },
+        {
+            "Estado": "Oaxaca",
+            "vacunados": "265,270"
+        },
+        {
+            "Estado": "Puebla",
+            "vacunados": "355,973"
+        },
+        {
+            "Estado": "Querétaro",
+            "vacunados": "191,274"
+        },
+        {
+            "Estado": "Quintana Roo",
+            "vacunados": "125,066"
+        },
+        {
+            "Estado": "San Luis Potosí",
+            "vacunados": "199,505"
+        },
+        {
+            "Estado": "Sinaloa",
+            "vacunados": "340,301"
+        },
+        {
+            "Estado": "Sonora",
+            "vacunados": "332,421"
+        },
+        {
+            "Estado": "Tabasco",
+            "vacunados": "169,433"
+        },
+        {
+            "Estado": "Tamaulipas",
+            "vacunados": "257,685"
+        },
+        {
+            "Estado": "Tlaxcala",
+            "vacunados": "138,201"
+        },
+        {
+            "Estado": "Veracruz",
+            "vacunados": "674,202"
+        },
+        {
+            "Estado": "Yucatán",
+            "vacunados": "196,926"
+        },
+        {
+            "Estado": "Zacatecas",
+            "vacunados": "130,755"
+        }
+    ]
+}
