@@ -199,6 +199,36 @@
             margin-bottom: 20px;
             a{
                 text-decoration: underline;
+                &:focus{
+                    background: transparent !important;
+                    outline-width: 0px !important;
+                    color: #000 !important;
+                }
+            }
+        }
+        .div-check{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .wpcf7-form-control.wpcf7-checkbox{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            input[type="checkbox"]{
+                width: 50px;
+            }
+            .desc{
+                font-size: 12px;
+                line-height: 14px;
+                a{
+                    text-decoration: underline;
+                    &:focus{
+                        background: transparent !important;
+                        outline-width: 0px !important;
+                        color: #000 !important;
+                    }
+                }
             }
         }
     }

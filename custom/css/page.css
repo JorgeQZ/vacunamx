@@ -242,6 +242,55 @@
   text-decoration: underline;
 }
 
+.contenedor-general-page .formulario-efectosadversos small a:focus {
+  background: transparent !important;
+  outline-width: 0px !important;
+  color: #000 !important;
+}
+
+.contenedor-general-page .formulario-efectosadversos .div-check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenedor-general-page .formulario-efectosadversos .div-check .wpcf7-form-control.wpcf7-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenedor-general-page .formulario-efectosadversos .div-check input[type="checkbox"] {
+  width: 50px;
+}
+
+.contenedor-general-page .formulario-efectosadversos .div-check .desc {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.contenedor-general-page .formulario-efectosadversos .div-check .desc a {
+  text-decoration: underline;
+}
+
+.contenedor-general-page .formulario-efectosadversos .div-check .desc a:focus {
+  background: transparent !important;
+  outline-width: 0px !important;
+  color: #000 !important;
+}
+
 .contenedor-general-page .wpcf7-response-output {
   margin: 0 !important;
   padding: 0 !important;
