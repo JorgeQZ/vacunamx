@@ -20,8 +20,8 @@
             <ul>
                 <li><a href="#">Es el portal único de trámites, información y participación ciudadana. Leer más…</a></li>
                 <li><a href="#">Declaración de accesibilidad</a></li>
-                <li><a href="#">Aviso de privacidad integral</a></li>
-                <li><a href="#">Aviso de privacidad simplificado</a></li>
+                <li><a href="aviso-de-privacidad-integral/">Aviso de privacidad integral</a></li>
+                <li><a href="aviso-de-privacidad-simplificado/">Aviso de privacidad simplificado</a></li>
                 <li><a href="#">Términos y condiciones</a></li>
                 <li><a href="#">Política de seguridad</a></li>
                 <li><a href="#">Marco Jurídico</a></li>
