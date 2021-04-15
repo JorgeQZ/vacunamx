@@ -159,9 +159,7 @@ function table_vaccines(){
             Los contratos establecidos hasta hoy permitirían la inmunización <br> de hasta 116.69 millones de personas al término de 2021.
         </div>
         <div class="desc-small">
-
-            (*) / Pendiente de confirmación del fabricante elegido.
-
+            *Calendario sujeto a cambios de acuerdo con lo establecido por los fabricantes.
         </div>
     </div>
 </div>
@@ -326,7 +324,7 @@ function table_vaccines(){
     </div>
     <div class="contenedor-wrapper table-sub-cont">
         <div class="desc-small">
-        *Hasta la fecha de publicación del presente documento 10 De acuerdo con lo descrito en las guías técnicas de aplicación de cada vacuna. Revisadas el cinco de abril de 2021. Disponibles en vacunacovid.gob.mx
+            *Mas información en las guías técnicas de cada vacuna.
         </div>
     </div>
 </div>
