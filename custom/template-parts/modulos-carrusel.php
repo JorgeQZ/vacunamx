@@ -1,99 +1,60 @@
+<?php
+$ID = get_the_ID();
+?>
+
 <div class="contenedor-general-modulos">
 
     <div class="contenedor-wrapper">
 
+        <?php if( have_rows('carrusel', $ID) ): ?>
+
         <div class="contenedor-bullets owl-carousel owl-theme">
-            <div class="contenedor-bullet active">
+
+            <?php 
+                $aux = 0;
+                while( have_rows('carrusel', $ID) ): the_row(); 
+                $titulo_tab = get_sub_field('titulo_tab');
+            ?>
+
+            <div class="contenedor-bullet <?php if($aux == 0){ echo 'active'; } ?>">
                 <p>
-                    ¿Es seguro vacunarse?
-                </p>
-            </div>
-            <div class="contenedor-bullet">
-                <p>
-                    ¿Quién debe ponérsela?
-                </p>
-            </div>
-            <div class="contenedor-bullet">
-                <p>
-                    ¿Cómo funciona la vacuna?
-                </p>
-            </div>
-            <div class="contenedor-bullet">
-                <p>
-                    ¿Qué contiene?
+                    <?php echo $titulo_tab; ?>
                 </p>
             </div>
 
+            <?php 
+                $aux++;
+                endwhile; 
+            ?>
+
         </div>
+
+        <?php endif; ?>
+
+
+        <?php if( have_rows('carrusel', $ID) ): ?>
 
         <div class="contenedor-modulos owl-carousel owl-theme">
+
+            <?php while( have_rows('carrusel', $ID) ): the_row(); 
+                $informacion = get_sub_field('informacion');
+                $imagen = get_sub_field('imagen');
+            ?>
+
             <div class="contenedor-item">
                 <div class="cont-pregunta">
-                    <h2>¿Es seguro vacunarse?</h2>
-                    <p>
-                        <span> La vacuna es segura. </span> Todas las vacunas aprobadas son sometidas a <span> pruebas rigurosas </span> a lo largo de las diferentes
-                        fases de los ensayos clínicos, y siguen siendo evaluadas regularmente una vez comercializadas. Los científicos
-                        también siguen constantemente la información procedente de diferentes fuentes en busca de indicios de que una
-                        vacuna pueda tener efectos adversos.
-                    </p>
+                    <?php echo $informacion; ?>
                 </div>
                 <div class="cont-imagen">
-                    <img src="<?php echo get_template_directory_uri().'/custom/img/es-seguro-vacunarse.png';?>" alt="">
-                </div>
-            </div>
-            <div class="contenedor-item">
-                <div class="cont-pregunta">
-                    <h2>¿Quién debe ponérsela?</h2>
-                    <p>
-                        <span> Toda la población, </span> a fin de salvar vidas, interrumpir la transmisión del virus o
-                        <span> disminuir la expansión de la pandemia, </span> así como los efectos indirectos sobre el funcionamiento de los
-                        servicios esenciales en la sociedad.
-                    </p>
-                </div>
-                <div class="cont-imagen">
-                    <img src="<?php echo get_template_directory_uri().'/custom/img/quien-debe-ponersela.png';?>" alt="">
-                </div>
-            </div>
-            <div class="contenedor-item">
-                <div class="cont-pregunta">
-                    <h2>¿Cómo funciona la vacuna?</h2>
-                    <p>
-                        Tras vacunarse, nuestro sistema inmunitario <span> produce anticuerpos, </span> como ocurre cuando nos exponemos a una enfermedad,
-                        con la diferencia de que la vacunas contienen solamente patógenos (como virus o bacterias) muertos o debilitados
-                        y <span> no causan enfermedades ni complicaciones. </span> La mayoría de las vacunas se inyectan, pero otras se ingieren (vía oral) o
-                        se nebulizan en la nariz.
-                    </p>
-                </div>
-                <div class="cont-imagen">
-                    <img src="<?php echo get_template_directory_uri().'/custom/img/como-funciona-la-vacuna2.png';?>" alt="">
-                </div>
-            </div>
-            <div class="contenedor-item">
-                <div class="cont-pregunta">
-                    <h2>¿Qué contiene?</h2>
-                    <p>
-                        Todos los componentes de las vacunas son importantes <span> para garantizar su inocuidad </span> y su eficacia.
-                        Estos son algunos de ellos:
-                    </p>
-                    <p>
-                        <span> El antígeno: </span> es una forma muerta o debilitada de un patógeno (por ejemplo, un virus o una bacteria) que prepara a nuestro organismo para reconocer y combatir una determinada enfermedad en el futuro.
-                    </p>
-                    <p>
-                        <span> Adyuvantes: </span> ayudan a incrementar la respuesta de nuestras defensas (inmunitaria) y, así, facilitan la acción de las vacunas.
-                    </p>
-                    <p>
-                        <span> Conservantes: </span> garantizan que la vacuna mantiene su eficacia.
-                    </p>
-                    <p>
-                        <span> Estabilizantes: </span> protegen la vacuna durante su transporte y almacenamiento.
-                    </p>
-                </div>
-                <div class="cont-imagen">
-                    <img src="<?php echo get_template_directory_uri().'/custom/img/que-contiene.png';?>" alt="">
+                    <img src="<?php echo $imagen; ?>" alt="">
                 </div>
             </div>
 
+            <?php endwhile; ?>
+
         </div>
+
+        <?php endif; ?>
 
     </div>
 
