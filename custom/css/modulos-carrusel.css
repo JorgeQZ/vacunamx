@@ -158,6 +158,10 @@
   font-weight: bold;
 }
 
+.contenedor-general-modulos .contenedor-modulos .contenedor-item .cont-pregunta p strong {
+  color: #e5caa3;
+}
+
 .contenedor-general-modulos .contenedor-modulos .contenedor-item .cont-imagen {
   width: 50%;
 }
