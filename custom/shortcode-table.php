@@ -15,7 +15,7 @@ function table_vaccines(){
 <div class="table-cont">
     <div class="contenedor-wrapper table-sub-cont">
         <div class="title">
-            CALENDARIO DE ENTREGAS (miles de personas inmunizadas)
+            CALENDARIO DE ENTREGAS (miles de personas inmunizadas)*
         </div>
     </div>
     <div class="contenedor-wrapper table-sub-cont">
@@ -159,9 +159,7 @@ function table_vaccines(){
             Los contratos establecidos hasta hoy permitirían la inmunización <br> de hasta 116.69 millones de personas al término de 2021.
         </div>
         <div class="desc-small">
-
-            (*) / Pendiente de confirmación del fabricante elegido.
-
+            *Calendario sujeto a cambios de acuerdo con lo establecido por los fabricantes.
         </div>
     </div>
 </div>
@@ -260,6 +258,74 @@ function table_vaccines(){
                 </tr>
             </tbody>
         </table>
+    </div>
+</div>
+
+<div class="table-cont">
+    <div class="contenedor-wrapper table-sub-cont">
+        <div class="title">
+            Resumen de las principales características de las vacunas disponibles en México*
+        </div>
+    </div>
+    <div class="contenedor-wrapper table-sub-cont">
+        <table cellspacing="0" cellpadding="0" class="vaccines  vaccines_alt">
+            <!-- header -->
+            <thead class="header-data_min">
+                <th>Vacuna (farmacéutica)</th>
+                <th>Nombre común</th>
+                <th>Plataforma de diseño</th>
+                <th>Dosis de esquema</th>
+                <th>Tiempo entre dosis</th>
+                <th style="width: 40%;">Efectos secundarios más comunes</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>BNT162b2</strong><br>(Pfizer, Inc,/BioNTech)</td>
+                    <td>Pfizer</td>
+                    <td>ARNm</td>
+                    <td>2</td>
+                    <td>3-6 <br> semanas</td>
+                    <td>Dolor en el sitio de inyección, cansancio, dolor de cabeza, músculos y articulaciones, y fiebre</td>
+                </tr>
+                <tr>
+                    <td><strong>AZD1222</strong><br>(AstraZeneca/Universidad de Oxford)</td>
+                    <td>Astra</td>
+                    <td>Vector viral no replicante</td>
+                    <td>2</td>
+                    <td>8-12 <br> semanas</td>
+                    <td>Dolor en el sitio de inyección, cansancio, dolor de cabeza, músculos y articulaciones, y fiebre</td>
+                </tr>
+                <tr>
+                    <td><strong>Gam-COVID-Vac</strong><br>(Instituto Gamaleya)</td>
+                    <td>Sputnik V</td>
+                    <td>Vector viral no replicante</td>
+                    <td>2</td>
+                    <td>3-4 <br> semanas</td>
+                    <td>Dolor e hinchazón en el sitio de inyección, cansancio, dolor de cabeza, músculos y articulaciones, fiebre, malestar general y escalofríos</td>
+                </tr>
+                <tr>
+                    <td><strong>Ad5-nCoV</strong><br>(CanSino Biologics Inc)</td>
+                    <td>Cansino</td>
+                    <td>Vector viral no replicante</td>
+                    <td>1</td>
+                    <td>No aplica. <br> El esquema se completa con una sola dosis</td>
+                    <td>Dolor, comezón, hinchazón y enrojecimiento en el sitio de inyección, cansancio, dolor de cabeza, músculos y articulaciones, fiebre, diarrea, náusea, vómito, bajo apetito, mareo, tos y dolor de garganta</td>
+                </tr>
+                <tr>
+                    <td><strong>CoronaVac</strong><br>(Sinovac Research and Development Co)</td>
+                    <td>Sinovac</td>
+                    <td>Virus inactivado</td>
+                    <td>2</td>
+                    <td>4-5 <br> semanas</td>
+                    <td>Dolor, hinchazón y enrojecimiento en el sitio de inyección, cansancio, dolor de cabeza, músculos y articulaciones, fiebre, diarrea y escalofríos</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="contenedor-wrapper table-sub-cont">
+        <div class="desc-small">
+            *Mas información en las guías técnicas de cada vacuna.
+        </div>
     </div>
 </div>
 <?php

@@ -22,7 +22,7 @@
                     </div>
                     <div class="numbers-total datos-vacunacion">
                         <div class="subtext">
-                            Meta a Vacunar de personal de salud 
+                            Meta a vacunar de personal de salud 
                         </div>
                         <div id="numbers_text" class="datoprincipal">
                             <span class="count">1100000</span>
@@ -51,7 +51,7 @@
                     </div>
                     <div class="numbers-total datos-vacunacion">
                         <div class="subtext">
-                            Población total Adultos mayores 
+                            Población total adultos mayores 
                         </div>
                         <div id="numbers_text" class="datoprincipal">
                             <span class="count">4793417</span>

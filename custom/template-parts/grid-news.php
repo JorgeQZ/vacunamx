@@ -18,6 +18,7 @@
             if ( $carousel_post ):
                 foreach ( $carousel_post as $post ) :
                     setup_postdata( $post );
+                    $enlace_externo = get_field('enlace_externo');					
                     ?>
             <div class="item">
 
@@ -38,7 +39,7 @@
                 </div>
 
                 <div class="seemore">
-                    <a href="<?php the_permalink() ?>" title="Ver más: Ir al enlace">
+                    <a href="<?php if($enlace_externo){ echo $enlace_externo; } else{ the_permalink(); } ?>" title="Ver más: Ir al enlace" <?php if($enlace_externo){ echo 'target="_blank"'; } ?>>
                         <span>Ver más</span>
                         <span><img src="<?php echo get_template_directory_uri().'/custom/img/right-arrow-white.png'?>" alt="Ir al enlace"></span>
                     </a>
@@ -68,6 +69,7 @@
         if ( $latestpost ):
             foreach ( $latestpost as $post ) :
                 setup_postdata( $post );
+                $enlace_externo = get_field('enlace_externo');					
                 ?>
 
         <div class="row-item">
@@ -88,7 +90,7 @@
             </div>
 
             <div class="seemore">
-                <a href="<?php the_permalink() ?>" title="Ver más: Ir al enlace">
+                <a href="<?php if($enlace_externo){ echo $enlace_externo; } else{ the_permalink(); } ?>" title="Ver más: Ir al enlace" <?php if($enlace_externo){ echo 'target="_blank"'; } ?>>
                     <span><img src="<?php echo get_template_directory_uri().'/custom/img/right-arrow-white.png'?>" alt="Ir al enlace"></span>
                 </a>
             </div>

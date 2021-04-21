@@ -15,7 +15,8 @@ $date_format = get_option( 'date_format' );
             </div>
 
             <div class="vermas">
-                <a href="<?php echo get_the_permalink($posts[0]->ID); ?>">
+                <?php $enlace_externo = get_field('enlace_externo', $posts[0]->ID); ?>
+                <a href="<?php if($enlace_externo){ echo $enlace_externo; } else{ echo get_the_permalink($posts[0]->ID); } ?>" <?php if($enlace_externo){ echo 'target="_blank"'; } ?> >
                     lee más
                 </a>
             </div>
@@ -33,7 +34,8 @@ $date_format = get_option( 'date_format' );
                     </div>
                 </div>
                 <div class="vermas">
-                    <a href="<?php echo get_the_permalink($posts[1]->ID); ?>">
+                    <?php $enlace_externo = get_field('enlace_externo', $posts[1]->ID); ?>
+                    <a href="<?php if($enlace_externo){ echo $enlace_externo; } else{ echo get_the_permalink($posts[1]->ID); } ?>" <?php if($enlace_externo){ echo 'target="_blank"'; } ?> >
                         lee más
                     </a>
                 </div>
@@ -52,7 +54,8 @@ $date_format = get_option( 'date_format' );
                 </div>
 
                 <div class="vermas">
-                    <a href="<?php echo get_the_permalink($posts[2]->ID); ?>">
+                    <?php $enlace_externo = get_field('enlace_externo', $posts[2]->ID); ?>
+                    <a href="<?php if($enlace_externo){ echo $enlace_externo; } else{ echo get_the_permalink($posts[2]->ID); } ?>" <?php if($enlace_externo){ echo 'target="_blank"'; } ?> >
                         lee más
                     </a>
                 </div>
