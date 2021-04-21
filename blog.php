@@ -13,7 +13,7 @@ $offset = ( $current_page - 1 ) * $per_page + $offset_start;
 ?>
 
 <?php get_template_part( 'custom/template-parts/grid-news' ); ?>
-
+<!--
 <div class="blog-cont">
     <div class="title">
         últimas noticias
@@ -107,4 +107,5 @@ $offset = ( $current_page - 1 ) * $per_page + $offset_start;
 
 ?>
 </div>
+-->
 <?php get_footer(); ?>

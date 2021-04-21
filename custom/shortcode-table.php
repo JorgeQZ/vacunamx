@@ -15,7 +15,7 @@ function table_vaccines(){
 <div class="table-cont">
     <div class="contenedor-wrapper table-sub-cont">
         <div class="title">
-            CALENDARIO DE ENTREGAS (miles de personas inmunizadas)
+            CALENDARIO DE ENTREGAS (miles de personas inmunizadas)*
         </div>
     </div>
     <div class="contenedor-wrapper table-sub-cont">
