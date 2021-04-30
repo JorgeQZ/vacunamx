@@ -59,7 +59,23 @@ function add_theme_scripts() {
 
     }
 
+
+    if(is_page_template('acervo.php')){
+        // Grid News
+        wp_enqueue_style( 'acervo', get_template_directory_uri() . '/custom/css/acervo.css', array(), filemtime( get_stylesheet_directory() . '/custom/css/acervo.css' ), 'all');
+
+    }
+
     wp_enqueue_style( 'accesibilidad', get_template_directory_uri() . '/custom/css/accesibilidad.css', array(), filemtime( get_stylesheet_directory() . '/custom/css/accesibilidad.css' ), 'all');
+
+    wp_register_script( 'load-more-docs', get_template_directory_uri() . '/custom/js/load-more-docs.js');
+    wp_enqueue_script( 'load-more-docs' );
+
+    wp_localize_script( 'load-more-docs', 'ajax_posts', array(
+	    'ajaxurl' => admin_url( 'admin-ajax.php' ),
+	    'noposts' => __('No older posts found', 'vacunamx'),
+    ));
+
 
 
 }
@@ -88,6 +104,47 @@ function my_acf_init_block_types() {
     }
 }
 
+
+function entex_add_attachment_support(){
+    add_post_type_support('attachment', 'thumbnail');
+}
+add_action('after_setup_theme', 'entex_add_attachment_support');
+
+function more_post_ajax(){
+    $paged = (isset($_POST['pageNumber'])) ? $_POST['pageNumber'] : 0;
+    header("Content-Type: text/html");
+
+
+    $args = array(
+        'post_type'=> 'documentos',
+        'order'    => 'ASC',
+        'posts_per_page' => 4,
+        'post_status' => 'published',
+        'order_by' => 'post_date',
+        'paged' => $paged
+    );
+
+    $the_query = new WP_Query($args);
+
+    $out = '';
+
+    if($the_query->have_posts() ) :
+        while ( $the_query->have_posts() ) :
+           $the_query->the_post();
+           $current_id = get_the_id();
+           $file_custom = get_field('documento');
+           $out .= '<a class="item loading" download href="'.$file_custom['url'].'"><div class="overlay"></div><div class="thumbnail">'.get_the_post_thumbnail($current_id, 'post-thumbnail').'</div><div class="title">'.get_the_title().'</div><div class="date">'.get_the_date().'</div></a>';
+
+        endwhile;
+
+    endif;
+    wp_reset_postdata();
+    die($out);
+}
+
+
+add_action('wp_ajax_nopriv_more_post_ajax', 'more_post_ajax');
+add_action('wp_ajax_more_post_ajax', 'more_post_ajax');
 
 
 ?>
